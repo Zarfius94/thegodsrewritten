@@ -1,0 +1,160 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+God_group = {
+	graphical_cultures = { southerngfx }
+	
+	High_God = {
+		graphical_cultures = { southerngfx }
+		modifier = default_culture_modifier
+		color = { 255 255 255 }
+
+		male_names = {
+			Aemilian Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelian Aurelius
+			Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius Clementius Constans_Constans Constantine_Constantine
+			Constantius_Constantius Cornelius Crassus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florian
+			Gaius Galerius Gallienus Gallus Germanus_Germanus Gordian Gracchus Gratian Hadrian_Adrian Herculius_Heracles Honorius Joannes_John Jovian
+			Julian_Julian Julius Julius-Caesar Junius Justin_Justin Justinian_Justinian Leo_Leo Leontius_Leontius Liberius Licinius Lucius Magnus_Magnus Marcellinus
+			Marcellus Marcian Marcus_Marcus Marinus Marius Martinus Maximian Maximinus Maximus_Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
+			Paulinus Paulus_Paul Petronius Philip_Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus_Roman Romulus Rufinus Rutilius Sabinianus
+			Saturninus Sempronius Septimius Sergius_Sergius Severinus Severus Sextus Symmachus_Symmachus Tacitus Theodosius_Theodosios Tiberius_Tiberius
+			Titius Titus Trajan_Trajan Urbanus Valens Valentinian Valerian Valerius_Valerius Venantius Vespasian Victor Victorinus Vigilius Vitalianus Volusianus
+		}
+		female_names = {
+			Aelia Agrippina Antonia_Antonia Antonina Aquilia Aurelia Caecilia Caesaris Candida Cassia Claudia_Claudia Clementia Constantia_Constantia
+			Constantina_Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
+			Gordiana Hadriana_Adriana Helvia Hilara Honoria Hortensia Julia_Julia Juliana_Juliana Junia Justa Justina_Justina Justiniana Licinia Livia Livilla Lucilla
+			Magnia Magnilla Marcella Marcia_Marcia Marciana Marina Martina_Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
+			Octavia Palatina Paula_Paula Paulina_Paulina Petronella Petronia_Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria_Pulcheria
+			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria_Valeria
+			Verina Victoria Vigilantia Viviana_Viviana
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+	}
+	
+	Fallen_God = {
+		graphical_cultures = { westerngfx }
+		modifier = default_culture_modifier
+		color = { 75 75 75 }
+
+		male_names = {
+			Aemilian Aemilius Aetius Albinus Alexander_Alexander Anastasius_Anastasius Anicius Annius Antoninus Antonius_Antonius Arcadius Aurelian Aurelius
+			Avitus Belisarius_Belisarius Britannicus Caecilius Caesar_Caesar Carinus Carus Cassius Claudius Clementius Constans_Constans Constantine_Constantine
+			Constantius_Constantius Cornelius Crassus Decimus Decius Diocletian Domitian Domitius Drusus Ennodius Fabianus Fabius Faustus Felix Flavianus Florian
+			Gaius Galerius Gallienus Gallus Germanus_Germanus Gordian Gracchus Gratian Hadrian_Adrian Herculius_Heracles Honorius Joannes_John Jovian
+			Julian_Julian Julius Julius-Caesar Junius Justin_Justin Justinian_Justinian Leo_Leo Leontius_Leontius Liberius Licinius Lucius Magnus_Magnus Marcellinus
+			Marcellus Marcian Marcus_Marcus Marinus Marius Martinus Maximian Maximinus Maximus_Maximus Nepotian Nerva Numerian Octavianus Octavius Otho
+			Paulinus Paulus_Paul Petronius Philip_Philip Pompeius Pontianus Priscus Probus Publius Quintus Romanus_Roman Romulus Rufinus Rutilius Sabinianus
+			Saturninus Sempronius Septimius Sergius_Sergius Severinus Severus Sextus Symmachus_Symmachus Tacitus Theodosius_Theodosios Tiberius_Tiberius
+			Titius Titus Trajan_Trajan Urbanus Valens Valentinian Valerian Valerius_Valerius Venantius Vespasian Victor Victorinus Vigilius Vitalianus Volusianus
+		}
+		female_names = {
+			Aelia Agrippina Antonia_Antonia Antonina Aquilia Aurelia Caecilia Caesaris Candida Cassia Claudia_Claudia Clementia Constantia_Constantia
+			Constantina_Constantina Cornelia Crispina Dominica Domitiana Domna Domnina Drusilla Fausta Faustina Flacilla Flavia Fortunata Frontina Gaia Galeria
+			Gordiana Hadriana_Adriana Helvia Hilara Honoria Hortensia Julia_Julia Juliana_Juliana Junia Justa Justina_Justina Justiniana Licinia Livia Livilla Lucilla
+			Magnia Magnilla Marcella Marcia_Marcia Marciana Marina Martina_Martina Matrona Maxima Maximiana Messalina Minervina Minucia Modia Mustela
+			Octavia Palatina Paula_Paula Paulina_Paulina Petronella Petronia_Petronia Placidia Plautia Plautilla Pompeia Poppaea Praeiecta Publia Pulcheria_Pulcheria
+			Rusticiana Sabina Sallustia Salonina Salvianella Scantilla Serena Sergia Severa Severina Silvia Spadusa Sulpicia Tarsilla Titiana Ulpia Valeria_Valeria
+			Verina Victoria Vigilantia Viviana_Viviana
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+	}
+	
+	Norse_God = {
+		graphical_cultures = { norsegfx }
+		modifier = default_culture_modifier
+		color = { 10 10 10 }
+
+		male_names = {
+			Baldr Bragi Dellingr Forseti Freyr Yngvi Ing Heimdallr Hermóðr Höðr H?nir Lóðurr Loki Máni Meili Njörðr Odin Óðr Saxn?t Thor Týr Ullr Váli Viðarr Vé Vili
+		}
+		female_names = {
+			Baduhenna Bil Beyla Eir ?ostre Freyja Frigg Fulla Gefjun Gersemi Gerðr Gná Gullveig Hariasa Hlín Hretha Hnoss Ilmr Iðunn Irpa Lofn Nanna Nerthus Njörun Rán Rindr 
+			Sága Sandraudiga Sif Sigyn Sinthgunt Sjöfn Skaði Snotra Sól Sunna Syn Tanfana Þrúðr Þorgerðr Hölgabrúðr Vár Vör Zisa
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 0
+		father_name_chance = 15
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 15
+		mother_name_chance = 0
+	}
+	Olympic_God = {
+		graphical_cultures = { byzantinegfx }
+		modifier = default_culture_modifier
+		color = { 200 200 200 }
+
+		male_names = {
+			Achelous Aeolus Aether Alastor Apollo Ares Aristaeus Asclepius Atlas Attis Boreas Caerus Castor Cerus Chaos Charon Chronos Crios Cronus Dinlas Dionysus 
+			Erebus Eros Eurus Glaucus Hades Helios Hephaestus Heracles Hermes Hesperus Hymenaios Hypnos Kratos Momus Morpheus Nereus Notus Oceanus Pallas Pan Phosphorus
+			Plutus Pollux Pontus Poseidon Priapus Pricus Proteus Tartarus Thanatos Triton Typhon Uranus Zelus Zephyrus Zeus
+		}
+		female_names = {
+			Achelois Alcyone Alectrona Amphitrite Antheia Aphaea Aphrodite Artemis Astraea AtÃ© Athena Atropos Bia Brizo Calliope Calypso Celaeno Ceto Circe Clio
+			Clotho Cybele Demeter Doris Eileithyia Electra Elpis Enyo Eos Erato Eris Euterpe Gaia Harmonia Hebe Hecate Hemera Hera Hestia Hygea Iris Kotys Lacheses 
+			Maia Mania Melpomene Merope Metis Nemesis Nike Nyx Peitha Persephone Pheme Polyhymnia Rhea Selene Sterope Styx Taygete Terpsichore Thalia Themis Thetis Tyche Urania
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+	}
+	Eastern_God = {
+		graphical_cultures = { mongolgfx }
+		modifier = default_culture_modifier
+		color = { 200 200 200 }
+
+		male_names = {
+			Haruto Yuto Sota Yuki Hayato Haruki Ryusei Koki Sora Sosuke Riku Soma Ryota Rui Kaito Haru Kota Yusei Yuito Yuma Ren Takumi Minato Eita Shota Daiki 
+			Hiroto Kosei Takeru Hinata Toma Manato Ryuki Rikuto Aoto Ibuki Tatsuki Haruma Yamato Ryuto Taisei Yuta Itsuki Soshi Taiga Kosuke Shoma Yushin Ryuga Ryo Rento 
+		}
+		female_names = {
+			Yui Rio Yuna Hina Koharu Hinata Mei Mio Saki Miyu Kokona Haruka Rin Akari Kairi Honoka Momoka Aoi Ichika Sakura Himari Yume Airi Sara Nanami Ayaka 
+			Yuka Riko Noa Mao Yua Ayane Hiyori Misaki Yuzuki Rina Sana RÃ­a Ruka Kanon Kaho Hana Karin Risa Shiori Fuka Rino Anna Natsuki Nana Reina
+		}
+		from_dynasty_prefix = "no "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+	}
+}
+

@@ -1,0 +1,64 @@
+###########################################
+#                                         #
+# Gods Mod (Enemy events)                 #
+#                                         #
+# ID godsenemy.1-godsenemy.999	          #
+#                                         #
+###########################################
+namespace = godsenemy
+
+character_event = {
+    id = godsenemy.1
+    desc = "EVTDESCgodsenemy.1"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+    is_triggered_only = yes
+    
+    option = {
+        name = "EVTOPTAgodsenemy.1"
+        trigger = {
+            NOT = {
+                any_character = {
+                    good_deity = yes
+                }
+            }
+        }
+        
+        random_independent_ruler = {
+            limit = {
+                god_material = yes
+                is_female = no
+            }
+            THIS = {
+                add_trait = young_god
+                add_trait = kind
+                add_trait = strong
+            }
+        }
+    }
+    option = {
+        name = "EVTOPTBgodsenemy.1"
+        trigger = {
+            NOT = {
+                any_character = {
+                    fallen_deity = yes
+                }
+            }
+        }
+        
+        random_independent_ruler = {
+            limit = {
+                god_material = yes
+                is_female = no
+            }
+            THIS = {
+                add_trait = young_fallen_god
+                add_trait = cruel
+                add_trait = strong
+            }
+        }
+    }
+    option = {
+        name = "EVTOPTCgodsenemy.1"
+    }
+}

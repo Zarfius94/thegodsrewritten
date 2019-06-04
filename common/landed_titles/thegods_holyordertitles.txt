@@ -1,0 +1,187 @@
+d_gofl = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = guardians_composition
+	
+	culture = High_God
+	gain_effect = {
+		add_trait = angel
+	}
+	# Parent Religion 
+	religion = the_light
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_gofd = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = guardians_composition
+	
+	culture = Fallen_God
+	gain_effect = {
+		add_trait = dark_angel
+	}
+	# Parent Religion 
+	religion = the_darkness
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_al = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = angelic_composition
+	
+	culture = High_God
+	gain_effect = {
+		add_trait = angel
+	}
+	# Parent Religion 
+	religion = the_light
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_dal = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = angelic_composition
+	
+	culture = Fallen_God
+	gain_effect ={
+		add_trait = dark_angel
+	}
+	# Parent Religion 
+	religion = the_darkness
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_sol = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = sword_composition
+	
+	culture = High_God
+	gain_effect = {
+		add_trait = angel
+	}
+	# Parent Religion 
+	religion = the_light
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}
+
+d_sod = {
+	color={ 230 230 230 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = holygfx
+	
+	capital = 138 # Orleans
+	
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	mercenary_type = sword_composition
+	
+	culture = Fallen_God
+	gain_effect = {
+		add_trait = dark_angel
+	}
+	# Parent Religion 
+	religion = the_darkness
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Extra income due to banking, etc
+	monthly_income = 10 # (Must be an integer between 1 and 512)
+}

@@ -1,0 +1,46 @@
+followers = {
+	monthly_character_piety = 0.05
+	icon = 8
+}
+followers2 = {
+	monthly_character_piety = 0.1
+	icon = 8
+}
+followers3 = {
+	monthly_character_piety = 0.25
+	icon = 8
+}
+followers4 = {
+	monthly_character_piety = 0.5
+	icon = 8
+}
+followers5 = {
+	monthly_character_piety = 1
+	icon = 8
+}
+followers6 = {
+	monthly_character_piety = 2.5
+	icon = 8
+}
+followers7 = {
+	monthly_character_piety = 5
+	icon = 8
+}
+followers8 = {
+	monthly_character_piety = 10
+	icon = 8
+}
+followers9 = {
+	monthly_character_piety = 25
+	icon = 8
+}
+followers10 = {
+	monthly_character_piety = 50
+	icon = 8
+}
+goodfollower = {
+	icon = 8
+}
+evilfollower = {
+	icon = 8
+}

@@ -1,0 +1,119 @@
+remove_divine_education = {
+    trigger_switch = {
+        on_trigger = trait
+        divine_assassin = {
+            remove_trait = divine_assassin
+        }
+        divine_steward = {
+            remove_trait = divine_steward
+        }
+        divine_diplomat = {
+            remove_trait = divine_diplomat
+        }
+        divine_theologian = {
+            remove_trait = divine_theologian
+        }
+        divine_warrior = {
+            remove_trait = divine_warrior
+        }
+    }
+}
+
+gods_remove_education_effect = {
+    trigger_switch = {
+        on_trigger = trait
+        naive_appeaser = {
+            remove_trait = naive_appeaser
+        }
+        underhanded_rogue = {
+            remove_trait = underhanded_rogue
+        }
+        charismatic_negotiator = {
+            remove_trait = charismatic_negotiator
+        }
+        grey_eminence = {
+            remove_trait = grey_eminence
+        }
+        misguided_warrior = {
+            remove_trait = misguided_warrior
+        }
+        tough_soldier = {
+            remove_trait = tough_soldier
+        }
+        skilled_tactician = {
+            remove_trait = skilled_tactician
+        }
+        brilliant_strategist = {
+            remove_trait = brilliant_strategist
+        }
+        indulgent_wastrel = {
+            remove_trait = indulgent_wastrel
+        }
+        thrifty_clerk = {
+            remove_trait = thrifty_clerk
+        }
+        fortune_builder = {
+            remove_trait = fortune_builder
+        }
+        midas_touched = {
+            remove_trait = midas_touched
+        }
+        amateurish_plotter = {
+            remove_trait = amateurish_plotter
+        }
+        flamboyant_schemer = {
+            remove_trait = flamboyant_schemer
+        }
+        intricate_webweaver = {
+            remove_trait = intricate_webweaver
+        }
+        elusive_shadow = {
+            remove_trait = elusive_shadow
+        }
+        detached_priest = {
+            remove_trait = detached_priest
+        }
+        martial_cleric = {
+            remove_trait = martial_cleric
+        }
+        scholarly_theologian = {
+            remove_trait = scholarly_theologian
+        }
+        mastermind_theologian = {
+            remove_trait = mastermind_theologian
+        }
+    }
+}
+
+gods_remove_title_trait_effect = {
+    trigger_switch = {
+        on_trigger = trait
+        goddessoflove = {
+            remove_trait = goddessoflove
+        }
+        godoftheseas = {
+			remove_trait = godoftheseas
+        }
+        godofwar = {
+			remove_trait = godofwar
+        }
+        godofthedead = {
+			remove_trait = godofthedead
+        }
+        goddessofwisdom = {
+			remove_trait = goddessofwisdom
+        }
+        kingofthegods = {
+			remove_trait = kingofthegods
+        }
+        evilking = {
+			remove_trait = evilking
+        }
+        evilqueen = {
+			remove_trait = evilqueen
+        }
+        queenofthegods = {
+			remove_trait = queenofthegods
+        }
+    }
+}

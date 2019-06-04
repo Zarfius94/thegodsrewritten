@@ -1,0 +1,339 @@
+castle = {
+	# All cultural buildings follow the same pattern:
+	# tech required is 0, 1, 2, 4 for the levels of the buildings
+	# cost is 200 + 100 per level
+	# 60 maintenance of troops + 20 per level
+	# + 0.15 bonus in either offensive, defensive or morale sometimes split over different units or stats same on all levels
+	
+	# Culture building names MUST start with ca_culture
+
+	#High God Divine Pool Building
+	ca_culture_High_God_1 = {
+		desc = ca_culture_High_God_1_desc
+		potential = {
+			FROM = {
+				culture = High_God
+			}
+		}
+		gold_cost = 1000
+		build_time = 100
+		angels = 50
+		tax_income = 20
+		retinuesize = 500
+		ai_creation_factor = 101
+	}
+	ca_culture_High_God_2 = {
+		desc = ca_culture_High_God_1_desc
+		potential = {
+			FROM = {
+				culture = High_God
+			}
+		}
+		upgrades_from = ca_culture_High_God_1
+		gold_cost = 2000
+		build_time = 200
+		angels = 50
+		galleys = 10
+		tax_income = 40
+		retinuesize = 1000	
+		ai_creation_factor = 100
+		
+	}
+	ca_culture_High_God_3 = {
+		desc = ca_culture_High_God_1_desc
+		potential = {
+			FROM = {
+				culture = High_God
+			}
+		}
+		upgrades_from = ca_culture_High_God_2
+		gold_cost = 4000
+		build_time = 400
+		angels = 100
+		galleys = 20
+		tax_income = 80
+		retinuesize = 1000
+		ai_creation_factor = 99
+		
+	}
+	ca_culture_High_God_4 = {
+		desc = ca_culture_High_God_1_desc
+		potential = {
+			FROM = {
+				culture = High_God
+			}
+		}
+		upgrades_from = ca_culture_High_God_3
+		gold_cost = 8000
+		build_time = 800
+		angels = 200
+		galleys = 40
+		tax_income = 160
+		retinuesize = 2500
+		ai_creation_factor = 98
+		
+	}
+	ca_culture_Eastern_God_1 = {
+		desc = ca_culture_Eastern_God_1_desc
+		potential = {
+			FROM = {
+				culture = Eastern_God
+			}
+		}
+		gold_cost = 1000
+		build_time = 100
+		youkai = 50
+		tax_income = 20
+		retinuesize = 500
+		ai_creation_factor = 101
+	}
+	ca_culture_Eastern_God_2 = {
+		desc = ca_culture_Eastern_God_1_desc
+		potential = {
+			FROM = {
+				culture = Eastern_God
+			}
+		}
+		upgrades_from = ca_culture_Eastern_God_1
+		gold_cost = 2000
+		build_time = 200
+		youkai = 50
+		galleys = 10
+		tax_income = 40
+		retinuesize = 1000	
+		ai_creation_factor = 100
+		
+	}
+	ca_culture_Eastern_God_3 = {
+		desc = ca_culture_Eastern_God_1_desc
+		potential = {
+			FROM = {
+				culture = Eastern_God
+			}
+		}
+		upgrades_from = ca_culture_Eastern_God_2
+		gold_cost = 4000
+		build_time = 400
+		youkai = 100
+		galleys = 20
+		tax_income = 80
+		retinuesize = 1000
+		ai_creation_factor = 99
+		
+	}
+	ca_culture_Eastern_God_4 = {
+		desc = ca_culture_Eastern_God_1_desc
+		potential = {
+			FROM = {
+				culture = Eastern_God
+			}
+		}
+		upgrades_from = ca_culture_Eastern_God_3
+		gold_cost = 8000
+		build_time = 800
+		youkai = 200
+		galleys = 40
+		tax_income = 160
+		retinuesize = 2500
+		ai_creation_factor = 98
+		
+	}
+	ca_culture_Evil_God_1 = {
+		desc = ca_culture_Evil_God_1_desc
+		potential = {
+			FROM = {
+				culture = Fallen_God
+			}
+		}
+		gold_cost = 1000
+		build_time = 100
+		dark_angels = 50
+		tax_income = 20
+		retinuesize = 500
+		ai_creation_factor = 101
+		
+	}
+	ca_culture_Evil_God_2 = {
+		desc = ca_culture_Evil_God_1_desc
+		potential = {
+			FROM = {
+				culture = Fallen_God
+			}
+		}
+		upgrades_from = ca_culture_Evil_God_1
+		gold_cost = 2000
+		build_time = 200
+		dark_angels = 50
+		galleys = 10
+		tax_income = 40
+		retinuesize = 1000
+		ai_creation_factor = 100
+		
+	}
+	ca_culture_Evil_God_3 = {
+		desc = ca_culture_Evil_God_1_desc
+		potential = {
+			FROM = {
+				culture = Fallen_God
+			}
+		}
+		upgrades_from = ca_culture_Evil_God_2
+		gold_cost = 4000
+		build_time = 400
+		dark_angels = 100
+		galleys = 20
+		tax_income = 80
+		retinuesize = 1000
+		ai_creation_factor = 99
+		
+	}
+	ca_culture_Evil_God_4 = {
+		desc = ca_culture_Evil_God_1_desc
+		potential = {
+			FROM = {
+				culture = Fallen_God
+			}
+		}
+		upgrades_from = ca_culture_Evil_God_3
+		gold_cost = 8000
+		build_time = 800
+		dark_angels = 200
+		galleys = 40
+		tax_income = 160
+		retinuesize = 2500
+		ai_creation_factor = 98
+		
+	}
+	ca_culture_Norse_God_1 = {
+		desc = ca_culture_Norse_God_1_desc
+		potential = {
+			FROM = {
+				culture = Norse_God
+			}
+		}
+		gold_cost = 1000
+		build_time = 100
+		jotnar = 10
+		tax_income = 20
+		retinuesize = 500
+		ai_creation_factor = 101
+		
+	}
+	ca_culture_Norse_God_2 = {
+		desc = ca_culture_Norse_God_1_desc
+		potential = {
+			FROM = {
+				culture = Norse_God
+			}
+		}
+		upgrades_from = ca_culture_Norse_God_1
+		gold_cost = 2000
+		build_time = 200
+		jotnar = 10
+		galleys = 10
+		tax_income = 40
+		retinuesize = 1000
+		ai_creation_factor = 100
+		
+	}
+	ca_culture_Norse_God_3 = {
+		desc = ca_culture_Norse_God_1_desc
+		potential = {
+			FROM = {
+				culture = Norse_God
+			}
+		}
+		upgrades_from = ca_culture_Norse_God_2
+		gold_cost = 4000
+		build_time = 400
+		jotnar = 50
+		galleys = 20
+		tax_income = 80
+		retinuesize = 1000
+		ai_creation_factor = 99
+		
+	}
+	ca_culture_Norse_God_4 = {
+		desc = ca_culture_Norse_God_1_desc
+		potential = {
+			FROM = {
+				culture = Norse_God
+			}
+		}
+		upgrades_from = ca_culture_Norse_God_3
+		gold_cost = 8000
+		build_time = 800
+		jotnar = 100
+		galleys = 40
+		tax_income = 160
+		retinuesize = 2500
+		ai_creation_factor = 98
+		
+	}
+	ca_culture_Olympic_God_1 = {
+		desc = ca_culture_Olympic_God_1_desc
+		potential = {
+			FROM = {
+				culture = Olympic_God
+			}
+		}
+		gold_cost = 1000
+		build_time = 100
+		titans = 10
+		tax_income = 20
+		retinuesize = 500
+		ai_creation_factor = 101
+		
+	}
+	ca_culture_Olympic_God_2 = {
+		desc = ca_culture_Olympic_God_1_desc
+		potential = {
+			FROM = {
+				culture = Olympic_God
+			}
+		}
+		upgrades_from = ca_culture_Olympic_God_1
+		gold_cost = 2000
+		build_time = 200
+		titans = 10
+		galleys = 10
+		tax_income = 40
+		retinuesize = 1000
+		ai_creation_factor = 100
+		
+	}
+	ca_culture_Olympic_God_3 = {
+		desc = ca_culture_Olympic_God_1_desc
+		potential = {
+			FROM = {
+				culture = Olympic_God
+			}
+		}
+		upgrades_from = ca_culture_Olympic_God_2
+		gold_cost = 4000
+		build_time = 400
+		titans = 50
+		galleys = 20
+		tax_income = 80
+		retinuesize = 1000
+		ai_creation_factor = 99
+		
+	}
+	ca_culture_Olympic_God_4 = {
+		desc = ca_culture_Olympic_God_1_desc
+		potential = {
+			FROM = {
+				culture = Olympic_God
+			}
+		}
+		upgrades_from = ca_culture_Olympic_God_3
+		gold_cost = 8000
+		build_time = 800
+		titans = 100
+		galleys = 40
+		tax_income = 160
+		retinuesize = 2500
+		ai_creation_factor = 98
+		
+	}
+}

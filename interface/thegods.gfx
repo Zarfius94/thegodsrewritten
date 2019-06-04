@@ -1,0 +1,25 @@
+spriteTypes = {
+	spriteType = {
+	name = "GFX_trait_God"
+	texturefile = "gfx/traits/God.dds"
+	noOfFrames = 1
+	norefcount = yes
+ 	effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+	name = "GFX_trait_Fallen_God"
+	texturefile = "gfx/traits/Fallen_God.dds"
+	noOfFrames = 1
+	norefcount = yes
+ 	effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+	name = "GFX_trait_Demi_God"
+	texturefile = "gfx/traits/Demi_God.dds"
+	noOfFrames = 1
+	norefcount = yes
+ 	effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+

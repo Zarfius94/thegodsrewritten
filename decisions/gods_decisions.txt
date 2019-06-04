@@ -1,0 +1,502 @@
+decisions = {
+    Create_Angel = {
+		is_high_prio = no
+        
+		potential = {
+			prisoner = no
+			OR = {
+				trait = god
+				trait = goddess
+            }
+		}
+        
+		allow = {
+    		piety = 500
+    		wealth = 500
+  		}
+        
+		effect = {
+			wealth = -500
+			piety = -500
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = angel
+				trait = diligent
+				trait = kind
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Female_Angel = {
+		is_high_prio = no
+        
+		potential = {
+			prisoner = no
+			OR = {
+				trait = god
+				trait = goddess
+            }
+		}
+        
+		allow = {
+    		piety = 500
+    		wealth = 500
+  		}	
+        
+		effect = {
+			wealth = -500
+			piety = -500
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 16
+				fertility = 0.5
+				trait = angel
+				trait = diligent
+				trait = kind
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Dark_Angel = {
+		is_high_prio = no
+        
+		potential = {
+			prisoner = no
+			OR = {
+				trait = fallen_god
+				trait = fallen_goddess
+            }
+		}
+        
+		allow = {
+    		piety = 500
+    		wealth = 500
+  		}	
+        
+		effect = {
+			piety = -500
+			wealth = -500
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = dark_angel
+				trait = diligent
+				trait = cruel
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Female_Dark_Angel = {
+		is_high_prio = no
+        
+		potential = {
+			prisoner = no
+			OR = {
+				trait = fallen_god
+				trait = fallen_goddess
+				}
+		}
+        
+		allow = {
+    		piety = 500
+    		wealth = 500
+  		}	
+        
+		effect = {
+			piety = -500
+			wealth = -500
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 16
+				fertility = 0.5
+				trait = dark_angel
+				trait = diligent
+				trait = cruel
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Jotunn = {
+		is_high_prio = no
+		potential = {
+			culture = Norse_God
+			prisoner = no
+			adult_deity = yes
+		}
+        
+		allow = {
+    		prestige = 1000
+    		wealth = 500
+  		}
+        
+		effect = {
+			wealth = -500
+			prestige = -1000
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = Norse_God
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = jotunn
+				trait = strong
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Titan = {
+		is_high_prio = no
+		potential = {
+			culture = Olympic_God
+			prisoner = no
+			adult_deity = yes
+		}
+        
+		allow = {
+    		prestige = 1000
+    		wealth = 500
+  		}	
+        
+		effect = {
+			wealth = -500
+			prestige = -1000
+			create_character = {
+				random_traits = no
+				dynasty = random
+				religion = ROOT
+				culture = Olympic_God
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = titan
+				trait = strong
+				trait = divine_warrior
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    Create_Goddess = {
+		is_high_prio = yes
+        
+		potential = {
+			OR = {
+                trait = goddess
+                trait = god
+			}
+		}
+        
+		allow = {
+    		prestige = 100
+    		piety = 100
+    		wealth = 100
+  		}
+        
+		effect = {
+			wealth = -100
+			create_character = {
+				dynasty = ROOT
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 16
+				fertility = 0.5
+				trait = young_goddess
+				trait = diligent
+				trait = kind
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_steward
+				trait = fair
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_God = {
+		is_high_prio = yes
+        
+		potential = {
+			OR = {
+                trait = goddess
+                trait = god
+			}
+		}
+        
+		allow = {
+    		prestige = 100
+    		piety = 100
+    		wealth = 100
+  		}
+        
+		effect = {
+			wealth = -100
+			create_character = {
+				dynasty = ROOT
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = young_god
+				trait = diligent
+				trait = kind
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				trait = strong
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Fallen_Goddess = {
+		is_high_prio = yes
+        
+		potential = {
+			OR = {
+                trait = fallen_goddess
+                trait = fallen_god
+			}
+		}
+        
+		allow = {
+    		prestige = 100
+    		piety = 100
+    		wealth = 100
+  		}
+        
+		effect = {
+			wealth = -100
+			create_character = {
+				random_traits = yes
+				dynasty = ROOT
+				religion = ROOT
+				culture = ROOT
+				female = yes
+				age = 16
+				fertility = 0.5
+				trait = young_fallen_goddess
+				trait = diligent
+				trait = cruel
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_steward
+				trait = fair
+				}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	Create_Fallen_God = {
+		is_high_prio = yes
+		potential = {
+			OR = {
+			trait = fallen_goddess
+			trait = fallen_god
+			}
+		}
+		allow = {
+    		prestige = 100
+    		piety = 100
+    		wealth = 100
+  		}	
+		effect = {
+			wealth = -100
+			create_character = {
+				random_traits = yes
+				dynasty = ROOT
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 16
+				fertility = 0.5
+				trait = fallen_god
+				trait = diligent
+				trait = cruel
+				trait = temperate
+				trait = patient
+				trait = zealous
+				trait = scholar
+				trait = divine_warrior
+				trait = strong
+				}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    Create_God_Empire = {
+		is_high_prio = yes
+		ai = no
+        
+		potential = {
+			OR = {
+				trait = god
+				trait = goddess
+			}
+			religion = the_light
+			e_thegods = {
+                has_holder = no
+            }
+		}
+        
+		allow = {
+			wealth = 600
+			piety = 400
+		}
+        
+		effect = {
+			wealth = -600
+			piety = -400
+			prestige = 1000
+			activate_title = {
+                title = e_thegods
+                status = yes
+            }
+			e_thegods = {
+                gain_title = PREV
+            }
+		}
+	}
+    
+	Create_Fallen_God_Empire = {
+		is_high_prio = yes
+		ai = no
+        
+		potential = {
+			OR = {
+				trait = fallen_god
+				trait = fallen_goddess
+			}
+			religion = the_darkness
+			e_evilgods = {
+                has_holder = no
+            }
+		}
+        
+		allow = {
+			wealth = 600
+			piety = 400
+		}
+        
+		effect = {
+			wealth = -600
+			piety = -400
+			prestige = 1000
+			activate_title = {
+                title = e_evilgods
+                status = yes
+            }
+			e_evilgods = {
+                gain_title = PREV
+            }
+		}
+	}
+    
+    Create_Opponent = {
+        is_high_prio = yes
+        ai = no
+        potential = {
+            OR = {
+                fallen_deity = yes
+                good_deity = yes
+            }
+            NAND = {
+                any_character = {
+                    good_deity = yes
+                }
+                any_character = {
+                    fallen_deity = yes
+                }
+            }
+        }
+        
+        effect = {
+            character_event = {
+                id = godsenemy.1
+            }
+        }
+    }
+}

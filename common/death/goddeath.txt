@@ -1,0 +1,12 @@
+smite_death = {
+	long_desc = "SMITE_DEATH_DESC"
+	violent = yes
+	sound_list = {
+		female = {
+			"burning_female_01"
+		}
+		male = {
+			"burning_male_04"
+		}
+	}
+}

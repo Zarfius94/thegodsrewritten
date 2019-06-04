@@ -1,0 +1,110 @@
+###########################################
+#                                         #
+# Gods Mod (Gods culture events)          #
+#                                         #
+# ID godsculture.1- godsculture.999       #
+#                                         #
+###########################################
+
+namespace = godsculture
+
+character_event = {
+    id = godsculture.1
+    desc = EVTDESCgodsculture.1
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+    
+	mean_time_to_happen = {
+		days = 30
+	}
+    
+    trigger = {
+        adult_deity = yes
+        NOT = {
+            has_god_culture = yes
+            clan = yes
+            has_dynasty_flag = nogodculture
+        }
+    }
+    
+    option = {
+		name = EVTOPTAgodsculture.1
+		trigger = {
+			OR = {
+				trait = god
+				trait = goddess
+				has_game_rule = {
+                    name = wartoggle
+                    value = off
+                }
+			}
+		}
+		culture = High_God		
+	}
+	option = {
+		name = EVTOPTBgodsculture.1
+		trigger = {
+			OR = {
+				trait = fallen_god
+				trait = fallen_goddess
+				NOT = {
+                    has_game_rule = {
+                        name = wartoggle
+                        value = on
+                    }
+                }
+			}
+		}
+		culture = Fallen_God	
+	}
+	option = {
+		name = EVTOPTCgodsculture.1
+		culture = Norse_God	
+	}
+	option = {
+		name = EVTOPTMgodsculture.1
+		character_event = {
+            id = godsculture.2
+        }
+	}
+}
+
+character_event = {
+	id = godsculture.2
+	desc = EVTDESCgodsculture.1
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgodsculture.2
+		culture = Olympic_God
+	}
+    
+    option = {
+		name = EVTOPTBgodsculture.2
+		culture = Eastern_God
+	}
+    
+	option = {
+		name = EVTOPTCgodsculture.2
+		trigger = {
+            has_game_rule = {
+                name = wartoggle
+                value = off
+            }
+        }
+		set_dynasty_flag = nogodculture
+		ai_chance = {
+            factor = 0
+        }
+	}
+	option = {
+		name = EVTOPTMgodsculture.1
+		character_event = {
+            id = godsculture.1
+        }
+	}
+}

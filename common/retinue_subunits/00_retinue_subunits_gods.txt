@@ -1,0 +1,206 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Heavy Cavalry
+# 5 - Archers
+# 6 - Special troops
+
+RETTYPE_ANGELSA = 
+{
+	first_type = 6
+	first_amount = 50
+
+	special_troops = angels
+	
+	potential = {
+		OR = {
+			culture = High_God
+			culture = Fallen_God
+		}
+	}
+}
+RETTYPE_ANGELSB = 
+{
+	first_type = 6
+	first_amount = 250
+
+	special_troops = angels
+	
+	potential = {
+		OR = {
+			culture = High_God
+			culture = Fallen_God
+		}
+	}
+}
+RETTYPE_ANGELSC = 
+{
+	first_type = 6
+	first_amount = 500
+
+	special_troops = angels
+	
+	potential = {
+		OR = {
+			culture = High_God
+			culture = Fallen_God
+		}
+	}
+}
+
+RETTYPE_YOUKAIA = 
+{
+	first_type = 6
+	first_amount = 50
+
+	special_troops = youkai
+	
+	potential = {
+		culture = Eastern_God
+	}
+}
+RETTYPE_YOUKAIB = 
+{
+	first_type = 6
+	first_amount = 250
+
+	special_troops = youkai
+	
+	potential = {
+		culture = Eastern_God
+	}
+}
+RETTYPE_YOUKAIC = 
+{
+	first_type = 6
+	first_amount = 500
+
+	special_troops = youkai
+	
+	potential = {
+		culture = Eastern_God
+	}
+}
+#RETTYPE_DARKANGELSA = 
+#{
+#	first_type = 6
+#	first_amount = 50
+#
+#	special_troops = dark_angels
+#	
+#	potential = {
+#		#culture = Fallen_God
+#	}
+#}
+#RETTYPE_DARKANGELSB = 
+#{
+#	first_type = 6
+#	first_amount = 250
+#
+#	special_troops = dark_angels
+#	
+#	potential = {
+#		#culture = Fallen_God
+#	}
+#}
+#RETTYPE_DARKANGELSC = 
+#{
+#	first_type = 6
+#	first_amount = 500
+#
+#	special_troops = dark_angels
+#	
+#	potential = {
+#		#culture = Fallen_God
+#	}
+#}
+RETTYPE_JOTNARA = 
+{
+	first_type = 6
+	first_amount = 10
+
+	special_troops = jotnar
+	
+	potential = {
+		culture = Norse_God
+	}
+}
+RETTYPE_JOTNARB = 
+{
+	first_type = 6
+	first_amount = 50
+
+	special_troops = jotnar
+	
+	potential = {
+		culture = Norse_God
+	}
+}
+RETTYPE_JOTNARC = 
+{
+	first_type = 6
+	first_amount = 100
+
+	special_troops = jotnar
+	
+	potential = {
+		culture = Norse_God
+	}
+}
+RETTYPE_JOTNARD = 
+{
+	first_type = 6
+	first_amount = 1000
+
+	special_troops = jotnar
+	
+	potential = {
+		culture = Norse_God
+	}
+}
+RETTYPE_TITANA = 
+{
+	first_type = 6
+	first_amount = 10
+
+	special_troops = titans
+	
+	potential = {
+		culture = Olympic_God
+	}
+}
+RETTYPE_TITANB = 
+{
+	first_type = 6
+	first_amount = 50
+
+	special_troops = titans
+	
+	potential = {
+		culture = Olympic_God
+	}
+}
+RETTYPE_TITANC = 
+{
+	first_type = 6
+	first_amount = 100
+
+	special_troops = titans
+	
+	potential = {
+		culture = Olympic_God
+	}
+}
+RETTYPE_TITAND = 
+{
+	first_type = 6
+	first_amount = 1000
+
+	special_troops = titans
+	
+	potential = {
+		culture = Olympic_God
+	}
+}
