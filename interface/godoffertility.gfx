@@ -1,0 +1,9 @@
+spriteTypes = {
+        spriteType = {
+		  name = "GFX_trait_godoffertility"
+		  texturefile = "gfx/traits/godoffertility.png"
+		   noOfFrames = 1
+           norefcount = yes
+           effectFile = "gfx/FX/buttonstate.lua"
+		}
+}		

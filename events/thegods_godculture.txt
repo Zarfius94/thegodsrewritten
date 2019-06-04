@@ -1,0 +1,90 @@
+namespace = godculture
+########################
+# Culture Options
+########################
+character_event = {
+	id = "godculture.1"
+	desc = "EVTDESCgodculture.1"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = {
+			trait = God
+			trait = Goddess
+			trait = Fallen_God
+			trait = Fallen_Goddess
+		}
+		NOT = {
+			culture = High_God
+			culture = Fallen_God
+			culture = Norse_God
+			culture = Olympic_God
+			culture = Eastern_God
+			has_global_flag = nogodculture
+			clan = yes
+		}
+	}
+
+	option = {
+		name ="EVTOPTAgodculture.1a"
+		trigger = {
+			OR = {
+				trait = God
+				trait = Goddess
+				has_game_rule = { name = wartoggle value = off }
+			}
+		}
+		culture = High_God		
+	}
+	option = {
+		name ="EVTOPTAgodculture.1b"
+		trigger = {
+			OR = {
+				trait = Fallen_God
+				trait = Fallen_Goddess
+				NOT = { has_game_rule = { name = wartoggle value = on } }
+			}
+		}
+		culture = Fallen_God	
+	}
+	option = {
+		name ="EVTOPTBgodculture.2"
+		culture = Norse_God	
+	}
+	option = {
+		name ="EVTOPTFgodculture.2"
+		character_event = { id = godculture.3 }
+	}
+}
+
+character_event = {
+	id = "godculture.3"
+	desc = "EVTDESCgodculture.1"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	is_triggered_only = yes
+	
+	option = {
+		name="EVTOPTCgodculture.2"
+		culture = Olympic_God
+	}
+		option = {
+		name ="EVTOPTDgodculture.2"
+		culture = Eastern_God
+	}
+	option = {
+		name ="EVTOPTEgodculture.2"
+		trigger = { has_game_rule = { name = wartoggle value = off } }
+		set_global_flag = nogodculture
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name="EVTOPTFgodculture.2"
+		character_event = { id = godculture.1 }
+	}
+}

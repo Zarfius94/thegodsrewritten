@@ -1,0 +1,95 @@
+slots = {
+	horn = 1
+	ring = 1
+	shield = 1
+}
+
+divine_sword = {
+	martial = 10
+	combat_rating = 20
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon sword created }
+	picture = "GFX_blue_glowing_sword"
+	slot = weapon
+}
+divine_axe = {
+	martial = 5
+	combat_rating = 30
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon axe created }
+	picture = "GFX_blue_glowing_axe"
+	slot = weapon
+}
+divine_hammer = {
+	martial = 5
+	combat_rating = 25
+	quality = 5
+	monthly_character_prestige = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon hammer created }
+	picture = "GFX_mjolnir"
+	slot = weapon
+}
+divine_spear = {
+	martial = 15
+	combat_rating = 15
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { combat_weapon spear created }
+	picture = "GFX_the_piercer"
+	slot = weapon
+}
+divine_shield = {
+	martial = 20
+	combat_rating = 10
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { armor created }
+	picture = "GFX_crown_african_mask_7"
+	slot = shield
+}
+divine_symbol = {
+	learning = 20
+	monthly_character_piety = 10
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { created }
+	picture = "GFX_yada_tashy"
+	slot = scepter
+}
+divine_horn = {
+	diplomacy = 20
+	monthly_character_wealth = 5
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { instrument created }
+	picture = "GFX_gjallarhorn"
+	slot = horn
+}
+divine_trick = {
+	intrigue = 20
+	set_graphical_culture = bear
+	quality = 5
+	active = {
+		is_adult = yes
+	}
+	flags = { jewelry created }
+	picture = "GFX_seal_of_mohammad"
+	slot = ring
+}

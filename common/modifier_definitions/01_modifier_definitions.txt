@@ -1,0 +1,161 @@
+# Definitions of the dynamically defined modifiers by other elements such as special troops
+
+angels = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+angels_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+angels_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+angels_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+youkai = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+youkai_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+youkai_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+youkai_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+dark_angels = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+dark_angels_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+dark_angels_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+dark_angels_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+jotnar = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+jotnar_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+jotnar_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+jotnar_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+titans = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+titans_offensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+titans_defensive = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}
+
+titans_morale = {
+	show_as_percent = yes
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 2
+}

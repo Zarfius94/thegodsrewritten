@@ -1,0 +1,9 @@
+spriteTypes = {
+        spriteType = {
+		  name = "GFX_trait_Young_Fallen_Goddess"
+		  texturefile = "gfx/traits/Young_Fallen_God.png"
+		   noOfFrames = 1
+           norefcount = yes
+           effectFile = "gfx/FX/buttonstate.lua"
+		}
+}		

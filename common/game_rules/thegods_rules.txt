@@ -1,0 +1,57 @@
+wartoggle = {
+	name = "RULE_WARTOGGLE"
+	option = {
+		name = on
+		text = "RULE_WAR_ON"
+		desc = "RULE_WAR_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_WAR_OFF"
+		desc = "RULE_WAR_NOPE_DESC"
+	}
+	option = {
+		name = justgood
+		text = "RULE_WAR_JUSTGOOD"
+		desc = "RULE_WAR_JUSTGOOD_DESC"
+	}
+}
+autogod = {
+	name = "RULE_AUTOGOD"
+	option = {
+		name = off
+		text = "RULE_AUTOGOD_OFF"
+		desc = "RULE_AUTOGOD_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_AUTOGOD_ON"
+		desc = "RULE_AUTOGOD_ON_DESC"
+	}
+}
+regod = {
+	name = "RULE_REGOD"
+	option = {
+		name = on
+		text = "RULE_REGOD_ON"
+		desc = "RULE_REGOD_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_REGOD_OFF"
+		desc = "RULE_REGOD_OFF_DESC"
+	}
+}
+powers = {
+	name = "RULE_POWERS"
+	option = {
+		name = normal
+		text = "RULE_POWERS_NORMAL"
+		desc = "RULE_POWERS_NORMAL_DESC"
+	}
+	option = {
+		name = free
+		text = "RULE_POWERS_FREE"
+		desc = "RULE_POWERS_FREE_DESC"
+	}
+}

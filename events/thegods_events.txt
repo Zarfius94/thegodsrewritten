@@ -1,0 +1,3148 @@
+namespace = thegods
+########################
+# COMING OF AGE EVENTS
+########################
+character_event = {
+	id = "thegods.2"
+	desc = "EVTDESCthegods.2"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_men = yes
+	trigger = {
+		trait = Young_God
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.2"
+		remove_trait = Young_God
+		add_trait = God
+	}
+}
+character_event = {
+	id = "thegods.3"
+	desc = "EVTDESCthegods.3"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_men = yes
+	trigger = {
+		trait = Young_Fallen_God
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.3"
+		remove_trait = Young_Fallen_God
+		add_trait = Fallen_God
+	}
+}
+character_event = {
+	id = "thegods.4"
+	desc = "EVTDESCthegods.4"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_men = yes
+	trigger = {
+		trait = Young_Demi_God
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.4"
+		remove_trait = Young_Demi_God
+		add_trait = Demi_God
+	}
+}
+character_event = {
+	id = "thegods.101"
+	desc = "EVTDESCthegods.101"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_women = yes
+	trigger = {
+		trait = Young_Goddess
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.101"
+		remove_trait = Young_Goddess
+		add_trait = Goddess
+	}
+}
+character_event = {
+	id = "thegods.102"
+	desc = "EVTDESCthegods.102"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_women = yes
+	trigger = {
+		trait = Young_Fallen_Goddess
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name ="EVTOPTAthegods.102"
+		remove_trait = Young_Fallen_Goddess
+		add_trait = Fallen_Goddess
+	}
+}
+character_event = {
+	id = "thegods.103"
+	desc = "EVTDESCthegods.103"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 16
+	only_women = yes
+	trigger = {
+		trait = Young_Demi_Goddess
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name ="EVTOPTAthegods.103"
+		remove_trait = Young_Demi_Goddess
+		add_trait = Demi_Goddess
+	}
+}
+########################
+# BIRTH EVENTS
+########################
+character_event = {
+	id = "thegods.9"
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { is_father_real_father = no }
+			if = {
+				limit = {
+							real_father = { trait = God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Fallen_God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Evil_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Fallen_God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Evil_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Fallen_God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Angel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Archangel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+						}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Fallen_God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+						}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							real_father = { trait = Demi_God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Angel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Archangel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Angel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							real_father = { trait = Dark_Archangel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Goddess }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							mother = { trait = Fallen_Goddess }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							mother = { trait = Demi_Goddess }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = God_Blood }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+							NOT = { real_father = { trait = God_Blood } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Angel_Blood }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+							NOT = { real_father = { trait = God_Blood } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Angel }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Archangel }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Dark_Angel }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Dark_Archangel }
+							NOT = { real_father = { trait = God } } 
+							NOT = { real_father = { trait = Fallen_God } }
+							NOT = { real_father = { trait = Demi_God } }
+							NOT = { real_father = { trait = Angel } }
+							NOT = { real_father = { trait = Archangel } }
+							NOT = { real_father = { trait = Dark_Angel } }
+							NOT = { real_father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+		}
+		if = {
+			limit = { is_father_real_father = yes }
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Angel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Angel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Archangel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Archangel }
+				}
+				add_trait = Young_Demi_Baby
+			}if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Evil_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Evil_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Angel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Archangel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Dark_Angel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Dark_Archangel }
+				}
+				add_trait = Dark_Angel
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Fallen_Goddess }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							mother = { trait = Demi_Goddess }
+				}
+				add_trait = God_Blood
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+						}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Fallen_God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+						}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							father = { trait = Demi_God }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Angel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Archangel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Angel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							father = { trait = Dark_Archangel }
+							NOT = { mother = { trait = God } } 
+							NOT = { mother = { trait = Fallen_God } }
+							NOT = { mother = { trait = Demi_God } }
+							NOT = { mother = { trait = Goddess } } 
+							NOT = { mother = { trait = Fallen_Goddess } }
+							NOT = { mother = { trait = Demi_Goddess } }
+							NOT = { mother = { trait = Angel } }
+							NOT = { mother = { trait = Archangel } }
+							NOT = { mother = { trait = Dark_Angel } }
+							NOT = { mother = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Goddess }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							mother = { trait = Fallen_Goddess }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Young_Demi_Baby
+			}
+			if = {
+				limit = {
+							mother = { trait = Demi_Goddess }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = God_Blood }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+							NOT = { father = { trait = God_Blood } }
+				}
+				add_trait = God_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Angel_Blood }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+							NOT = { father = { trait = God_Blood } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Angel }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Archangel }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Dark_Angel }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+			if = {
+				limit = {
+							mother = { trait = Dark_Archangel }
+							NOT = { father = { trait = God } } 
+							NOT = { father = { trait = Fallen_God } }
+							NOT = { father = { trait = Demi_God } }
+							NOT = { father = { trait = Angel } }
+							NOT = { father = { trait = Archangel } }
+							NOT = { father = { trait = Dark_Angel } }
+							NOT = { father = { trait = Dark_Archangel } }
+				}
+				add_trait = Angel_Blood
+			}
+		}
+	}	
+}
+character_event = {
+	id = "thegods.104"
+	desc = "EVTDESCthegods.104"
+	picture = GFX_event_Sick_character_recovering
+	border = GFX_event_normal_frame_war
+	max_age = 1
+	trigger = {
+		trait = Young_Baby
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.104"
+		if = {
+			limit = {
+				is_female = yes
+				trait = Young_Baby
+			}
+			remove_trait = Young_Baby
+			add_trait = Young_Goddess
+		}
+		if = {
+			limit = {
+				is_female = no
+				trait = Young_Baby
+			}
+			remove_trait = Young_Baby
+			add_trait = Young_God
+		}
+	}	
+}
+character_event = {
+	id = "thegods.105"
+	desc = "EVTDESCthegods.105"
+	picture = GFX_event_Sick_character_recovering
+	border = GFX_event_normal_frame_war
+	max_age = 1
+	trigger = {
+		trait = Young_Evil_Baby
+	}mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.105"
+		if = {
+			limit = {
+				is_female = yes
+				trait = Young_Evil_Baby
+			}
+			remove_trait = Young_Evil_Baby
+			add_trait = Young_Fallen_Goddess
+		}
+		if = {
+			limit = {
+				is_female = no
+				trait = Young_Evil_Baby
+			}
+			remove_trait = Young_Evil_Baby
+			add_trait = Young_Fallen_God
+		}
+	}	
+}
+character_event = {
+	id = "thegods.106"
+	desc = "EVTDESCthegods.106"
+	picture = GFX_event_Sick_character_recovering
+	border = GFX_event_normal_frame_war
+	max_age = 1
+	trigger = {
+		trait = Young_Demi_Baby
+	}mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.106"
+		if = {
+			limit = {
+				is_female = yes
+				trait = Young_Demi_Baby
+			}
+			remove_trait = Young_Demi_Baby
+			add_trait = Young_Demi_Goddess
+		}
+		if = {
+			limit = {
+				is_female = no
+				trait = Young_Demi_Baby
+			}
+			remove_trait = Young_Demi_Baby
+			add_trait = Young_Demi_God
+		}
+	}	
+}
+character_event = {
+	id = "thegods.107"
+	desc = "EVTDESCthegods.107"
+	picture = GFX_event_Sick_character_recovering
+	border = GFX_event_normal_frame_war
+	only_men = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = {
+			trait = Young_Goddess
+			trait = Young_Fallen_Goddess
+			trait = Young_Demi_Goddess
+			trait = Goddess
+			trait = Fallen_Goddess
+			trait = Demi_Goddess
+		}
+	}
+	option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Young_Goddess
+				}
+			remove_trait = Young_Goddess
+			add_trait = Young_God
+			}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Young_Fallen_Goddess
+				}
+			remove_trait = Young_Fallen_Goddess
+			add_trait = Young_Fallen_God
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Young_Demi_Goddess
+				}
+			remove_trait = Young_Demi_Goddess
+			add_trait = Young_Demi_God
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Goddess
+				}
+			remove_trait = Goddess
+			add_trait = God
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Fallen_Goddess
+				}
+			remove_trait = Fallen_Goddess
+			add_trait = Fallen_God
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Demi_Goddess
+				}
+			remove_trait = Demi_Goddess
+			add_trait = Demi_God
+		}
+	}
+character_event = {
+	id = "thegods.108"
+	desc = "EVTDESCthegods.107"
+	picture = GFX_event_Sick_character_recovering
+	border = GFX_event_normal_frame_war
+	only_women = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = { 
+			trait = Young_God 
+			trait = Young_Fallen_God
+			trait = Young_Demi_God
+			trait = God
+			trait = Fallen_God
+			trait = Demi_God
+		}
+	}
+	option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Young_God
+			}
+			remove_trait = Young_God
+			add_trait = Young_Goddess
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Young_Fallen_God
+			}
+			remove_trait = Young_Fallen_God
+			add_trait = Young_Fallen_Goddess
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+		trait = Young_Demi_God
+			}
+			remove_trait = Young_Demi_God
+			add_trait = Young_Demi_Goddess
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = God
+			}
+			remove_trait = God
+			add_trait = Goddess
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+			trait = Fallen_God
+			}
+			remove_trait = Fallen_God
+			add_trait = Fallen_Goddess
+		}
+		option = {
+		name ="EVTOPTAthegods.107"
+		trigger = {
+				trait = Demi_God
+			}
+			remove_trait = Demi_God
+			add_trait = Demi_Goddess
+		}
+	}
+########################
+# Evil God Events
+########################
+character_event = { #cruel makes you convert to evil god
+	id = "thegods.10"
+	desc = "EVTDESCthegods.10"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Young_God
+			trait = Young_Goddess
+			}
+		trait = cruel
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 1000
+	}
+	option = {
+		name ="EVTOPTAthegods.10"
+		if = {
+			limit = {
+				trait = Young_God
+				is_female = no
+			}
+			remove_trait = Young_God
+			add_trait = Young_Fallen_God
+			religion = the_darkness
+		}
+		if = {
+			limit = {
+				trait = Young_Goddess
+				is_female = yes
+			}
+			remove_trait = Young_Goddess
+			add_trait = Young_Fallen_Goddess
+			religion = the_darkness
+		}
+	}
+}
+character_event = { #cruel makes you convert to evil god
+	id = "thegods.11"
+	desc = "EVTDESCthegods.11"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = God
+			trait = Goddess
+			}
+		trait = cruel
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 1000
+	}
+	option = {
+		name ="EVTOPTAthegods.11"
+		if = {
+			limit = {
+				trait = God
+				is_female = no
+			}
+			remove_trait = God
+			add_trait = Fallen_God
+			religion = the_darkness
+		}
+		if = {
+			limit = {
+				trait = Goddess
+				is_female = yes
+			}
+			remove_trait = Goddess
+			add_trait = Fallen_Goddess
+			religion = the_darkness
+		}
+	}
+}
+character_event = {
+	id = "thegods.17"
+	desc = "EVTDESCthegods.17"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Young_Fallen_God
+			trait = Young_Fallen_Goddess
+			}
+		NOT = { religion = the_darkness }
+		NOT = { rightful_religious_head = ROOT }
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.17"
+		religion = the_darkness
+	}
+}
+character_event = {
+	id = "thegods.19"
+	desc = "EVTDESCthegods.19"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Fallen_God
+			trait = Fallen_Goddess
+			}
+		NOT = { religion = the_darkness }
+		NOT = { rightful_religious_head = ROOT }
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.17"
+		religion = the_darkness
+	}
+}
+########################
+# Good God Events
+########################
+character_event = {
+	id = "thegods.12"
+	desc = "EVTDESCthegods.12"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Young_Fallen_God
+			trait = Young_Fallen_Goddess
+			}
+		trait = kind
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 1000
+	}
+	option = {
+		name ="EVTOPTAthegods.12"
+		if = {
+			limit = {
+				trait = Young_Fallen_God
+				is_female = no
+			}
+			remove_trait = Young_Fallen_God
+			add_trait = Young_God
+			religion = the_light
+		}
+		if = {
+			limit = {
+				trait = Young_Fallen_Goddess
+				is_female = yes
+			}
+			remove_trait = Young_Fallen_Goddess
+			add_trait = Young_Goddess
+			religion = the_light
+		}
+	}
+}
+character_event = {
+	id = "thegods.13"
+	desc = "EVTDESCthegods.13"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Fallen_God
+			trait = Fallen_Goddess
+			}
+		trait = kind
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 1000
+	}
+	option = {
+		name ="EVTOPTAthegods.13"
+		if = {
+			limit = {
+				trait = Fallen_God
+				is_female = no
+			}
+			remove_trait = Fallen_God
+			add_trait = God
+			religion = the_light
+		}
+		if = {
+			limit = {
+				trait = Fallen_Goddess
+				is_female = yes
+			}
+			remove_trait = Fallen_Goddess
+			add_trait = Goddess
+			religion = the_light
+		}
+	}
+}
+character_event = {
+	id = "thegods.21"
+	desc = "EVTDESCthegods.21"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = Young_God
+			trait = Young_Goddess
+			}
+		NOT = { religion = the_light }
+		NOT = { rightful_religious_head = ROOT }
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.21"
+		religion = the_light
+	}
+}
+character_event = {
+	id = "thegods.23"
+	desc = "EVTDESCthegods.23"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		OR = {
+			trait = God
+			trait = Goddess
+			}
+		NOT = { religion = the_light }
+		NOT = { rightful_religious_head = ROOT }
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.23"
+		religion = the_light
+	}
+}
+########################
+# NO DUPLICATE TRAITS
+########################
+character_event = {
+	id = "thegods.14"
+	hide_window = yes
+
+	trigger = {
+		trait = Young_Fallen_God
+		trait = God_Blood
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		remove_trait = God_Blood
+	}
+}
+character_event = {
+	id = "thegods.15"
+	hide_window = yes
+
+	trigger = {
+		trait = Young_Demi_God
+		trait = God_Blood
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		remove_trait = God_Blood
+	}
+}
+character_event = {
+	id = "thegods.16"
+	hide_window = yes
+
+	trigger = {
+		trait = Young_God
+		trait = God_Blood
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		remove_trait = God_Blood
+	}
+}
+########################
+# ANGEL EVENTS
+########################
+character_event = {
+	id = "thegods.25"
+	desc = "EVTDESCthegods.25"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Angel
+		piety = 1000
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.25"
+		add_trait = Archangel
+		remove_trait = Angel
+	}
+}
+character_event = {
+	id = "thegods.26"
+	desc = "EVTDESCthegods.26"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Dark_Angel
+		piety = 1000
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.26"
+		add_trait = Dark_Archangel
+		remove_trait = Dark_Angel
+	}
+}
+character_event = {
+	id = "thegods.27"
+	desc = "EVTDESCthegods.27"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Dark_Angel
+		trait = kind
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+	}
+	option = {
+		name ="EVTOPTAthegods.27"
+		remove_trait = Dark_Angel
+		add_trait = Angel
+		culture = High_God
+		religion = the_light
+	}
+}
+character_event = {
+	id = "thegods.28"
+	desc = "EVTDESCthegods.28"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Dark_Archangel
+		trait = kind
+		NOT = { has_game_rule = { name = wartoggle value = off } }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+	}
+	option = {
+		name ="EVTOPTAthegods.28"
+		remove_trait = Dark_Archangel
+		add_trait = Archangel
+		culture = High_God
+		religion = the_light
+	}
+}
+character_event = {
+	id = "thegods.29"
+	desc = "EVTDESCthegods.29"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Angel
+		trait = cruel
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+	}
+	option = {
+		name ="EVTOPTAthegods.29"
+		remove_trait = Angel
+		add_trait = Dark_Angel
+		culture = Fallen_God
+		religion = the_darkness
+	}
+}
+character_event = {
+	id = "thegods.30"
+	desc = "EVTDESCthegods.30"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Archangel
+		trait = cruel
+		has_game_rule = { name = wartoggle value = on }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+	}
+	option = {
+		name ="EVTOPTAthegods.30"
+		remove_trait = Archangel
+		add_trait = Dark_Archangel
+		culture = Fallen_God
+		religion = the_darkness
+	}
+}
+########################
+# PROPER EDUCATION
+########################
+character_event = {
+	id = "thegods.31"
+	desc = "EVTDESCthegods.31"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_God
+		OR = { 
+			trait = amateurish_plotter
+			trait = flamboyant_schemer
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.31"
+		if = {
+			limit = {
+				trait = amateurish_plotter 
+			}
+			remove_trait = amateurish_plotter
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = flamboyant_schemer 
+			}
+			remove_trait = flamboyant_schemer
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = intricate_webweaver 
+			}
+			remove_trait = intricate_webweaver
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = elusive_shadow 
+			}
+			remove_trait = elusive_shadow
+			add_trait = Divine_Assassin
+		}
+	}
+}
+character_event = {
+	id = "thegods.32"
+	desc = "EVTDESCthegods.32"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_God
+		OR = { 
+			trait = naive_appeaser
+			trait = underhanded_rogue
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.32"
+		if = {
+			limit = {
+				trait = naive_appeaser
+			}
+			remove_trait = naive_appeaser
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = underhanded_rogue 
+			}
+			remove_trait = underhanded_rogue
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = charismatic_negotiator 
+			}
+			remove_trait = charismatic_negotiator
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = grey_eminence 
+			}
+			remove_trait = grey_eminence
+			add_trait = Divine_Diplomat
+		}
+	}
+}
+character_event = {
+	id = "thegods.33"
+	desc = "EVTDESCthegods.33"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_God
+		OR = { 
+			trait = indulgent_wastrel
+			trait = thrifty_clerk
+			trait = fortune_builder
+			trait = midas_touched
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.33"
+		if = {
+			limit = {
+				trait = indulgent_wastrel
+			}
+			remove_trait = indulgent_wastrel
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = thrifty_clerk 
+			}
+			remove_trait = thrifty_clerk
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = fortune_builder
+			}
+			remove_trait = fortune_builder
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = midas_touched
+			}
+			remove_trait = midas_touched
+			add_trait = Divine_Steward
+		}
+	}
+}
+character_event = {
+	id = "thegods.34"
+	desc = "EVTDESCthegods.34"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_God
+		OR = { 
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.34"
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = tough_soldier 
+			}
+			remove_trait = tough_soldier
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = brilliant_strategist
+			}
+			remove_trait = brilliant_strategist
+			add_trait = Divine_Warrior
+		}
+	}
+}
+character_event = {
+	id = "thegods.35"
+	desc = "EVTDESCthegods.35"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_God
+		OR = { 
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.35"
+		if = {
+			limit = {
+				trait = detached_priest
+			}
+			remove_trait = detached_priest
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = martial_cleric
+			}
+			remove_trait = martial_cleric
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = scholarly_theologian
+			}
+			remove_trait = scholarly_theologian
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = mastermind_theologian
+			}
+			remove_trait = mastermind_theologian
+			add_trait = Divine_Theologian
+		}
+	}
+}
+character_event = {
+	id = "thegods.131"
+	desc = "EVTDESCthegods.31"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Goddess
+		OR = { 
+			trait = amateurish_plotter
+			trait = flamboyant_schemer
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.31"
+		if = {
+			limit = {
+				trait = amateurish_plotter 
+			}
+			remove_trait = amateurish_plotter
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = flamboyant_schemer 
+			}
+			remove_trait = flamboyant_schemer
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = intricate_webweaver 
+			}
+			remove_trait = intricate_webweaver
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = elusive_shadow 
+			}
+			remove_trait = elusive_shadow
+			add_trait = Divine_Assassin
+		}
+	}
+}
+character_event = {
+	id = "thegods.132"
+	desc = "EVTDESCthegods.32"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Goddess
+		OR = { 
+			trait = naive_appeaser
+			trait = underhanded_rogue
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.32"
+		if = {
+			limit = {
+				trait = naive_appeaser
+			}
+			remove_trait = naive_appeaser
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = underhanded_rogue 
+			}
+			remove_trait = underhanded_rogue
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = charismatic_negotiator 
+			}
+			remove_trait = charismatic_negotiator
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = grey_eminence 
+			}
+			remove_trait = grey_eminence
+			add_trait = Divine_Diplomat
+		}
+	}
+}
+character_event = {
+	id = "thegods.133"
+	desc = "EVTDESCthegods.33"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Goddess
+		OR = { 
+			trait = indulgent_wastrel
+			trait = thrifty_clerk
+			trait = fortune_builder
+			trait = midas_touched
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.33"
+		if = {
+			limit = {
+				trait = indulgent_wastrel
+			}
+			remove_trait = indulgent_wastrel
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = thrifty_clerk 
+			}
+			remove_trait = thrifty_clerk
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = fortune_builder
+			}
+			remove_trait = fortune_builder
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = midas_touched
+			}
+			remove_trait = midas_touched
+			add_trait = Divine_Steward
+		}
+	}
+}
+character_event = {
+	id = "thegods.134"
+	desc = "EVTDESCthegods.34"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Goddess
+		OR = { 
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.34"
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = tough_soldier 
+			}
+			remove_trait = tough_soldier
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = brilliant_strategist
+			}
+			remove_trait = brilliant_strategist
+			add_trait = Divine_Warrior
+		}
+	}
+}
+character_event = {
+	id = "thegods.135"
+	desc = "EVTDESCthegods.35"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Goddess
+		OR = { 
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.35"
+		if = {
+			limit = {
+				trait = detached_priest
+			}
+			remove_trait = detached_priest
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = martial_cleric
+			}
+			remove_trait = martial_cleric
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = scholarly_theologian
+			}
+			remove_trait = scholarly_theologian
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = mastermind_theologian
+			}
+			remove_trait = mastermind_theologian
+			add_trait = Divine_Theologian
+		}
+	}
+}
+character_event = {
+	id = "thegods.231"
+	desc = "EVTDESCthegods.31"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_God
+		OR = { 
+			trait = amateurish_plotter
+			trait = flamboyant_schemer
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.31"
+		if = {
+			limit = {
+				trait = amateurish_plotter 
+			}
+			remove_trait = amateurish_plotter
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = flamboyant_schemer 
+			}
+			remove_trait = flamboyant_schemer
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = intricate_webweaver 
+			}
+			remove_trait = intricate_webweaver
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = elusive_shadow 
+			}
+			remove_trait = elusive_shadow
+			add_trait = Divine_Assassin
+		}
+	}
+}
+character_event = {
+	id = "thegods.232"
+	desc = "EVTDESCthegods.32"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_God
+		OR = { 
+			trait = naive_appeaser
+			trait = underhanded_rogue
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.32"
+		if = {
+			limit = {
+				trait = naive_appeaser
+			}
+			remove_trait = naive_appeaser
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = underhanded_rogue 
+			}
+			remove_trait = underhanded_rogue
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = charismatic_negotiator 
+			}
+			remove_trait = charismatic_negotiator
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = grey_eminence 
+			}
+			remove_trait = grey_eminence
+			add_trait = Divine_Diplomat
+		}
+	}
+}
+character_event = {
+	id = "thegods.233"
+	desc = "EVTDESCthegods.33"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_God
+		OR = { 
+			trait = indulgent_wastrel
+			trait = thrifty_clerk
+			trait = fortune_builder
+			trait = midas_touched
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.33"
+		if = {
+			limit = {
+				trait = indulgent_wastrel
+			}
+			remove_trait = indulgent_wastrel
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = thrifty_clerk 
+			}
+			remove_trait = thrifty_clerk
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = fortune_builder
+			}
+			remove_trait = fortune_builder
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = midas_touched
+			}
+			remove_trait = midas_touched
+			add_trait = Divine_Steward
+		}
+	}
+}
+character_event = {
+	id = "thegods.234"
+	desc = "EVTDESCthegods.34"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_God
+		OR = { 
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.34"
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = tough_soldier 
+			}
+			remove_trait = tough_soldier
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = brilliant_strategist
+			}
+			remove_trait = brilliant_strategist
+			add_trait = Divine_Warrior
+		}
+	}
+}
+character_event = {
+	id = "thegods.235"
+	desc = "EVTDESCthegods.35"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_God
+		OR = { 
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.35"
+		if = {
+			limit = {
+				trait = detached_priest
+			}
+			remove_trait = detached_priest
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = martial_cleric
+			}
+			remove_trait = martial_cleric
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = scholarly_theologian
+			}
+			remove_trait = scholarly_theologian
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = mastermind_theologian
+			}
+			remove_trait = mastermind_theologian
+			add_trait = Divine_Theologian
+		}
+	}
+}
+character_event = {
+	id = "thegods.331"
+	desc = "EVTDESCthegods.31"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_Goddess
+		OR = { 
+			trait = amateurish_plotter
+			trait = flamboyant_schemer
+			trait = intricate_webweaver
+			trait = elusive_shadow
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.31"
+		if = {
+			limit = {
+				trait = amateurish_plotter 
+			}
+			remove_trait = amateurish_plotter
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = flamboyant_schemer 
+			}
+			remove_trait = flamboyant_schemer
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = intricate_webweaver 
+			}
+			remove_trait = intricate_webweaver
+			add_trait = Divine_Assassin
+		}
+		if = {
+			limit = {
+				trait = elusive_shadow 
+			}
+			remove_trait = elusive_shadow
+			add_trait = Divine_Assassin
+		}
+	}
+}
+character_event = {
+	id = "thegods.332"
+	desc = "EVTDESCthegods.32"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_Goddess
+		OR = { 
+			trait = naive_appeaser
+			trait = underhanded_rogue
+			trait = charismatic_negotiator
+			trait = grey_eminence
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.32"
+		if = {
+			limit = {
+				trait = naive_appeaser
+			}
+			remove_trait = naive_appeaser
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = underhanded_rogue 
+			}
+			remove_trait = underhanded_rogue
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = charismatic_negotiator 
+			}
+			remove_trait = charismatic_negotiator
+			add_trait = Divine_Diplomat
+		}
+		if = {
+			limit = {
+				trait = grey_eminence 
+			}
+			remove_trait = grey_eminence
+			add_trait = Divine_Diplomat
+		}
+	}
+}
+character_event = {
+	id = "thegods.333"
+	desc = "EVTDESCthegods.33"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_Goddess
+		OR = { 
+			trait = indulgent_wastrel
+			trait = thrifty_clerk
+			trait = fortune_builder
+			trait = midas_touched
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.33"
+		if = {
+			limit = {
+				trait = indulgent_wastrel
+			}
+			remove_trait = indulgent_wastrel
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = thrifty_clerk 
+			}
+			remove_trait = thrifty_clerk
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = fortune_builder
+			}
+			remove_trait = fortune_builder
+			add_trait = Divine_Steward
+		}
+		if = {
+			limit = {
+				trait = midas_touched
+			}
+			remove_trait = midas_touched
+			add_trait = Divine_Steward
+		}
+	}
+}
+character_event = {
+	id = "thegods.334"
+	desc = "EVTDESCthegods.34"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_Goddess
+		OR = { 
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.34"
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = tough_soldier 
+			}
+			remove_trait = tough_soldier
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = Divine_Warrior
+		}
+		if = {
+			limit = {
+				trait = brilliant_strategist
+			}
+			remove_trait = brilliant_strategist
+			add_trait = Divine_Warrior
+		}
+	}
+}
+character_event = {
+	id = "thegods.335"
+	desc = "EVTDESCthegods.35"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	trigger = {
+		trait = Young_Fallen_Goddess
+		OR = { 
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
+			trait = mastermind_theologian
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name ="EVTOPTAthegods.35"
+		if = {
+			limit = {
+				trait = detached_priest
+			}
+			remove_trait = detached_priest
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = martial_cleric
+			}
+			remove_trait = martial_cleric
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = scholarly_theologian
+			}
+			remove_trait = scholarly_theologian
+			add_trait = Divine_Theologian
+		}
+		if = {
+			limit = {
+				trait = mastermind_theologian
+			}
+			remove_trait = mastermind_theologian
+			add_trait = Divine_Theologian
+		}
+	}
+}
+character_event = {
+	id = "thegods.36"
+	desc = "EVTDESCthegods.36"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	mean_time_to_happen = {
+		days = 3082
+	}
+	trigger = {
+		NOT = { trait = Young_God }
+		NOT = { trait = God }
+		NOT = { trait = Young_Fallen_God }
+		NOT = { trait = Fallen_God }
+		NOT = { trait = Young_Demi_God }
+		NOT = { trait = Demi_God }
+		NOT = { trait = Young_Goddess }
+		NOT = { trait = Goddess }
+		NOT = { trait = Young_Fallen_Goddess }
+		NOT = { trait = Fallen_Goddess }
+		NOT = { trait = Young_Demi_Goddess }
+		NOT = { trait = Demi_Goddess }
+		NOT = { trait = Angel }
+		NOT = { trait = Archangel }
+		NOT = { trait = Dark_Angel }
+		NOT = { trait = Dark_Archangel }
+		NOT = { trait = Jotunn }
+		NOT = { trait = Titan }
+		OR = { 
+			trait = Divine_Assassin
+			trait = Divine_Steward
+			trait = Divine_Diplomat
+			trait = Divine_Warrior
+			trait = Divine_Theologian
+			trait = goddessoflove
+			trait = godoftheseas
+			trait = godofwar
+			trait = godofthedead
+			trait = goddessofwisdom
+			trait = kingofthegods
+			trait = evilking
+			trait = evilqueen
+			trait = queenofthegods
+		}
+	}
+	option = {
+		name ="EVTOPTAthegods.36"
+		if = {
+			limit = {
+				trait = Divine_Assassin
+			}
+			remove_trait = Divine_Assassin
+			add_trait = intricate_webweaver
+		}
+		if = {
+			limit = {
+				trait = Divine_Steward
+			}
+			remove_trait = Divine_Steward
+			add_trait = fortune_builder
+		}
+		if = {
+			limit = {
+				trait = Divine_Diplomat
+			}
+			remove_trait = Divine_Diplomat
+			add_trait = charismatic_negotiator
+		}
+		if = {
+			limit = {
+				trait = Divine_Warrior
+			}
+			remove_trait = Divine_Warrior
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = Divine_Theologian
+			}
+			remove_trait = Divine_Theologian
+			add_trait = scholarly_theologian
+		}
+		if = {
+			limit = {
+				trait = goddessoflove
+			}
+			remove_trait = goddessoflove
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = godoftheseas
+			}
+			remove_trait = godoftheseas
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = godofwar
+			}
+			remove_trait = godofwar
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = godofthedead
+			}
+			remove_trait = godofthedead
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = goddessofwisdom
+			}
+			remove_trait = goddessofwisdom
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = kingofthegods
+			}
+			remove_trait = kingofthegods
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = queenofthegods
+			}
+			remove_trait = queenofthegods
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = evilking
+			}
+			remove_trait = evilking
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = evilqueen
+			}
+			remove_trait = evilqueen
+			add_trait = skilled_tactician
+		}
+	}
+}
+########################
+# PROVINCE EVENTS
+########################
+province_event = {
+	id = "thegods.99"
+	desc = "EVTDESCthegods.99"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+
+	trigger = {
+		owner = { culture = High_God }
+		NOT = { culture = High_God }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+
+	option = {
+		name = "EVTOPTAthegods.99"
+		culture = High_God
+	}
+}
+province_event = {
+	id = "thegods.100"
+	desc = "EVTDESCthegods.100"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+
+	trigger = {
+		owner = { culture = Fallen_God }
+		NOT = { culture = Fallen_God }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+
+	option = {
+		name = "EVTOPTAthegods.100"
+		culture = Fallen_God
+	}
+}
+province_event = {
+	id = "thegods.98"
+	desc = "EVTDESCthegods.98"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+
+	trigger = {
+		owner = { culture = Norse_God }
+		NOT = { culture = Norse_God }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+
+	option = {
+		name = "EVTOPTAthegods.98"
+		culture = Norse_God
+	}
+}
+province_event = {
+	id = "thegods.97"
+	desc = "EVTDESCthegods.97"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+
+	trigger = {
+		owner = { culture = Olympic_God }
+		NOT = { culture = Olympic_God }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+
+	option = {
+		name = "EVTOPTAthegods.97"
+		culture = Olympic_God
+	}
+}
+province_event = {
+	id = "thegods.150"
+	desc = "EVTDESCthegods.150"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+
+	trigger = {
+		owner = { culture = Eastern_God }
+		NOT = { culture = Eastern_God }
+
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+
+	option = {
+		name = "EVTOPTAthegods.150"
+		culture = Eastern_God
+	}
+}

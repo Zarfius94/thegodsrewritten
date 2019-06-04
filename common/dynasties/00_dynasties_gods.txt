@@ -1,0 +1,10 @@
+1=
+{
+	name="of the Gods"
+	culture="High_God"
+}
+2=
+{
+	name="of the Gods"
+	culture="Fallen_God"
+}

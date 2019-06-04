@@ -1,0 +1,16 @@
+RULE_WAR_NOPE_DESC;Gods live among mortals, worshipping as they do.  This setting turns off auto-conversion events.;;;;;;
+RULE_AUTOGOD;God Party Mode;;;;;;
+RULE_AUTOGOD_OFF;Default;;;;;;
+RULE_AUTOGOD_OFF_DESC;Only the player becomes a god.;;;;;;
+RULE_AUTOGOD_ON;God Party!;;;;;;
+RULE_AUTOGOD_ON_DESC;All adult AI independent rulers at peace are elevated to godhood (and sometimes Fallen Gods if the War is on).;;;;;;
+RULE_REGOD;Repeat God Ascension Chain;;;;;;
+RULE_REGOD_ON;Default;;;;;;
+RULE_REGOD_ON_DESC;All non-god player characters receive the event chain to become a god.;;;;;;
+RULE_REGOD_OFF;Off;;;;;;
+RULE_REGOD_OFF_DESC;Only the first non-god player character receives the event chain to become a god.;;;;;;
+RULE_POWERS;God Powers Cost;;;;;;
+RULE_POWERS_NORMAL;Default;;;;;;
+RULE_POWERS_NORMAL_DESC;God powers cost the normal amount of piety.;;;;;;
+RULE_POWERS_FREE;Omnipotent;;;;;;
+RULE_POWERS_FREE_DESC;God powers have zero piety cost.;;;;;;

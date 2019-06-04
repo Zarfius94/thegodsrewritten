@@ -1,0 +1,9 @@
+spriteTypes = {
+        spriteType = {
+		  name = "GFX_trait_Divine_Theologian"
+		  texturefile = "gfx/traits/Divine_Theologian.png"
+		   noOfFrames = 1
+           norefcount = yes
+           effectFile = "gfx/FX/buttonstate.lua"
+		}
+}		

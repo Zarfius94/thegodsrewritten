@@ -1,0 +1,24 @@
+government_flavor = {
+	name = gov_gods
+	graphics = GFX_evt_religious_exultation
+	priority = 3
+	trigger = {
+		OR = {
+			trait = God
+			trait = Fallen_God
+			trait = Goddess
+			trait = Fallen_Goddess
+			}
+		}
+	}
+government_flavor = {
+	name = gov_angels
+	graphics = GFX_evt_religious_exultation
+	priority = 3
+	trigger = {
+		OR = {
+			trait = Archangel
+			trait = Dark_Archangel
+			}
+		}
+	}

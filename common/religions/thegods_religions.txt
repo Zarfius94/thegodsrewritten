@@ -1,0 +1,92 @@
+god_group= {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	hostile_within_group = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	color = {1 1 1}
+	ai_convert_same_group = 2 #  try to convert if zeal is high
+	ai_convert_other_group = 0 # always try to convert
+	
+	the_light= {
+		graphical_culture = westerngfx
+		icon = 49
+		heresy_icon = 48
+		scripture_name = god_text
+		priest_title = Arch_Angel
+		crusade_name = god_crusade
+		can_call_crusade = yes
+		high_god_name = the_light
+		color = {1 1 1}
+
+		can_retire_to_monastery = no
+		female_temple_holders = yes
+		feminist = yes
+		divine_blood = yes 
+		pc_marriage = yes
+		bs_marriage = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes 
+		short_reign_opinion_year_mult = 5
+		allow_looting = yes
+		allow_rivermovement = yes
+		has_heir_designation = yes
+		raised_vassal_opinion_loss = no
+		max_consorts = 5
+
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		#allow_in_ruler_designer = no
+		piety_name = PIETY_GOD
+
+	}
+	
+	the_darkness= {
+		graphical_culture = westerngfx
+		
+		icon = 23
+		heresy_icon = 24
+		
+		color = { 255 255 255 }
+		
+
+		scripture_name = evilgod_text
+		priest_title = Arch_Angel
+		crusade_name = god_crusade
+		can_call_crusade = yes
+		high_god_name = the_darkness
+		
+		
+			
+
+		can_retire_to_monastery = no
+		female_temple_holders = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		divine_blood = yes # Sacred close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
+		priests_can_marry = yes
+		priests_can_inherit = yes 
+		short_reign_opinion_year_mult = 5
+		allow_looting = yes
+		allow_rivermovement = yes
+		has_heir_designation = yes
+		raised_vassal_opinion_loss = no
+		max_consorts = 5
+
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		#allow_in_ruler_designer = no
+		piety_name = PIETY_EVILGOD
+
+	}
+	
+	
+}
+
+
+
+		
+
+
+	

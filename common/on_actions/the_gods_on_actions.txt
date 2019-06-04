@@ -1,0 +1,18 @@
+on_birth = {
+	events = {
+		thegods.9
+	}
+}
+on_yearly_pulse = {
+events = {
+thegods.650
+thegods.651
+thegods.601
+thegods.603
+thegods.652
+thegods.653
+thegods.605
+thegods.607
+thegods.700
+}
+}

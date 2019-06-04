@@ -1,0 +1,289 @@
+########################
+# God / Good Type Traits
+########################
+godoflight = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 20
+	fertility = 0.3
+}
+godofstrategy = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 20
+	combat_rating = 10
+	fertility = 0.2
+}
+godoffortune = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	stewardship = 20
+	fertility = 0.2
+}
+godofsecrecy = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	intrigue = 20
+	fertility = 0.2
+}
+godofknowledge = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	learning = 20
+	fertility = 0.2
+}
+godoffertility = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	learning = 10
+	sex_appeal_opinion = 50
+	fertility = 0.5
+}
+godoftheseas = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 10
+	stewardship = 10
+	fertility = 0.2
+}
+godoffestivals = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	stewardship = 10
+	fertility = 0.2
+}
+########################
+# Goddess / Good Type Traits
+########################
+goddessofthesun = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 20
+	fertility = 0.3
+}
+goddessofprotection = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 20
+	combat_rating = 10
+	fertility = 0.2
+}
+goddessofharvest = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	stewardship = 20
+	fertility = 0.2
+}
+goddessofsilence = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	intrigue = 20
+	fertility = 0.2
+}
+goddessofwisdom = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	learning = 20
+	fertility = 0.2
+}
+goddessoflove = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	learning = 10
+	sex_appeal_opinion = 50
+	fertility = 0.5
+}
+goddessofrain = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 10
+	stewardship = 10
+	fertility = 0.2
+}
+goddessofwine = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	stewardship = 10
+	fertility = 0.2
+}
+########################
+# God / Evil Type Traits
+########################
+godofdarkness = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 20
+	fertility = 0.3
+}
+godofwar = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 20
+	combat_rating = 10
+	fertility = 0.2
+}
+godofgreed = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	stewardship = 20
+	fertility = 0.2
+}
+godofthedead = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	intrigue = 20
+	fertility = 0.2
+}
+godofdarkknowledge = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	learning = 20
+	fertility = 0.2
+}
+godofadultery = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	learning = 10
+	sex_appeal_opinion = 50
+	fertility = 0.5
+}
+godofearthquakes = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 10
+	stewardship = 10
+	fertility = 0.2
+}
+godofchaos = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy_penalty = -20
+	martial = 20
+	stewardship = 10
+	fertility = 0.2
+}
+########################
+# Goddess / Evil Type Traits
+########################
+goddessofthemoon = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 20
+	fertility = 0.3
+}
+goddessofdestruction = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 20
+	combat_rating = 10
+	fertility = 0.2
+}
+goddessofdecadence = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	stewardship = 20
+	fertility = 0.2
+}
+goddessofmurder = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	intrigue = 20
+	fertility = 0.2
+}
+goddessofmanipulation = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	learning = 20
+	fertility = 0.2
+}
+goddessoflust = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	learning = 10
+	sex_appeal_opinion = 50
+	fertility = 0.5
+}
+goddessoffire = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	martial = 10
+	stewardship = 10
+	fertility = 0.2
+}
+goddessofhunting = {
+	education = no
+	birth = 0
+	customizer = no
+	
+	diplomacy = 10
+	stewardship = 10
+	fertility = 0.2
+}

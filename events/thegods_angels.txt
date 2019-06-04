@@ -1,0 +1,38 @@
+namespace = thegods
+
+character_event = { #upgrade angelic holy order members to angels
+	id = "thegods.700"
+	desc = "EVTDESCangels.1"
+	is_triggered_only = yes
+	hide_window = yes
+	min_age = 16
+	
+	option = {
+		if = {
+			limit = {
+				OR = {
+					liege = { has_landed_title = d_gofd }
+					liege = { has_landed_title = d_gofl }
+					liege = { has_landed_title = d_al }
+					liege = { has_landed_title = d_dal }
+					liege = { has_landed_title = d_sol }
+					liege = { has_landed_title = d_sod }
+				}
+				NOR = {
+					trait = Angel
+					trait = Dark_Angel
+					trait = Archangel
+					trait = Dark_Archangel
+				}
+			}
+			if = {
+				limit = { religion = the_light }
+				add_trait = Angel
+			}
+			if = {
+				limit = { religion = the_darkness }
+				add_trait = Dark_Angel
+			}
+		}
+	}
+}

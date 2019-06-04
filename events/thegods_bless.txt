@@ -1,0 +1,442 @@
+namespace = thegodsbless
+
+character_event = { #bless a character
+	id = "thegodsbless.1"
+	desc = "EVTDESCthegodsbless.1"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = { #strong
+		name ="EVTOPTAthegodsbless.1"
+		trigger = {
+			from = { NOT = { trait = strong } }
+		}
+		from = { add_trait = strong }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #smart
+		name ="EVTOPTBthegodsbless.1"
+		trigger = {
+			from = { NOT = { OR = { trait = quick trait = genius } } }
+		}
+		from = { add_trait = quick }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #attractive
+		name ="EVTOPTCthegodsbless.1"
+		trigger = {
+			from = { NOT = { trait = fair } }
+		}
+		from = { add_trait = fair }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #long life
+		name ="EVTOPTDthegodsbless.1"
+		trigger = {
+			from = { NOT = { has_character_flag = lifebless } }
+		}
+		from = { health = 15 set_character_flag = lifebless }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250	
+		}
+	}
+	option = { #immortal (once tapped out)
+		name ="EVTOPTEthegodsbless.1"
+		trigger = {
+			from = { 
+				AND = {
+					trait = strong
+					OR = {
+						trait = quick
+						trait = genius
+					}
+					trait = fair
+					has_character_flag = lifebless
+				} 
+			}
+		}
+		from = { add_trait = immortal }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #demigod (once tapped out)
+		name ="EVTOPTFthegodsbless.1"
+		trigger = {
+			from = { 
+				AND = {
+					trait = strong
+					OR = {
+						trait = quick
+						trait = genius
+					}
+					trait = fair
+					has_character_flag = lifebless
+				} 
+			}
+		}
+		from = {
+			if = { 
+				limit = { 
+					NOT = { age = 16 }
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = Young_Demi_Goddess
+				}
+				if = {
+					limit = {
+						NOT = { is_female = yes }
+					}
+					add_trait = Young_Demi_God
+				}
+			}
+			if = { 
+				limit = { 
+					age = 16
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = Demi_Goddess
+				}
+				if = {
+					limit = {
+						NOT = { is_female = yes }
+					}
+					add_trait = Demi_God
+				}
+			}
+			hidden = { remove_trait = God_Blood }
+		}
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #never mind
+		name ="EVTOPTGthegodsbless.1"
+		trigger = {
+			from = { 
+				AND = {
+					trait = strong
+					OR = {
+						trait = quick
+						trait = genius
+					}
+					trait = fair
+					has_character_flag = lifebless
+				} 
+			}
+		}
+	}
+}
+character_event = { #curse a character
+	id = "thegodsbless.2"
+	desc = "EVTDESCthegodsbless.2"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = { #weak
+		name ="EVTOPTAthegodsbless.2"
+		trigger = {
+			from = { NOT = { trait = weak } }
+		}
+		from = { add_trait = weak }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #slow
+		name ="EVTOPTBthegodsbless.2"
+		trigger = {
+			from = { NOT = { OR = { trait = slow trait = imbecile } } }
+		}
+		from = { add_trait = slow }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+	option = { #ugly
+		name ="EVTOPTCthegodsbless.2"
+		trigger = {
+			from = { NOT = { trait = ugly } }
+		}
+		from = { add_trait = ugly }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250	
+		}
+	}
+	option = { #balls
+		name ="EVTOPTDthegodsbless.2"
+		trigger = {
+			from = { NOT = { trait = eunuch } is_female = no }
+		}
+		from = { add_trait = eunuch }
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			piety = -250
+		}
+	}
+}
+character_event = { #divine visitation
+	id = "thegodsbless.3"
+	desc = "EVTDESCthegodsbless.3"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	option = {
+		name ="EVTOPTAthegodsbless.3"
+		trigger = {
+			religion = the_light
+		}
+		FROM = {
+			religion = the_light
+			add_trait = zealous
+			add_trait = studentlight
+		}
+	}
+	option = {
+		name ="EVTOPTBthegodsbless.3"
+		trigger = {
+			religion = the_darkness
+		}
+		FROM = {
+			religion = the_darkness
+			add_trait = zealous
+			add_trait = studentdark
+		}
+	}
+}
+
+character_event = { #artifact creation
+	id = "thegodsbless.4"
+	desc = "EVTDESCthegodsbless.4"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	trigger = {
+	}
+	
+	immediate = {
+
+	}
+	option = {
+		name ="EVTOPTAthegodsbless.4"
+		trigger = {
+			NOT = {
+				has_character_flag = divinerelicB
+				has_character_flag = divinerelicC
+			}
+		}
+		from = {
+			add_artifact = divine_sword
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Radiant Sword"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+	}
+	option = {
+		name ="EVTOPTBthegodsbless.4"
+		trigger = {
+			NOT = {
+				has_character_flag = divinerelicB
+				has_character_flag = divinerelicC
+			}
+		}
+		from = {
+			add_artifact = divine_axe
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s World-Hewing Axe"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+		
+	}
+	option = {
+		name ="EVTOPTCthegodsbless.4"
+		trigger = {
+			NOT = {
+				has_character_flag = divinerelicB
+				has_character_flag = divinerelicC
+			}
+		}
+		from = {
+			add_artifact = divine_hammer
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Flying Hammer"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+		
+	}
+	option = {
+		name ="EVTOPTDthegodsbless.4" #more
+		trigger = {
+			NOT = {
+				has_character_flag = divinerelicB
+				has_character_flag = divinerelicC
+			}
+		}
+			clr_character_flag = divinerelicA
+			set_character_flag = divinerelicB
+			from = { character_event = { id = thegodsbless.5 } } 
+		}
+		
+	
+	option = {
+		name ="EVTOPTEthegodsbless.4"
+		trigger = {
+			has_character_flag = divinerelicB
+		}
+			from = {
+			add_artifact = divine_spear
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Spear of Destiny"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+			clr_character_flag = divinerelicB
+	}
+	option = {
+		name ="EVTOPTFthegodsbless.4"
+		trigger = {
+			has_character_flag = divinerelicB
+		}
+		from = {
+			add_artifact = divine_shield
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Divine Aegis"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+			clr_character_flag = divinerelicB
+	}
+	option = {
+		name ="EVTOPTGthegodsbless.4"
+		trigger = {
+			has_character_flag = divinerelicB
+		}
+		from = {
+			add_artifact = divine_symbol
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "Symbol of [Prev.GetFirstName]"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+			clr_character_flag = divinerelicB
+	}
+	option = {
+		name ="EVTOPTJthegodsbless.4" #more2
+		trigger = {
+			has_character_flag = divinerelicB
+		}
+			clr_character_flag = divinerelicB
+			set_character_flag = divinerelicC
+			from = { character_event = { id = thegodsbless.5 } }
+		}
+	
+	
+	option = {
+		name ="EVTOPTHthegodsbless.4"
+		trigger = {
+			has_character_flag = divinerelicC
+		}
+			from = {
+			add_artifact = divine_horn
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Horn of Plenty"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+			clr_character_flag = divinerelicC
+	}
+	option = {
+		name ="EVTOPTIthegodsbless.4"
+		trigger = {
+			has_character_flag = divinerelicC
+		}
+		from = {
+			add_artifact = divine_trick
+			new_artifact = {
+				set_creation_date = 1.1.1
+				set_original_owner = FromFrom
+				set_name =  "[Prev.GetFirstName]'s Ring of Trickery"
+			}
+			}
+			if = { limit = { NOT = { has_game_rule = { name = powers value = free } } } piety = -500 }
+			clr_character_flag = divinerelicC
+	}
+	option = {
+		name ="EVTOPTKthegodsbless.4" #returntostart
+		trigger = {
+			has_character_flag = divinerelicC
+		}
+			clr_character_flag = divinerelicC
+			from = { character_event = { id = thegodsbless.5 } }
+		}
+	
+	option = {
+		name ="EVTOPTLthegodsbless.4" #nah
+		trigger = {
+			has_character_flag = divinerelicC
+		}
+		FROM = {
+		}
+		clr_character_flag = divinerelicC
+	}
+}
+character_event = { #artifact creation nextpage
+	id = "thegodsbless.5"
+	desc = "EVTDESCthegodsbless.5"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+	}
+	
+	immediate = {
+		from = { character_event = { id = thegodsbless.4 } }
+	}

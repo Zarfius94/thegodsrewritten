@@ -1,0 +1,46 @@
+# Kings & Queen
+nick_the_kingofthegods = {}
+nick_the_queenofthegods = {}
+nick_the_evilking = {}
+nick_the_evilqueen = {}
+
+# Good Male Nicknames
+nick_the_godoflight = {}
+nick_the_godofstrategy = {}
+nick_the_godoffortune = {}
+nick_the_godofsecrecy = {}
+nick_the_godofknowledge = {}
+nick_the_godoffertility = {}
+nick_the_godoftheseas = {}
+nick_the_godoffestivals = {}
+
+# Good Female Nicknames
+nick_the_goddessofthesun = {}
+nick_the_goddessofprotection = {}
+nick_the_goddessofharvest = {}
+nick_the_goddessofsilence = {}
+nick_the_goddessofwisdom = {}
+nick_the_goddessoflove = {}
+nick_the_goddessofrain = {}
+nick_the_goddessofwine = {}
+
+# Evil Male Nicknames
+nick_the_godofdarkness = {}
+nick_the_godofwar = {}
+nick_the_godofgreed = {}
+nick_the_godofthedead = {}
+nick_the_godofdarkknowledge = {}
+nick_the_godofadultery = {}
+nick_the_godofearthquakes = {}
+nick_the_godofchaos = {}
+
+# Evil Female Nicknames
+nick_the_goddessofthemoon = {}
+nick_the_goddessofdestruction = {}
+nick_the_goddessofdecadence = {}
+nick_the_goddessofmurder = {}
+nick_the_goddessofmanipulation = {}
+nick_the_goddessoflust = {}
+nick_the_goddessoffire = {}
+nick_the_goddessofhunting = {}
+

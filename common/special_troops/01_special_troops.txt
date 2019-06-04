@@ -1,0 +1,59 @@
+angels = {
+	morale = 25
+	maintenance = 2
+	phase_skirmish_attack = 15
+	phase_melee_attack = 20
+	phase_pursue_attack = 25
+	phase_skirmish_defense = 25
+	phase_melee_defense = 20
+	phase_pursue_defense = 15
+	base_type = heavy_infantry
+}
+
+youkai = {
+	morale = 25
+	maintenance = 2
+	phase_skirmish_attack = 15
+	phase_melee_attack = 20
+	phase_pursue_attack = 25
+	phase_skirmish_defense = 25
+	phase_melee_defense = 20
+	phase_pursue_defense = 15
+	base_type = heavy_infantry
+}
+
+dark_angels = {
+	morale = 25
+	maintenance = 2
+	phase_skirmish_attack = 15
+	phase_melee_attack = 20
+	phase_pursue_attack = 25
+	phase_skirmish_defense = 25
+	phase_melee_defense = 20
+	phase_pursue_defense = 15
+	base_type = heavy_infantry
+}
+
+jotnar = {
+	morale = 50
+	maintenance = 10
+	phase_skirmish_attack = 100
+	phase_melee_attack = 5000
+	phase_pursue_attack = 100
+	phase_skirmish_defense = 100
+	phase_melee_defense = 100
+	phase_pursue_defense = 80
+	base_type = heavy_infantry
+}
+
+titans = {
+	morale = 50
+	maintenance = 10
+	phase_skirmish_attack = 100
+	phase_melee_attack = 5000
+	phase_pursue_attack = 100
+	phase_skirmish_defense = 100
+	phase_melee_defense = 100
+	phase_pursue_defense = 80
+	base_type = heavy_infantry
+}

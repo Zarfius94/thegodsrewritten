@@ -1,0 +1,342 @@
+namespace = gift_troops_ai
+character_event = {
+	id = gift_troops_ai.0
+	desc = EVTDESCgift_troops_ai.0
+	picture = GFX_evt_council
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops1
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops1
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -100 }	
+		}
+	}
+	option = {
+		name = EVTOPTBgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops1
+			OR = {
+				has_game_rule = { name = powers value = free }
+				from = { piety = 200 }
+			}
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops1
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -200 }	
+		}
+	}
+	option = {
+		name = EVTOPTCgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops1
+			OR = {
+				has_game_rule = { name = powers value = free }
+				from = { piety = 300 }
+			}
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 100 100 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops1
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -300 }	
+		}
+	}
+	option = {
+		name = EVTOPTDgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops2
+			OR = {
+				has_game_rule = { name = powers value = free }
+				from = { piety = 500 }
+			}
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops2
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -500 }	
+		}
+	}
+	option = {
+		name = EVTOPTEgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops2
+			OR = {
+				has_game_rule = { name = powers value = free }
+				from = { piety = 1000 }
+			}
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops2
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -1000 }	
+		}
+	}
+	option = {
+		name = EVTOPTFgift_troops_ai.0
+		trigger = {
+			has_character_flag = troops2
+			OR = {
+				has_game_rule = { name = powers value = free }
+				from = { piety = 1500 }
+			}
+		}
+		event_target:sin_troop_target = {
+			capital_scope = {
+				holder_scope = {
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+					spawn_unit = {
+						owner = THIS
+						province = PREV
+						leader = none
+						troops = {
+							angels = { 500 500 }
+						}
+						attrition = 1.0
+						reinforcing = yes
+						reinforce_rate_multiplier = 0.1
+						maintenance_multiplier = 0.0
+  						disband_on_peace = yes
+						merge = yes
+					}
+				}
+			}
+			character_event = { id = gift_troops_ai.1 }
+		}
+		clr_character_flag = troops2
+		clr_character_flag = buying_troops
+		if = {
+			limit = { has_game_rule = { name = powers value = normal } }
+			from = { piety = -1500 }	
+		}
+	}
+	option = {
+		name = EVTOPTGgift_troops_ai.0
+		IF = {
+			limit = {
+				has_character_flag = troops1
+			}
+			clr_character_flag = troops1
+			set_character_flag = troops2
+			character_event = { id = gift_troops_ai.0 }
+			break = yes
+		}
+		IF = {
+			limit = {
+				has_character_flag = troops2
+			}
+			clr_character_flag = troops2
+			set_character_flag = troops1
+			character_event = { id = gift_troops_ai.0 }
+			break = yes
+		}
+	}
+}
+
+character_event = {
+	id = gift_troops_ai.1
+	desc = EVTDESCgift_troops_ai.1
+	picture = GFX_evt_council
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAgift_troops_ai.1
+	}
+}

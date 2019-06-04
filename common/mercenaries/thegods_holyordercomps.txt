@@ -1,0 +1,20 @@
+guardians_composition = {
+	levy_size = 4	
+	heavy_infantry = 200
+	light_infantry = 300
+	archers = 100	
+	angels = 10
+}
+angelic_composition = {
+	levy_size = 4	
+	angels = 100
+}
+sword_composition = {
+	levy_size = 4	
+	heavy_infantry = 150
+	light_infantry = 50	
+	pikemen = 100	
+	light_cavalry = 100	
+	knights = 150
+	angels = 25
+}

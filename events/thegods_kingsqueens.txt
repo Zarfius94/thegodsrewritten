@@ -1,0 +1,60 @@
+namespace = kingsqueens
+########################
+# Become King
+########################
+character_event = {
+	id = "kingsqueens.1"
+	desc = "EVTDESCkingsqueens.1"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	
+	option = {
+		name ="EVTOPTAkingsqueens.1"
+		add_trait = kingofthegods
+		give_nickname = nick_the_kingofthegods
+	}
+}
+character_event = {
+	id = "kingsqueens.2"
+	desc = "EVTDESCkingsqueens.2"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	
+	option = {
+		name ="EVTOPTAkingsqueens.2"
+		add_trait = queenofthegods
+		give_nickname = nick_the_queenofthegods
+	}
+}
+character_event = {
+	id = "kingsqueens.3"
+	desc = "EVTDESCkingsqueens.3"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	
+	option = {
+		name ="EVTOPTAkingsqueens.3"
+		add_trait = evilking
+		give_nickname = nick_the_evilking
+	}
+}
+character_event = {
+	id = "kingsqueens.4"
+	desc = "EVTDESCkingsqueens.4"
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	
+	option = {
+		name ="EVTOPTAkingsqueens.4"
+		add_trait = evilqueen
+		give_nickname = nick_the_evilqueen
+	}
+}
