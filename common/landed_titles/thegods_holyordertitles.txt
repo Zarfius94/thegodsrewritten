@@ -17,7 +17,7 @@ d_gofl = {
 	
 	culture = High_God
 	gain_effect = {
-		add_trait = Angel
+		add_trait = angel
 	}
 	# Parent Religion 
 	religion = the_light
@@ -48,7 +48,7 @@ d_gofd = {
 	
 	culture = Fallen_God
 	gain_effect = {
-		add_trait = Dark_Angel
+		add_trait = dark_angel
 	}
 	# Parent Religion 
 	religion = the_darkness
@@ -81,7 +81,7 @@ d_al = {
 	
 	culture = High_God
 	gain_effect = {
-		add_trait = Angel
+		add_trait = angel
 	}
 	# Parent Religion 
 	religion = the_light
@@ -112,7 +112,7 @@ d_dal = {
 	
 	culture = Fallen_God
 	gain_effect ={
-		add_trait = Dark_Angel
+		add_trait = dark_angel
 	}
 	# Parent Religion 
 	religion = the_darkness
@@ -143,7 +143,7 @@ d_sol = {
 	
 	culture = High_God
 	gain_effect = {
-		add_trait = Angel
+		add_trait = angel
 	}
 	# Parent Religion 
 	religion = the_light
@@ -174,7 +174,7 @@ d_sod = {
 	
 	culture = Fallen_God
 	gain_effect = {
-		add_trait = Dark_Angel
+		add_trait = dark_angel
 	}
 	# Parent Religion 
 	religion = the_darkness

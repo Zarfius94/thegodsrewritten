@@ -84,7 +84,7 @@ divine_horn = {
 }
 divine_trick = {
 	intrigue = 20
-	set_graphical_culture = bear
+	#set_graphical_culture = bear
 	quality = 5
 	active = {
 		is_adult = yes

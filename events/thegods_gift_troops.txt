@@ -1,12 +1,22 @@
-namespace = gift_troops_ai
+###########################################
+#                                         #
+# Gods Mod (Gift troops events)           #
+#                                         #
+# ID godsgift.1- godsgift.999             #
+#                                         #
+###########################################
+
+namespace = godsgift
+
 character_event = {
-	id = gift_troops_ai.0
-	desc = EVTDESCgift_troops_ai.0
+    id = godsgift.1
+    desc = EVTDESCgodsgift.1
 	picture = GFX_evt_council
+    
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAgift_troops_ai.0
+		name = EVTOPTAgodsgift.1
 		trigger = {
 			has_character_flag = troops1
 		}
@@ -21,7 +31,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -29,22 +39,36 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops1
 		clr_character_flag = buying_troops
 		if = {
-			limit = { has_game_rule = { name = powers value = normal } }
-			from = { piety = -100 }	
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			from = {
+                piety = -100
+            }	
 		}
 	}
 	option = {
-		name = EVTOPTBgift_troops_ai.0
+		name = EVTOPTBgodsgift.1
 		trigger = {
 			has_character_flag = troops1
 			OR = {
-				has_game_rule = { name = powers value = free }
-				from = { piety = 200 }
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 200
+                }
 			}
 		}
 		event_target:sin_troop_target = {
@@ -58,7 +82,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -72,7 +96,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -80,7 +104,9 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops1
 		clr_character_flag = buying_troops
@@ -90,12 +116,17 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCgift_troops_ai.0
+		name = EVTOPTCgodsgift.1
 		trigger = {
 			has_character_flag = troops1
 			OR = {
-				has_game_rule = { name = powers value = free }
-				from = { piety = 300 }
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 300
+                }
 			}
 		}
 		event_target:sin_troop_target = {
@@ -109,7 +140,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -123,7 +154,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -137,7 +168,7 @@ character_event = {
 							angels = { 100 100 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -145,22 +176,36 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops1
 		clr_character_flag = buying_troops
 		if = {
-			limit = { has_game_rule = { name = powers value = normal } }
-			from = { piety = -300 }	
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			from = {
+                piety = -300
+            }	
 		}
 	}
 	option = {
-		name = EVTOPTDgift_troops_ai.0
+		name = EVTOPTDgodsgift.1
 		trigger = {
 			has_character_flag = troops2
 			OR = {
-				has_game_rule = { name = powers value = free }
-				from = { piety = 500 }
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 500
+                }
 			}
 		}
 		event_target:sin_troop_target = {
@@ -174,7 +219,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -182,22 +227,36 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops2
 		clr_character_flag = buying_troops
 		if = {
-			limit = { has_game_rule = { name = powers value = normal } }
-			from = { piety = -500 }	
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			from = {
+                piety = -500
+            }	
 		}
 	}
 	option = {
-		name = EVTOPTEgift_troops_ai.0
+		name = EVTOPTEgodsgift.1
 		trigger = {
 			has_character_flag = troops2
 			OR = {
-				has_game_rule = { name = powers value = free }
-				from = { piety = 1000 }
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 1000
+                }
 			}
 		}
 		event_target:sin_troop_target = {
@@ -211,7 +270,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -225,7 +284,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -233,22 +292,36 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops2
 		clr_character_flag = buying_troops
 		if = {
-			limit = { has_game_rule = { name = powers value = normal } }
-			from = { piety = -1000 }	
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			from = {
+                piety = -1000
+            }	
 		}
 	}
 	option = {
-		name = EVTOPTFgift_troops_ai.0
+		name = EVTOPTFgodsgift.1
 		trigger = {
 			has_character_flag = troops2
 			OR = {
-				has_game_rule = { name = powers value = free }
-				from = { piety = 1500 }
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 1500
+                }
 			}
 		}
 		event_target:sin_troop_target = {
@@ -262,7 +335,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -276,7 +349,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -290,7 +363,7 @@ character_event = {
 							angels = { 500 500 }
 						}
 						attrition = 1.0
-						reinforcing = yes
+						reinforces = yes
 						reinforce_rate_multiplier = 0.1
 						maintenance_multiplier = 0.0
   						disband_on_peace = yes
@@ -298,45 +371,58 @@ character_event = {
 					}
 				}
 			}
-			character_event = { id = gift_troops_ai.1 }
+			character_event = {
+                id = godsgift.2
+            }
 		}
 		clr_character_flag = troops2
 		clr_character_flag = buying_troops
 		if = {
-			limit = { has_game_rule = { name = powers value = normal } }
-			from = { piety = -1500 }	
+			limit = {
+                has_game_rule = {
+                    name = powers value = normal
+                }
+            }
+			from = {
+                piety = -1500
+            }	
 		}
 	}
 	option = {
-		name = EVTOPTGgift_troops_ai.0
-		IF = {
+		name = EVTOPTGgodsgift.1
+		if = {
 			limit = {
 				has_character_flag = troops1
 			}
 			clr_character_flag = troops1
 			set_character_flag = troops2
-			character_event = { id = gift_troops_ai.0 }
+			character_event = {
+                id = godsgift.1
+            }
 			break = yes
 		}
-		IF = {
+		if = {
 			limit = {
 				has_character_flag = troops2
 			}
 			clr_character_flag = troops2
 			set_character_flag = troops1
-			character_event = { id = gift_troops_ai.0 }
+			character_event = {
+                id = godsgift.1
+            }
 			break = yes
 		}
 	}
 }
 
 character_event = {
-	id = gift_troops_ai.1
-	desc = EVTDESCgift_troops_ai.1
+	id = godsgift.2
+	desc = EVTDESCgodsgift.2
 	picture = GFX_evt_council
+    
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAgift_troops_ai.1
+		name = EVTOPTAgodsgift.2
 	}
 }

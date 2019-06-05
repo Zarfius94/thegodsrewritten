@@ -68,7 +68,7 @@ k_angel = {
     allow = {
 		religion = the_light
 		ai = no
-		trait = Archangel
+		trait = archangel
 	}
 }
 
@@ -83,6 +83,6 @@ k_fallen_angels = {
     allow = {
 		religion = the_darkness
 		ai = no
-		trait = Dark_Archangel
+		trait = dark_archangel
 	}
 }

@@ -1,12 +1,22 @@
-########################
-# Piety events
-########################
+###########################################
+#                                         #
+# Gods Mod (Gods piety events)            #
+#                                         #
+# ID godspiety2.1- godspiety2.999           #
+#                                         #
+###########################################
+
+#THIS IS MUCH TO COMPLICATED, THERE IS AN EASIER APPROCH POSSIBLE!!!!!!
+
+namespace = godspiety2
 
 character_event = {
-	id = "thegods.605"
+    id = godspiety2.1
+    
 	is_triggered_only = yes
 	hide_window = yes
 	religion = the_darkness
+    
 	trigger = {
 		rightful_religious_head = ROOT
 		OR = {
@@ -14,264 +24,477 @@ character_event = {
 			trait = evilqueen
 		}
 	}
-	immediate = {
-		while = {
-			limit = {check_variable = { which = global_darkcount value = 1 } }
+    
+    immediate = {
+        while = {
+			limit = {
+                check_variable = {
+                    which = global_darkcount
+                    value = 1
+                }
+            }
 			add_character_modifier = {
 				name = followers
 				hidden = yes
 				stacking = yes
 				duration = -1
 			}
-			subtract_variable = { which = global_darkcount value = 1 }
-			change_variable = { which = global_darkcount1 value = 1 }
+			subtract_variable = {
+                which = global_darkcount
+                value = 1
+            }
+			change_variable = {
+                which = global_darkcount1
+                value = 1
+            }
+            
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount1
+                            value = 2
+                        }
+                    }
+                remove_character_modifiers = {
+                    modifier = followers
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers2
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount1
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount2
+                    value = 1
+                }
+            }
+            
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount2
+                        value = 5
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers2
+                    amount = 5
+                }
+                add_character_modifier = {
+                    name = followers4
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount2
+                    value = 5
+                }
+                change_variable = {
+                    which = global_darkcount4
+                    value = 1
+                }
+            }
+            
+            while = {
+                limit = {  
+                    check_variable = {
+                        which = global_darkcount2
+                        value = 2
+                    } 
+                    check_variable = {
+                        which = global_darkcount1
+                        value = 1
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers2
+                    amount = 2
+                }
+                remove_character_modifiers = {
+                    modifier = followers
+                    amount = 1
+                }
+                add_character_modifier = {
+                    name = followers3
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount2
+                    value = 2
+                }
+                subtract_variable = {
+                    which = global_darkcount1
+                    value = 1
+                }
+                change_variable = {
+                    which = global_darkcount3
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount3
+                        value = 2
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers3
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers4
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount3
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount4
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount4
+                        value = 2
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers4
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers5
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount4
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount5
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount5
+                        value = 5
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers5 amount = 5
+                }
+                add_character_modifier = {
+                    name = followers7
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount5
+                    value = 5
+                }
+                change_variable = {
+                    which = global_darkcount7
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount5
+                        value = 2
+                    } 
+                    check_variable = {
+                        which = global_darkcount4
+                        value = 1
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers5
+                    amount = 2
+                }
+                remove_character_modifiers = {
+                    modifier = followers4
+                    amount = 1
+                }
+                add_character_modifier = {
+                    name = followers6
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount5
+                    value = 2
+                }
+                subtract_variable = {
+                    which = global_darkcount4
+                    value = 1
+                }
+                change_variable = {
+                    which = global_darkcount6
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount6
+                        value = 2
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers6
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers7
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount6
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount7
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount7
+                        value = 2
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers7
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers8
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount7
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount8
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount8
+                        value = 5
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers8
+                    amount = 5
+                }
+                add_character_modifier = {
+                    name = followers10
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount8
+                    value = 5
+                }
+                change_variable = {
+                    which = global_darkcount10
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount8
+                        value = 2
+                    } 
+                    check_variable = {
+                        which = global_darkcount7
+                        value = 1
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers8
+                    amount = 2
+                }
+                remove_character_modifiers = {
+                    modifier = followers7
+                    amount = 1
+                }
+                add_character_modifier = {
+                    name = followers9
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount8
+                    value = 2
+                }
+                subtract_variable = {
+                    which = global_darkcount7
+                    value = 1
+                }
+                change_variable = {
+                    which = global_darkcount9
+                    value = 1
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = global_darkcount9
+                        value = 2
+                    }
+                }
+                remove_character_modifiers = {
+                    modifier = followers9
+                    amount = 2
+                }
+                add_character_modifier = {
+                    name = followers10
+                    hidden = yes
+                    stacking = yes
+                    duration = -1
+                }
+                subtract_variable = {
+                    which = global_darkcount9
+                    value = 2
+                }
+                change_variable = {
+                    which = global_darkcount10
+                    value = 1
+                }
+            }
 		}
-		while = {
-			limit = {check_variable = { which = global_darkcount1 value = 2 }}
-			remove_character_modifiers = { modifier = followers amount = 2 }
-			add_character_modifier = {
-				name = followers2
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount1 value = 2 }
-			change_variable = { which = global_darkcount2 value = 1 }
+    }
+}
+
+character_event = {
+	id = godspiety2.2
+	is_triggered_only = yes
+	hide_window = yes
+	religion = the_darkness
+    
+	trigger = {
+		rightful_religious_head = ROOT
+		OR = {
+			trait = evilking
+			trait = evilqueen
 		}
-		while = {
-			limit = {check_variable = { which = global_darkcount2 value = 5 }}
-			remove_character_modifiers = { modifier = followers2 amount = 5 }
-			add_character_modifier = {
-				name = followers4
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount2 value = 5 }
-			change_variable = { which = global_darkcount4 value = 1 }
-		}
-		while = {
-			limit = {
-				AND = {
-				check_variable = { which = global_darkcount2 value = 2 } 
-				check_variable = { which = global_darkcount1 value = 1 }
+	}
+	immediate = {
+        any_province = { 
+            limit = { 
+                religion = the_darkness 
+                NOT = {
+                    has_province_modifier = evilfollower
 				}
+			}
+            province_event = {
+                id = godspiety2.501
+            }
+		}
+	}
+}
+
+character_event = {
+	id = godspiety2.3
+	is_triggered_only = yes
+	hide_window = yes
+	religion = the_darkness
+    
+	trigger = {
+		rightful_religious_head = ROOT
+		OR = {
+			trait = evilking
+			trait = evilqueen
+		}
+	}
+    
+	immediate = {
+        any_province = { 
+            limit = { 
+                has_province_modifier = evilfollower 
+                NOT = {
+                    religion = the_darkness
 				}
-			remove_character_modifiers = { modifier = followers2 amount = 2 }
-			remove_character_modifiers = { modifier = followers amount = 1 }
-			add_character_modifier = {
-				name = followers3
-				hidden = yes
-				stacking = yes
-				duration = -1
 			}
-			subtract_variable = { which = global_darkcount2 value = 2 }
-			subtract_variable = { which = global_darkcount1 value = 1 }
-			change_variable = { which = global_darkcount3 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount3 value = 2 } }
-			remove_character_modifiers = { modifier = followers3 amount = 2 }
-			add_character_modifier = {
-				name = followers4
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount3 value = 2 }
-			change_variable = { which = global_darkcount4 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount4 value = 2 } }
-			remove_character_modifiers = { modifier = followers4 amount = 2 }
-			add_character_modifier = {
-				name = followers5
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount4 value = 2 }
-			change_variable = { which = global_darkcount5 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount5 value = 5 }}
-			remove_character_modifiers = { modifier = followers5 amount = 5 }
-			add_character_modifier = {
-				name = followers7
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount5 value = 5 }
-			change_variable = { which = global_darkcount7 value = 1 }
-		}
-		while = {
-			limit = {
-				AND = {
-				check_variable = { which = global_darkcount5 value = 2 } 
-				check_variable = { which = global_darkcount4 value = 1 }
-				}
-				}
-			remove_character_modifiers = { modifier = followers5 amount = 2 }
-			remove_character_modifiers = { modifier = followers4 amount = 1 }
-			add_character_modifier = {
-				name = followers6
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount5 value = 2 }
-			subtract_variable = { which = global_darkcount4 value = 1 }
-			change_variable = { which = global_darkcount6 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount6 value = 2 } }
-			remove_character_modifiers = { modifier = followers6 amount = 2 }
-			add_character_modifier = {
-				name = followers7
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount6 value = 2 }
-			change_variable = { which = global_darkcount7 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount7 value = 2 } }
-			remove_character_modifiers = { modifier = followers7 amount = 2 }
-			add_character_modifier = {
-				name = followers8
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount7 value = 2 }
-			change_variable = { which = global_darkcount8 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount8 value = 5 }}
-			remove_character_modifiers = { modifier = followers8 amount = 5 }
-			add_character_modifier = {
-				name = followers10
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount8 value = 5 }
-			change_variable = { which = global_darkcount10 value = 1 }
-		}
-		while = {
-			limit = {
-				AND = {
-				check_variable = { which = global_darkcount8 value = 2 } 
-				check_variable = { which = global_darkcount7 value = 1 }
-				}
-				}
-			remove_character_modifiers = { modifier = followers8 amount = 2 }
-			remove_character_modifiers = { modifier = followers7 amount = 1 }
-			add_character_modifier = {
-				name = followers9
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount8 value = 2 }
-			subtract_variable = { which = global_darkcount7 value = 1 }
-			change_variable = { which = global_darkcount9 value = 1 }
-		}
-		while = {
-			limit = {check_variable = { which = global_darkcount9 value = 2 } }
-			remove_character_modifiers = { modifier = followers9 amount = 2 }
-			add_character_modifier = {
-				name = followers10
-				hidden = yes
-				stacking = yes
-				duration = -1
-			}
-			subtract_variable = { which = global_darkcount9 value = 2 }
-			change_variable = { which = global_darkcount10 value = 1 }
+            province_event = {
+                id = godspiety2.502
+            }
 		}
 	}
 }
 
 province_event = {
-    id = "thegods.502"
+    id = godspiety2.501
     is_triggered_only = yes
     hide_window = yes
+    
     immediate = {
-         change_variable = { which = global_darkcount value = 1 } 
-		 add_province_modifier = {
-			name = evilfollower
+        change_variable = {
+            which = global_darkcount
+            value = 1
+        } 
+        add_province_modifier = {
+			name = goodfollower
 			duration = -1
-			}
-		}
-	}
-
-character_event = {
-	id = "thegods.652"
-	is_triggered_only = yes
-	hide_window = yes
-	religion = the_darkness
-	trigger = {
-		rightful_religious_head = ROOT
-		OR = {
-			trait = evilkind
-			trait = evilqueen
-		}
-	}
-	immediate = {
-			any_province = { 
-    limit = { 
-		religion = the_darkness
-		NOT = {
-			has_province_modifier = evilfollower
-				}
-			}
-    province_event = { id = thegods.502 }
-		}
-	}
-}
-
-character_event = {
-	id = "thegods.653"
-	is_triggered_only = yes
-	hide_window = yes
-	religion = the_darkness
-	trigger = {
-		rightful_religious_head = ROOT
-		OR = {
-			trait = evilking
-			trait = evilqueen
-		}
-	}
-	immediate = {
-			any_province = { 
-    limit = { 
-		has_province_modifier = evilfollower 
-		NOT = {
-			religion = the_darkness
-				}
-			}
-    province_event = { id = thegods.503 }
-		}
-	}
+        }
+    }
 }
 
 province_event = {
-    id = "thegods.503"
+    id = godspiety2.502
     is_triggered_only = yes
     hide_window = yes
+    
     immediate = {
-         change_variable = { which = global_antidarkcount value = 1 } 
-		 remove_province_modifier = evilfollower
-	}
+        change_variable = {
+            which = global_antidarkcount
+            value = 1
+        } 
+		remove_province_modifier = goodfollower
+    }
 }
 
 character_event = {
-	id = "thegods.607"
+	id = godspiety2.4
 	is_triggered_only = yes
 	hide_window = yes
 	religion = the_darkness
+    
 	trigger = {
 		rightful_religious_head = ROOT
 		OR = {
@@ -279,140 +502,374 @@ character_event = {
 			trait = evilqueen
 		}
 	}
+    
 	immediate = {
 		while = {
-			limit = {check_variable = { which = global_antidarkcount value = 1 } }
+			limit = {
+                check_variable = {
+                    which = global_antidarkcount
+                    value = 1
+                    }
+                }
 			if = {
-			limit = {check_variable = { which = global_darkcount value = 1} }
-			subtract_variable = { which = global_darkcount value = 1}
-			subtract_variable = { which = global_antidarkcount value = 1}
+                limit = {
+                    check_variable = {
+                        which = global_darkcount
+                        value = 1
+                    }
+                }
+                subtract_variable = {
+                    which = global_darkcount
+                    value = 1
+                }
+                subtract_variable = {
+                    which = global_antidarkcount
+                    value = 1
+                }
 			}
 			if = { 
-			limit = {
-				NOT = {check_variable = { which = global_darkcount value = 1}}
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount1 value = 1 } }
-				remove_character_modifiers = { modifier = followers amount = 1 }
-				subtract_variable = { which = global_darkcount1 value = 1 }
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount1 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount2 value = 1 } }
-				remove_character_modifiers = { modifier = followers2 amount = 1 }
-				subtract_variable = { which = global_darkcount2 value = 1 }
-				change_variable = {which = global_darkcount value = 1}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
+                limit = {
+                    NOT = {
+                        check_variable = {
+                            which = global_darkcount
+                            value = 1
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        check_variable = {
+                            which = global_darkcount1
+                            value = 1
+                        }
+                    }
+                    remove_character_modifiers = {
+                        modifier = followers
+                        amount = 1
+                    }
+                    subtract_variable = {
+                        which = global_darkcount1
+                        value = 1
+                    }
+                    subtract_variable = {
+                        which = global_antidarkcount
+                        value = 1
+                    }
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            check_variable = {
+                                which = global_darkcount1
+                                value = 1
+                            }
+                        }
+                    }
+                    if = {
+                        limit = {
+                            check_variable = {
+                                which = global_darkcount2
+                                value = 1
+                            }
+                        }
+                        remove_character_modifiers = {
+                            modifier = followers2
+                            amount = 1
+                        }
+                        subtract_variable = {
+                            which = global_darkcount2
+                            value = 1
+                        }
+                        change_variable = {
+                            which = global_darkcount
+                            value = 1
+                        }
+                        subtract_variable = {
+                            which = global_antidarkcount
+                            value = 1
+                        }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                check_variable = {
+                                    which = global_darkcount2
+                                    value = 1
+                                }
+                            }
+                        }
+                        if = {
+                            limit = {
+                                check_variable = {
+                                    which = global_darkcount3
+                                    value = 1
+                                    }
+                            }
+                            remove_character_modifiers = {
+                                modifier = followers3
+                                amount = 1
+                            }
+                            subtract_variable = {
+                                which = global_darkcount3
+                                value = 1
+                            }
+                            change_variable = {
+                                which = global_darkcount
+                                value = 4
+                            }
+                            subtract_variable = {
+                                which = global_antidarkcount
+                                value = 1
+                            }
+                        }
+                        if = {
+                            limit = {
+                                NOT = {
+                                    check_variable = {
+                                        which = global_darkcount3
+                                        value = 1
+                                    }
+                                }
+                            }
+                            if = {
+                                limit = {
+                                    check_variable = {
+                                        which = global_darkcount4
+                                        value = 1
+                                    }
+                                }
+                                remove_character_modifiers = {
+                                    modifier = followers4
+                                    amount = 1
+                                }
+                                subtract_variable = {
+                                    which = global_darkcount4
+                                    value = 1
+                                }
+                                change_variable = {
+                                    which = global_darkcount
+                                    value = 9
+                                }
+                                subtract_variable = {
+                                    which = global_antidarkcount
+                                    value = 1
+                                }
+                            }
+                            if = {
+                                limit = {
+                                    NOT = {
+                                        check_variable = {
+                                            which = global_darkcount4
+                                            value = 1
+                                        }
+                                    }
+                                }
+                                if = {
+                                    limit = {
+                                        check_variable = {
+                                            which = global_darkcount5
+                                            value = 1
+                                        }
+                                    }
+                                    remove_character_modifiers = {
+                                        modifier = followers5
+                                        amount = 1
+                                    }
+                                    subtract_variable = {
+                                        which = global_darkcount5
+                                        value = 1
+                                    }
+                                    change_variable = {
+                                        which = global_darkcount
+                                        value = 19
+                                    }
+                                    subtract_variable = {
+                                        which = global_antidarkcount
+                                        value = 1
+                                    }
+                                }
+                                if = {
+                                    limit = {
+                                        NOT = {
+                                            check_variable = {
+                                                which = global_darkcount5
+                                                value = 1
+                                            }
+                                        }
+                                    }
+                                    if = {
+                                        limit = {
+                                            check_variable = {
+                                                which = global_darkcount6
+                                                value = 1
+                                            }
+                                        }
+                                        remove_character_modifiers = {
+                                            modifier = followers6
+                                            amount = 1
+                                        }
+                                        subtract_variable = {
+                                            which = global_darkcount6
+                                            value = 1
+                                        }
+                                        change_variable = {
+                                            which = global_darkcount
+                                            value = 49
+                                        }
+                                        subtract_variable = {
+                                            which = global_antidarkcount
+                                            value = 1
+                                        }
+                                    }
+                                    if = {
+                                        limit = {
+                                            NOT = {
+                                                check_variable = {
+                                                    which = global_darkcount6
+                                                    value = 1
+                                                }
+                                            }
+                                        }
+                                        if = {
+                                            limit = {
+                                                check_variable = {
+                                                    which = global_darkcount7
+                                                    value = 1
+                                                }
+                                            }
+                                            remove_character_modifiers = {
+                                                modifier = followers7
+                                                amount = 1
+                                            }
+                                            subtract_variable = {
+                                                which = global_darkcount7
+                                                value = 1
+                                            }
+                                            change_variable = {
+                                                which = global_darkcount
+                                                value = 99
+                                            }
+                                            subtract_variable = {
+                                                which = global_antidarkcount
+                                                value = 1
+                                            }
+                                        }
+                                        if = {
+                                            limit = {
+                                                NOT = {
+                                                    check_variable = {
+                                                        which = global_darkcount7
+                                                        value = 1
+                                                    }
+                                                }
+                                            }
+                                            if = {
+                                                limit = {
+                                                    check_variable = {
+                                                        which = global_darkcount8
+                                                        value = 1
+                                                    }
+                                                }
+                                                remove_character_modifiers = {
+                                                    modifier = followers8
+                                                    amount = 1
+                                                }
+                                                subtract_variable = {
+                                                    which = global_darkcount8
+                                                    value = 1
+                                                }
+                                                change_variable = {
+                                                    which = global_darkcount
+                                                    value = 199
+                                                }
+                                                subtract_variable = {
+                                                    which = global_antidarkcount
+                                                    value = 1
+                                                }
+                                            }
+                                            if = {
+                                                limit = {
+                                                    NOT = {
+                                                        check_variable = {
+                                                            which = global_darkcount8
+                                                            value = 1
+                                                        }
+                                                    }
+                                                }
+                                                if = {
+                                                    limit = {
+                                                        check_variable = {
+                                                            which = global_darkcount9
+                                                            value = 1
+                                                        }
+                                                    }
+                                                    remove_character_modifiers = {
+                                                        modifier = followers9
+                                                        amount = 1
+                                                    }
+                                                    subtract_variable = {
+                                                        which = global_darkcount9
+                                                        value = 1
+                                                    }
+                                                    change_variable = {
+                                                        which = global_darkcount
+                                                        value = 499
+                                                    }
+                                                    subtract_variable = {
+                                                        which = global_antidarkcount
+                                                        value = 1
+                                                    }
+                                                }
+                                                if = {
+                                                    limit = {
+                                                        NOT = {
+                                                            check_variable = {
+                                                                which = global_darkcount9
+                                                                value = 1
+                                                            }
+                                                        }
+                                                    }
+                                                    if = {
+                                                        limit = {
+                                                            check_variable = {
+                                                                which = global_darkcount10
+                                                                value = 1
+                                                            }
+                                                        }
+                                                        remove_character_modifiers = {
+                                                            modifier = followers10
+                                                            amount = 1
+                                                        }
+                                                        subtract_variable = {
+                                                            which = global_darkcount10
+                                                            value = 1
+                                                        }
+                                                        change_variable = {
+                                                            which = global_darkcount
+                                                            value = 999
+                                                        }
+                                                        subtract_variable = {
+                                                            which = global_antidarkcount
+                                                            value = 1
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
 			
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount2 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount3 value = 1 } }
-				remove_character_modifiers = { modifier = followers3 amount = 1 }
-				subtract_variable = { which = global_darkcount3 value = 1 }
-				change_variable = {which = global_darkcount value = 4}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount3 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount4 value = 1 } }
-				remove_character_modifiers = { modifier = followers4 amount = 1 }
-				subtract_variable = { which = global_darkcount4 value = 1 }
-				change_variable = {which = global_darkcount value = 9}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount4 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount5 value = 1 } }
-				remove_character_modifiers = { modifier = followers5 amount = 1 }
-				subtract_variable = { which = global_darkcount5 value = 1 }
-				change_variable = {which = global_darkcount value = 19}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount5 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount6 value = 1 } }
-				remove_character_modifiers = { modifier = followers6 amount = 1 }
-				subtract_variable = { which = global_darkcount6 value = 1 }
-				change_variable = {which = global_darkcount value = 49}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount6 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount7 value = 1 } }
-				remove_character_modifiers = { modifier = followers7 amount = 1 }
-				subtract_variable = { which = global_darkcount7 value = 1 }
-				change_variable = {which = global_darkcount value = 99}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount7 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount8 value = 1 } }
-				remove_character_modifiers = { modifier = followers8 amount = 1 }
-				subtract_variable = { which = global_darkcount8 value = 1 }
-				change_variable = {which = global_darkcount value = 199}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount8 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount9 value = 1 } }
-				remove_character_modifiers = { modifier = followers9 amount = 1 }
-				subtract_variable = { which = global_darkcount9 value = 1 }
-				change_variable = {which = global_darkcount value = 499}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			if = {
-			limit = {
-				NOT = {check_variable = { which = global_darkcount9 value = 1 } }
-			}
-			if = {
-				limit = {check_variable = { which = global_darkcount10 value = 1 } }
-				remove_character_modifiers = { modifier = followers10 amount = 1 }
-				subtract_variable = { which = global_darkcount10 value = 1 }
-				change_variable = {which = global_darkcount value = 999}
-				subtract_variable = { which = global_antidarkcount value = 1 }
-			}
-			}
-			}
-			}
-			}
-			
-		}
-	}
-	}
-	}
-	}
-	}
-	}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 	}
 	
 	after = {
-	character_event = { id = thegods.605 }
+        character_event = {
+            id = godspiety2.1
+        }
 	}
 }

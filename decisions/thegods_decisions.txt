@@ -1,18 +1,20 @@
 decisions = {
-	Create_Angel = {
+    Create_Angel = {
 		is_high_prio = no
+        
 		potential = {
-			#religion_group = god_group
 			prisoner = no
 			OR = {
-				trait = God
-				trait = Goddess
-				}
+				trait = god
+				trait = goddess
+            }
 		}
+        
 		allow = {
     		piety = 500
     		wealth = 500
-  		}	
+  		}
+        
 		effect = {
 			wealth = -500
 			piety = -500
@@ -24,34 +26,38 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Angel
+				trait = angel
 				trait = diligent
 				trait = kind
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Female_Angel = {
 		is_high_prio = no
+        
 		potential = {
-			#religion_group = god_group
 			prisoner = no
 			OR = {
-				trait = God
-				trait = Goddess
-				}
+				trait = god
+				trait = goddess
+            }
 		}
+        
 		allow = {
     		piety = 500
     		wealth = 500
   		}	
+        
 		effect = {
 			wealth = -500
 			piety = -500
@@ -63,34 +69,38 @@ decisions = {
 				female = yes
 				age = 16
 				fertility = 0.5
-				trait = Angel
+				trait = angel
 				trait = diligent
 				trait = kind
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Dark_Angel = {
 		is_high_prio = no
+        
 		potential = {
-			#religion_group = god_group
 			prisoner = no
 			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-				}
+				trait = fallen_god
+				trait = fallen_goddess
+            }
 		}
+        
 		allow = {
     		piety = 500
     		wealth = 500
   		}	
+        
 		effect = {
 			piety = -500
 			wealth = -500
@@ -102,34 +112,38 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Dark_Angel
+				trait = dark_angel
 				trait = diligent
 				trait = cruel
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Female_Dark_Angel = {
 		is_high_prio = no
+        
 		potential = {
-			#religion_group = god_group
 			prisoner = no
 			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
+				trait = fallen_god
+				trait = fallen_goddess
 				}
 		}
+        
 		allow = {
     		piety = 500
     		wealth = 500
   		}	
+        
 		effect = {
 			piety = -500
 			wealth = -500
@@ -141,36 +155,35 @@ decisions = {
 				female = yes
 				age = 16
 				fertility = 0.5
-				trait = Dark_Angel
+				trait = dark_angel
 				trait = diligent
 				trait = cruel
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Jotunn = {
 		is_high_prio = no
 		potential = {
 			culture = Norse_God
 			prisoner = no
-			OR = {
-				trait = God
-				trait = Goddess
-				trait = Fallen_God
-				trait = Fallen_Goddess
-				}
+			adult_deity = yes
 		}
+        
 		allow = {
     		prestige = 1000
     		wealth = 500
-  		}	
+  		}
+        
 		effect = {
 			wealth = -500
 			prestige = -1000
@@ -182,31 +195,30 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Jotunn
+				trait = jotunn
 				trait = strong
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Titan = {
 		is_high_prio = no
 		potential = {
 			culture = Olympic_God
 			prisoner = no
-			OR = {
-				trait = God
-				trait = Goddess
-				trait = Fallen_God
-				trait = Fallen_Goddess
-				}
+			adult_deity = yes
 		}
+        
 		allow = {
     		prestige = 1000
     		wealth = 500
   		}	
+        
 		effect = {
 			wealth = -500
 			prestige = -1000
@@ -218,28 +230,33 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Titan
+				trait = titan
 				trait = strong
-				trait = Divine_Warrior
+				trait = divine_warrior
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	Create_Goddess = {
+    
+    Create_Goddess = {
 		is_high_prio = yes
+        
 		potential = {
 			OR = {
-			trait = Goddess
-			trait = God
+                trait = goddess
+                trait = god
 			}
 		}
+        
 		allow = {
     		prestige = 100
     		piety = 100
     		wealth = 100
-  		}	
+  		}
+        
 		effect = {
 			wealth = -100
 			create_character = {
@@ -249,34 +266,39 @@ decisions = {
 				female = yes
 				age = 16
 				fertility = 0.5
-				trait = Young_Goddess
+				trait = young_goddess
 				trait = diligent
 				trait = kind
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Steward
+				trait = divine_steward
 				trait = fair
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_God = {
 		is_high_prio = yes
+        
 		potential = {
 			OR = {
-			trait = Goddess
-			trait = God
+                trait = goddess
+                trait = god
 			}
 		}
+        
 		allow = {
     		prestige = 100
     		piety = 100
     		wealth = 100
-  		}	
+  		}
+        
 		effect = {
 			wealth = -100
 			create_character = {
@@ -286,34 +308,39 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Young_God
+				trait = young_god
 				trait = diligent
 				trait = kind
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				trait = strong
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Fallen_Goddess = {
 		is_high_prio = yes
+        
 		potential = {
 			OR = {
-			trait = Fallen_Goddess
-			trait = Fallen_God
+                trait = fallen_goddess
+                trait = fallen_god
 			}
 		}
+        
 		allow = {
     		prestige = 100
     		piety = 100
     		wealth = 100
-  		}	
+  		}
+        
 		effect = {
 			wealth = -100
 			create_character = {
@@ -324,27 +351,29 @@ decisions = {
 				female = yes
 				age = 16
 				fertility = 0.5
-				trait = Young_Fallen_Goddess
+				trait = young_fallen_goddess
 				trait = diligent
 				trait = cruel
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Steward
+				trait = divine_steward
 				trait = fair
 				}
 		}
+        
 		ai_will_do = {
 			factor = 0
 		}
 	}
+    
 	Create_Fallen_God = {
 		is_high_prio = yes
 		potential = {
 			OR = {
-			trait = Fallen_Goddess
-			trait = Fallen_God
+			trait = fallen_goddess
+			trait = fallen_god
 			}
 		}
 		allow = {
@@ -362,14 +391,14 @@ decisions = {
 				female = no
 				age = 16
 				fertility = 0.5
-				trait = Fallen_God
+				trait = fallen_god
 				trait = diligent
 				trait = cruel
 				trait = temperate
 				trait = patient
 				trait = zealous
 				trait = scholar
-				trait = Divine_Warrior
+				trait = divine_warrior
 				trait = strong
 				}
 		}
@@ -377,69 +406,97 @@ decisions = {
 			factor = 0
 		}
 	}
-	Create_God_Empire = {
+    
+    Create_God_Empire = {
 		is_high_prio = yes
 		ai = no
+        
 		potential = {
 			OR = {
-				trait = God
-				trait = Goddess
+				trait = god
+				trait = goddess
 			}
 			religion = the_light
-			e_thegods = { has_holder = no }
+			e_thegods = {
+                has_holder = no
+            }
 		}
+        
 		allow = {
 			wealth = 600
 			piety = 400
 		}
+        
 		effect = {
 			wealth = -600
 			piety = -400
 			prestige = 1000
-			activate_title = { title = e_thegods status = yes }
-			e_thegods = { gain_title = PREV }
+			activate_title = {
+                title = e_thegods
+                status = yes
+            }
+			e_thegods = {
+                gain_title = PREV
+            }
 		}
 	}
+    
 	Create_Fallen_God_Empire = {
 		is_high_prio = yes
 		ai = no
+        
 		potential = {
 			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
+				trait = fallen_god
+				trait = fallen_goddess
 			}
 			religion = the_darkness
-			e_evilgods = { has_holder = no }
+			e_evilgods = {
+                has_holder = no
+            }
 		}
+        
 		allow = {
 			wealth = 600
 			piety = 400
 		}
+        
 		effect = {
 			wealth = -600
 			piety = -400
 			prestige = 1000
-			activate_title = { title = e_evilgods status = yes }
-			e_evilgods = { gain_title = PREV }
+			activate_title = {
+                title = e_evilgods
+                status = yes
+            }
+			e_evilgods = {
+                gain_title = PREV
+            }
 		}
 	}
-	#Shapeshift = {
-	#	potential = {
-	#		has_artifact = divine_trick
-	#		NOT = { graphical_culture = beargfx }
-	#	}
-	#	effect = {
-	#		set_graphical_culture = bear
-	#	}
-	#}
-	#Shapeshift Back = {
-	#	ai = no
-	#	potential = {
-	#		has_artifact = divine_trick
-	#		graphical_culture = beargfx
-	#	}
-	#	effect = {
-	#		set_graphical_culture = random_courtier
-	#	}
-	#}
+    
+    Create_Opponent = {
+        is_high_prio = yes
+        ai = no
+        potential = {
+            OR = {
+                fallen_deity = yes
+                good_deity = yes
+            }
+            NAND = {
+                any_character = {
+                    good_deity = yes
+                }
+                any_character = {
+                    fallen_deity = yes
+                }
+            }
+        }
+        
+        effect = {
+            character_event = {
+                id = godsenemy.1
+            }
+        }
+    }
 }

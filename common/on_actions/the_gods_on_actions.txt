@@ -1,18 +1,27 @@
 on_birth = {
 	events = {
-		thegods.9
+		gods.20
 	}
 }
 on_yearly_pulse = {
-events = {
-thegods.650
-thegods.651
-thegods.601
-thegods.603
-thegods.652
-thegods.653
-thegods.605
-thegods.607
-thegods.700
-}
+    events = {
+        godspiety.2
+        godspiety.3
+        godspiety.1
+        godspiety.4
+        godspiety2.2
+        godspiety2.3
+        godspiety2.1
+        godspiety2.4
+        godsho.1
+        
+        #Rework piety system
+        #godspietyrework.2
+        #godspietyrework.3
+        #godspietyrework.1
+        #godspiety2rework.2
+        #godspiety2rework.3
+        #godspiety2rework.1
+        #godsho.1
+    }
 }

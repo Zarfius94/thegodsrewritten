@@ -13,7 +13,7 @@ god_group= {
 		icon = 49
 		heresy_icon = 48
 		scripture_name = god_text
-		priest_title = Arch_Angel
+		priest_title = arch_angel
 		crusade_name = god_crusade
 		can_call_crusade = yes
 		high_god_name = the_light
@@ -27,6 +27,7 @@ god_group= {
 		bs_marriage = yes
 		priests_can_marry = yes
 		priests_can_inherit = yes 
+		#can_hold_temples = yes
 		short_reign_opinion_year_mult = 5
 		allow_looting = yes
 		allow_rivermovement = yes
@@ -38,7 +39,6 @@ god_group= {
 		religious_clothing_priest = 2
 		#allow_in_ruler_designer = no
 		piety_name = PIETY_GOD
-
 	}
 	
 	the_darkness= {
@@ -49,15 +49,11 @@ god_group= {
 		
 		color = { 255 255 255 }
 		
-
 		scripture_name = evilgod_text
-		priest_title = Arch_Angel
+		priest_title = arch_angel
 		crusade_name = god_crusade
 		can_call_crusade = yes
-		high_god_name = the_darkness
-		
-		
-			
+		high_god_name = the_darkness	
 
 		can_retire_to_monastery = no
 		female_temple_holders = yes
@@ -67,6 +63,7 @@ god_group= {
 		bs_marriage = yes
 		priests_can_marry = yes
 		priests_can_inherit = yes 
+		#can_hold_temples = yes
 		short_reign_opinion_year_mult = 5
 		allow_looting = yes
 		allow_rivermovement = yes
@@ -78,15 +75,6 @@ god_group= {
 		religious_clothing_priest = 2
 		#allow_in_ruler_designer = no
 		piety_name = PIETY_EVILGOD
-
-	}
-	
-	
+	}	
 }
-
-
-
-		
-
-
 	

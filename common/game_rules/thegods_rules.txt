@@ -1,5 +1,6 @@
 wartoggle = {
 	name = "RULE_WARTOGGLE"
+    group = "RULE_GROUP_GODS"
 	option = {
 		name = on
 		text = "RULE_WAR_ON"
@@ -16,8 +17,10 @@ wartoggle = {
 		desc = "RULE_WAR_JUSTGOOD_DESC"
 	}
 }
+
 autogod = {
 	name = "RULE_AUTOGOD"
+    group = "RULE_GROUP_GODS"
 	option = {
 		name = off
 		text = "RULE_AUTOGOD_OFF"
@@ -29,8 +32,10 @@ autogod = {
 		desc = "RULE_AUTOGOD_ON_DESC"
 	}
 }
+
 regod = {
 	name = "RULE_REGOD"
+    group = "RULE_GROUP_GODS"
 	option = {
 		name = on
 		text = "RULE_REGOD_ON"
@@ -42,8 +47,10 @@ regod = {
 		desc = "RULE_REGOD_OFF_DESC"
 	}
 }
+
 powers = {
 	name = "RULE_POWERS"
+    group = "RULE_GROUP_GODS"
 	option = {
 		name = normal
 		text = "RULE_POWERS_NORMAL"
@@ -54,4 +61,34 @@ powers = {
 		text = "RULE_POWERS_FREE"
 		desc = "RULE_POWERS_FREE_DESC"
 	}
+}
+
+traitcap = {
+    name = "RULE_TRAITCAP"
+    group = "RULE_GROUP_GODS"
+    option = {
+        name = normal
+        text = "RULE_TRAITCAP_NORMAL"
+        desc = "RULE_TRAITCAP_NORMAL_DESC"
+    }
+    option = {
+        name = double
+        text = "RULE_TRAITCAP_DOUBLE"
+        desc = "RULE_TRAITCAP_DOUBLE_DESC"
+    }
+    option = {
+        name = onlygods
+        text = "RULE_TRAITCAP_ONLYGODS"
+        desc = "RULE_TRAITCAP_ONLYGODS_DESC"
+    }
+    option = {
+        name = doublegods
+        text = "RULE_TRAITCAP_DOUBLEGODS"
+        desc = "RULE_TRAITCAP_DOUBLEGODS_DESC"
+    }
+    option = {
+        name = all
+        text = "RULE_TRAITCAP_ALL"
+        desc = "RULE_TRAITCAP_ALL_DESC"
+    }
 }

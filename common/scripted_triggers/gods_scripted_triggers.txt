@@ -1,0 +1,247 @@
+god_material = {
+    age = 35
+    NOT = {
+        OR = {
+            trait = incapable
+            trait = celibate
+            trait = zealous
+            trait = monk
+            trait = nun
+            trait = muni
+            trait = aryika
+            trait = bhikkhu
+            trait = bhikkhuni
+            trait = sanyasi
+            trait = sanyasini
+            trait = eunuch
+            trait = god
+            trait = goddess
+            trait = young_god
+            trait = young_goddess
+            trait = fallen_god
+            trait = fallen_goddess
+            trait = young_fallen_god
+            trait = young_fallen_goddess
+            trait = young_demi_god
+            trait = young_demi_goddess
+            trait = demi_god
+            trait = demi_goddess
+            trait = dark_angel
+            trait = dark_archangel
+            trait = angel
+            trait = archangel
+            trait = jotunn
+            trait = titan
+        }
+    }
+}
+
+good_deity = {
+    OR = {
+        trait = god
+        trait = goddess
+        trait = young_god
+        trait = young_goddess
+        trait = young_baby
+    }
+}
+
+fallen_deity = {
+    OR = {
+        trait = fallen_god
+        trait = fallen_goddess
+        trait = young_fallen_god
+        trait = young_fallen_goddess
+        trait = young_evil_baby
+    }
+}
+
+demi_deity = {
+    OR = {
+        trait = demi_god
+        trait = young_demi_god
+        trait = demi_goddess
+        trait = young_demi_goddess
+        trait = young_demi_baby
+    }
+}
+
+adult_deity = {
+    OR = {
+        trait = god
+        trait = goddess
+        trait = fallen_god
+        trait = fallen_goddess
+    }
+}
+
+angel_beeing = {
+    OR = {
+        trait = angel
+        trait = archangel
+        trait = dark_angel
+        trait = dark_archangel
+    }
+}
+
+mythic_beeing = {
+    OR = {
+        trait = jotunn
+        trait = titan
+    }
+}
+
+has_education_divine_trigger = {
+    OR = {
+        trait = divine_assassin
+        trait = divine_steward
+        trait = divine_diplomat
+        trait = divine_warrior
+        trait = divine_theologian
+    }
+}
+
+has_god_culture = {
+    OR = {
+        culture = High_God
+        culture = Fallen_God
+        culture = Norse_God
+        culture = Olympic_God
+        culture = Eastern_God
+    }
+}
+
+has_minor_god_title = {
+    OR = {
+        trait = godoflight
+        trait = godofstrategy
+        trait = godoffortune
+        trait = godofsecrecy
+        trait = godofknowledge
+        trait = godoffertility
+        trait = godoftheseas
+        trait = godoffestivals
+        trait = godofdarkness
+        trait = godofwar
+        trait = godofgreed
+        trait = godofthedead
+        trait = godofdarkknowledge
+        trait = godofadultery
+        trait = godofearthquakes
+        trait = godofchaos
+        trait = goddessofthesun
+        trait = goddessofprotection
+        trait = goddessofharvest
+        trait = goddessofsilence
+        trait = goddessofwisdom
+        trait = goddessoflove
+        trait = goddessofrain
+        trait = goddessofwine
+        trait = goddessofthemoon
+        trait = goddessofdestruction
+        trait = goddessofdecadence
+        trait = goddessofmurder
+        trait = goddessofmanipulation
+        trait = goddessoflust
+        trait = goddessoffire
+        trait = goddessofhunting
+    }
+}
+
+gods_tsc_over_personality_trait_cap = {
+    OR = {
+        AND = {
+            OR = {
+                has_game_rule = {
+                    name = traitcap
+                    value = normal
+                }
+                AND = {
+                    OR = {
+                        has_game_rule = {
+                            name = traitcap
+                            value = onlygods
+                        }
+                        has_game_rule = {
+                            name = traitcap
+                            value = doublegods
+                        }
+                    }
+                    NOR = {
+                        fallen_deity = yes
+                        good_deity = yes
+                    }
+                }
+            }
+            personality_traits = 6
+        }
+        AND = {
+            OR = {
+                has_game_rule = {
+                    name = traitcap
+                    value = double
+                }
+                AND = {
+                    has_game_rule = {
+                        name = traitcap
+                        value = doublegods
+                    }
+                    OR = {
+                        fallen_deity = yes
+                        good_deity = yes
+                    }
+                }
+            }
+            personality_traits = 11
+        }
+    }
+}
+
+gods_tsc_personality_traits = {
+    OR = {
+        AND = {
+            OR = {
+                has_game_rule = {
+                    name = traitcap
+                    value = normal
+                }
+                AND = {
+                    OR = {
+                        has_game_rule = {
+                            name = traitcap
+                            value = onlygods
+                        }
+                        has_game_rule = {
+                            name = traitcap
+                            value = doublegods
+                        }
+                    }
+                    NOR = {
+                        fallen_deity = yes
+                        good_deity = yes
+                    }
+                }
+            }
+            personality_traits = 5
+        }
+        AND = {
+            OR = {
+                has_game_rule = {
+                    name = traitcap
+                    value = double
+                }
+                AND = {
+                    has_game_rule = {
+                        name = traitcap
+                        value = doublegods
+                    }
+                    OR = {
+                        fallen_deity = yes
+                        good_deity = yes
+                    }
+                }
+            }
+            personality_traits = 10
+        }
+    }
+}

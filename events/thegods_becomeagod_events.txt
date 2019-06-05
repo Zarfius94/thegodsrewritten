@@ -1,84 +1,91 @@
-namespace = becomeagod
-########################
-# BECOMING A GOD EVENTS
-########################
+###########################################
+#                                         #
+# Gods Mod (Become a god events)          #
+#                                         #
+# ID godsbec.1- godsbec.999               #
+#                                         #
+###########################################
+
+namespace = godsbec
+
 character_event = {
-	id = "becomeagod.1"
-	desc = "EVTDESCbecomeagod.1"
-	picture = GFX_evt_god_01
+    id = godsbec.1
+    desc = EVTDESCgodsbec.1
+    picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 20
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = hasmagicseer }
-		NOT = { trait = studentlight }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		OR = {
-			AND = {
-				has_game_rule = { name = regod value = off }
-				NOT = { has_global_flag = regodded }
-				} 
-			has_game_rule = { name = regod value = on }
-		}
-	}
-	mean_time_to_happen = {
-		months = 5
-	}
-	option = {
-		name ="EVTOPTAbecomeagod.1"
-		add_trait = haddream
-		set_global_flag = regodded
-	}
+    ai = no
+    
+    trigger = {
+        NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = hasmagicseer
+            trait = studentlight
+            trait = internallight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer
+        }
+        OR = {
+            AND = {
+                has_game_rule = {
+                    name = regod
+                    value = off
+                }
+                NOT = {
+                    has_global_flag = regodded
+                }
+            }
+            has_game_rule = {
+                name = regod
+                value = on
+            }
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 5
+    }
+    
+    option = {
+        name = EVTOPTAgodsbec.1
+        add_trait = haddream
+        set_global_flag = regodded
+    }
 }
+
 character_event = {
-	id = "becomeagod.2"
-	desc = "EVTDESCbecomeagod.2"
+    id = godsbec.2
+	desc = EVTDESCgodsbec.2
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 22
 	ai = no
+    
 	mean_time_to_happen = {
 		days = 182
 	}
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		trait = haddream
-		NOT = { trait = hasmagicseer }
-		NOT = { trait = studentlight }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-	}
-	option = {
-		name ="EVTOPTAbecomeagod.2"
+    
+    trigger = {
+        NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = hasmagicseer
+            trait = studentlight
+            trait = internallight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer
+        }
+        trait = haddream
+    }
+    
+    option = {
+        name = EVTOPTAgodsbec.2
 		remove_trait = haddream
 		add_trait = hasmagicseer
 		create_character = {
@@ -105,89 +112,89 @@ character_event = {
 			trait = celibate
 			trait = magicseer
 		}
-	}
-	option = {
-		name ="EVTOPTAbecomeagod.102"
-		remove_trait = haddream
+    }
+    
+    option = {
+        name = EVTOPTBgodsbec.2
+        remove_trait = haddream
 		add_trait = deniedseer
-	}
+    }
 }
+
 character_event = {
-	id = "becomeagod.3"
-	desc = "EVTDESCbecomeagod.3"
+	id = godsbec.3
+	desc = EVTDESCgodsbec.3
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 22
 	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		trait = hasmagicseer
-		NOT = { trait = studentlight }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = studentlight
+            trait = internallight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer
+        }
+        trait = hasmagicseer
 	}
+    
 	mean_time_to_happen = {
 		days = 3
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.3"
+		name = EVTOPTAgodsbec.3
 		add_trait = studentlight
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.103"
-		trigger = { has_game_rule = { name = wartoggle value = on } }
+		name = EVTOPTBgodsbec.3
+		trigger = {
+            has_game_rule = {
+                name = wartoggle
+                value = on
+            }
+        }
 		add_trait = studentdark
 	}
 }
+
 character_event = {
-	id = "becomeagod.4"
-	desc = "EVTDESCbecomeagod.4"
+	id = godsbec.4
+	desc = EVTDESCgodsbec.4
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 22
 	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		NOT = { trait = kind }
-		NOT = { trait = strong }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = internallight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer
+            trait = kind
+        }
 		trait = hasmagicseer
 		trait = studentlight
 	}
+    
 	mean_time_to_happen = {
 		days = 182
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.4"
+		name = EVTOPTAgodsbec.4
 		random = { 
 			chance = 70 
 			add_trait = kind
@@ -196,567 +203,346 @@ character_event = {
 		}
 	}
 }
+
 character_event = {
-	id = "becomeagod.5"
-	desc = "EVTDESCbecomeagod.5"
+	id = godsbec.5
+	desc = EVTDESCgodsbec.5
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 23
 	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = strong }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = internallight
+            trait = internaldarkness
+            trait = deniedseer 
+            trait = strong
+        }
 		trait = hasmagicseer
-		trait = studentlight
-		trait = kind
+        OR = {
+            AND = {
+                trait = kind
+                trait = studentlight
+            }
+            AND = {
+                trait = cruel
+                trait = studentdark
+            }
+        }
 	}
+    
 	mean_time_to_happen = {
 		days = 182
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.5"
+		name = EVTOPTAgodsbec.5
 		random = { 
 			chance = 60 
 			add_trait = strong 
 		}
 	}
 }
+
 character_event = {
-	id = "becomeagod.6"
-	desc = "EVTDESCbecomeagod.6"
+	id = godsbec.6
+	desc = EVTDESCgodsbec.6
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 24
 	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentdark }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = internallight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer  
+        }
 		trait = hasmagicseer
 		trait = studentlight
 		trait = kind
 		trait = strong
 	}
+    
 	mean_time_to_happen = {
 		days = 182
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.6"
+		name = EVTOPTAgodsbec.6
 		random = { 
 			chance = 50 
 			add_trait = internallight
 			remove_trait = studentlight
-			}
+        }
 	}
 }
 
 character_event = {
-	id = "becomeagod.7"
-	desc = "EVTDESCbecomeagod.7"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 200
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = internaldarkness }
-		trait = internallight
-		trait = kind
-		trait = strong
-		trait = hasmagicseer
-	}
-
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name ="EVTOPTAbecomeagod.7"
-		if = {
-			limit = {
-				is_female = no
-			}
-		add_trait = Young_God
-		remove_trait = internallight
-		}
-		if = {
-			limit = {
-				is_female = yes
-			}
-		add_trait = Young_Goddess
-		remove_trait = internallight
-		}
-	}
-}
-
-character_event = {
-	id = "becomeagod.8"
-	desc = "EVTDESCbecomeagod.8"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 200
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		NOT = { trait = cruel }
-		NOT = { trait = strong }
-		trait = hasmagicseer
-		trait = studentdark
-	}
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name = "EVTOPTAbecomeagod.8"
-		random = { 
-			chance = 70 
-			add_trait = cruel
-			remove_trait = kind
-		}
-	}
-}
-
-character_event = {
-	id = "becomeagod.9"
-	desc = "EVTDESCbecomeagod.9"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 200
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = strong }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		trait = hasmagicseer
-		trait = studentdark
-		trait = cruel
-	}
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name = "EVTOPTAbecomeagod.9"
-		random = { chance = 60 add_trait = strong }
-		
-	}
-}
-
-character_event = {
-	id = "EVTNAMEbecomeagod.10"
-	desc = "EVTDESCbecomeagod.10"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 200
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		trait = hasmagicseer
-		trait = studentdark
-		trait = cruel
-		trait = strong
-	}
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name = "EVTOPTAbecomeagod.10"
-		random = { 
-			chance = 50 
-			add_trait = internaldarkness
-			remove_trait = studentdark
-			}
-	}
-}
-
-character_event = {
-	id = "becomeagod.11"
-	desc = "EVTDESCbecomeagod.11"
+	id = godsbec.7
+	desc = EVTDESCgodsbec.7
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 25
-	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = studentlight
+            trait = studentdark
+            trait = internaldarkness
+            trait = deniedseer  
+        }
 		trait = hasmagicseer
-		NOT = { trait = studentlight }
-		NOT = { trait = studentdark }
-		trait = internaldarkness
-		NOT = { trait = internallight }
-		NOT = { trait = deniedseer }
-		trait = cruel
+		trait = internallight
+		trait = kind
 		trait = strong
 	}
+
 	mean_time_to_happen = {
 		days = 182
 	}
 	option = {
-		name ="EVTOPTAbecomeagod.11"
+		name = EVTOPTAgodsbec.7
+        
+        remove_trait = internallight
 		if = {
 			limit = {
 				is_female = yes
 			}
-			add_trait = Young_Fallen_Goddess
-			remove_trait = internaldarkness
+            add_trait = young_goddess
 		}
-		if = {
-			limit = {
-				is_female = no
-			}
-			add_trait = Young_Fallen_God
-			remove_trait = internaldarkness
+		else = {
+            add_trait = young_god
+            
 		}
 	}
 }
+
 character_event = {
-	id = "becomeagod.12"
-	desc = "EVTDESCbecomeagod.12"
+	id = godsbec.8
+	desc = EVTDESCgodsbec.8
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	min_age = 22
 	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		NOT = { trait = cruel }
-		NOT = { trait = strong }
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = internallight
+            trait = studentlight
+            trait = internaldarkness
+            trait = deniedseer
+            trait = kind
+        }
 		trait = hasmagicseer
 		trait = studentdark
 	}
+    
 	mean_time_to_happen = {
 		days = 182
 	}
+    
 	option = {
-		name ="EVTOPTAbecomeagod.12"
+		name = EVTOPTAgodsbec.8
 		random = { 
 			chance = 70 
-			add_trait = cruel
 			remove_trait = kind
+			add_trait = cruel
 		}
 	}
 }
+
 character_event = {
-	id = "becomeagod.13"
-	desc = "EVTDESCbecomeagod.13"
+	id = godsbec.9
+	desc = EVTDESCgodsbec.9
 	picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
-	min_age = 1
+	min_age = 24
+	ai = no
+    
 	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = internaldarkness}
-		trait = internallight
-		trait = kind
-		trait = strong
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = internallight
+            trait = studentlight
+            trait = internaldarkness
+            trait = deniedseer  
+        }
 		trait = hasmagicseer
+		trait = studentdark
+		trait = cruel
+		trait = strong
+	}
+    
+	mean_time_to_happen = {
+		days = 182
+	}
+    
+	option = {
+		name = EVTOPTAgodsbec.9
+		random = { 
+			chance = 50 
+			add_trait = internaldarkness
+			remove_trait = studentdark
+        }
+	}
+}
+
+character_event = {
+	id = godsbec.10
+	desc = EVTDESCgodsbec.10
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 25
+    
+	trigger = {
+		NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = haddream
+            trait = studentlight
+            trait = studentdark
+            trait = internallight
+            trait = deniedseer  
+        }
+		trait = hasmagicseer
+		trait = internaldarkness
+		trait = cruel
+		trait = strong
 	}
 
 	mean_time_to_happen = {
 		days = 182
 	}
 	option = {
-		name ="EVTOPTAbecomeagod.13"
-		if = {
-			limit = {
-				is_female = no
-			}
-		add_trait = Young_God
-		remove_trait = internallight
-		}
+		name = EVTOPTAgodsbec.10
+        
+        remove_trait = internaldarkness
 		if = {
 			limit = {
 				is_female = yes
 			}
-		add_trait = Young_Goddess
-		remove_trait = internallight
+            add_trait = young_fallen_goddess
+		}
+		else = {
+            add_trait = young_fallen_god  
 		}
 	}
 }
+
+#autogod
 character_event = {
-	id = "becomeagod.14"
-	desc = "EVTDESCbecomeagod.14"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 23
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = strong }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		trait = hasmagicseer
-		trait = studentdark
-		trait = cruel
-	}
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name = "EVTOPTAbecomeagod.14"
-		random = { chance = 60 add_trait = strong }
-		
-	}
-}
-character_event = {
-	id = "becomeagod.15"
-	desc = "EVTDESCbecomeagod.15"
-	picture = GFX_evt_god_01
-	border = GFX_event_normal_frame_war
-	min_age = 24
-	ai = no
-	trigger = {
-		NOT = { trait = Young_God }
-		NOT = { trait = God }
-		NOT = { trait = Young_Fallen_God }
-		NOT = { trait = Fallen_God }
-		NOT = { trait = Demi_God }
-		NOT = { trait = Young_Demi_God }
-		NOT = { trait = Young_Goddess }
-		NOT = { trait = Goddess }
-		NOT = { trait = Young_Fallen_Goddess }
-		NOT = { trait = Fallen_Goddess }
-		NOT = { trait = Demi_Goddess }
-		NOT = { trait = Young_Demi_Goddess }
-		NOT = { trait = haddream }
-		NOT = { trait = studentlight }
-		NOT = { trait = internallight }
-		NOT = { trait = internaldarkness }
-		NOT = { trait = deniedseer }
-		trait = hasmagicseer
-		trait = studentdark
-		trait = cruel
-		trait = strong
-	}
-	mean_time_to_happen = {
-		days = 182
-	}
-	option = {
-		name = "EVTOPTAbecomeagod.15"
-		random = { 
-			chance = 50 
-			add_trait = internaldarkness
-			remove_trait = studentdark
-			}
-	}
-}
-character_event = { #autogod on
-	id = "becomeagod.17"
-	desc = "EVTDESCbecomeagod.15"
-	picture = GFX_evt_god_01
+    id = godsbec.100
+    desc = EVTDESCgodsbec.100
+    picture = GFX_evt_god_01
 	border = GFX_event_normal_frame_war
 	ai = yes
 	only_independent = yes
 	war = no
 	min_age = 16
-	
-	trigger = {
-		has_game_rule = { name = autogod value = on }
-		NOT = { 
-			OR = {
-					trait = God
-					trait = Goddess
-					trait = Fallen_God
-					trait = Fallen_Goddess
-					trait = Demi_God
-					trait = Demi_Goddess
-					trait = Young_God
-					trait = Young_Fallen_God
-					trait = Young_Goddess
-					trait = Young_Fallen_Goddess
-					trait = Young_Demi_God
-					trait = Young_Demi_Goddess
-					trait = Angel
-					trait = Archangel
-					trait = Dark_Angel
-					trait = Dark_Archangel
-					trait = Young_Baby
-					trait = Young_Evil_Baby
-					trait = Young_Demi_Baby
-					trait = Jotunn
-					trait = Titan
-			}
-		}
-	}
-	mean_time_to_happen = { months = 1 }
+    
+    trigger = {
+        has_game_rule = {
+            name = autogod
+            value = on
+        }
+        NOR = {
+            good_deity = yes
+            fallen_deity = yes
+            demi_deity = yes
+            trait = angel
+            trait = archangel
+            trait = dark_angel
+            trait = dark_archangel
+            trait = young_baby
+            trait = young_evil_baby
+            trait = young_demi_baby
+            trait = jotunn
+            trait = titan
+        }
+    }
+    
+    mean_time_to_happen = {
+        months = 1
+    }
+    
+    immediate = {
+        remove_trait = angel_blood
+		remove_trait = god_blood
+    }
+    
 	option = {
-		name = "EVTOPTAbecomeagod.17"
-		trigger = { has_game_rule = { name = wartoggle value = on } }
-		if = { limit = { is_female = yes } add_trait = Goddess }
-		if = { limit = { NOT = { is_female = yes } } add_trait = God }
-		religion = the_light
-		remove_trait = Angel_Blood
-		remove_trait = God_Blood
-	}
-	option = {
-		name = "EVTOPTDbecomeagod.17"
-		trigger = { has_game_rule = { name = wartoggle value = on } }
-		if = { limit = { is_female = yes } add_trait = Fallen_Goddess }
-		if = { limit = { NOT = { is_female = yes } } add_trait = Fallen_God }
-		religion = the_darkness
-		remove_trait = Angel_Blood
-		remove_trait = God_Blood
-	}
-	option = {
-		name = "EVTOPTBbecomeagod.17"
-		trigger = { has_game_rule = { name = wartoggle value = justgood } }
-		if = { limit = { is_female = yes } add_trait = Goddess }
-		if = { limit = { NOT = { is_female = yes } } add_trait = God }
-		religion = the_light
-		remove_trait = Angel_Blood
-		remove_trait = God_Blood
-	}
-	option = {
-		name = "EVTOPTCbecomeagod.17"
-		trigger = { has_game_rule = { name = wartoggle value = off } }
+        name = EVTOPTAgodsbec.100
 		random_list = {
 			50 = {
-				if = { limit = { is_female = yes } add_trait = Goddess }
-				if = { limit = { NOT = { is_female = yes } } add_trait = God }
+				if = {
+                    limit = {
+                        is_female = yes
+                    }
+                    add_trait = young_goddess
+                }
+				else = {
+                    add_trait = young_god
+                }
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            name = wartoggle
+                            value = on
+                        }
+                    }
+                    religion = the_light
+                }
 			}
 			50 = {
-				if = { limit = { is_female = yes } add_trait = Fallen_Goddess }
-				if = { limit = { NOT = { is_female = yes } } add_trait = Fallen_God }
+                modifier = {
+                    factor = 0
+                    has_game_rule = {
+                        name = wartoggle
+                        value = justgood
+                    }
+                }
+				if = {
+                    limit = {
+                        is_female = yes
+                    }
+                    add_trait = young_fallen_goddess
+                }
+				else = {
+                    add_trait = young_fallen_god
+                }
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            name = wartoggle
+                            value = on
+                        }
+                    }
+                    religion = the_darkness
+                }
 			}
 		}
-		remove_trait = Angel_Blood
-		remove_trait = God_Blood
 	}
 }

@@ -1,6 +1,6 @@
 spriteTypes = {
         spriteType = {
-		  name = "GFX_trait_Divine_Theologian"
+		  name = "GFX_trait_divine_theologian"
 		  texturefile = "gfx/traits/Divine_Theologian.png"
 		   noOfFrames = 1
            norefcount = yes

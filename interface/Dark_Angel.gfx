@@ -1,6 +1,6 @@
 spriteTypes = {
         spriteType = {
-		  name = "GFX_trait_Dark_Angel"
+		  name = "GFX_trait_dark_angel"
 		  texturefile = "gfx/traits/Dark_Angel.png"
 		   noOfFrames = 1
            norefcount = yes

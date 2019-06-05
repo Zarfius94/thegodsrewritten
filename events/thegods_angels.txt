@@ -1,38 +1,52 @@
-namespace = thegods
+###########################################
+#                                         #
+# Gods Mod (Holy Order Events)            #
+#                                         #
+# ID godsho.1- godsho.999                 #
+#                                         #
+###########################################
 
-character_event = { #upgrade angelic holy order members to angels
-	id = "thegods.700"
-	desc = "EVTDESCangels.1"
-	is_triggered_only = yes
-	hide_window = yes
-	min_age = 16
-	
-	option = {
-		if = {
-			limit = {
-				OR = {
-					liege = { has_landed_title = d_gofd }
-					liege = { has_landed_title = d_gofl }
-					liege = { has_landed_title = d_al }
-					liege = { has_landed_title = d_dal }
-					liege = { has_landed_title = d_sol }
-					liege = { has_landed_title = d_sod }
-				}
-				NOR = {
-					trait = Angel
-					trait = Dark_Angel
-					trait = Archangel
-					trait = Dark_Archangel
-				}
-			}
-			if = {
-				limit = { religion = the_light }
-				add_trait = Angel
-			}
-			if = {
-				limit = { religion = the_darkness }
-				add_trait = Dark_Angel
-			}
-		}
-	}
+namespace = godsho
+
+#Holy order members gain angel trait
+character_event = {
+    id = godsho.1
+    
+    is_triggered_only = yes
+    hide_window = yes
+    min_age = 16
+    religion_group = god_group
+    
+    trigger = {
+        NOR = {
+            trait = angel
+            trait = archangel
+            trait = dark_angel
+            trait = dark_archangel
+        }
+        liege = {
+            OR= {
+                has_landed_title = d_gofd
+                has_landed_title = d_gofl
+                has_landed_title = d_al
+                has_landed_title = d_dal
+                has_landed_title = d_sol
+                has_landed_title = d_sod
+            }
+        }
+    }
+    
+    option = {
+        trigger = {
+            religion = the_light
+        }
+        add_trait = angel
+    }
+    
+    option = {
+        trigger = {
+            religion = the_darkness
+        }
+        add_trait = dark_angel
+    }
 }

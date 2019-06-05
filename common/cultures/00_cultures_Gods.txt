@@ -86,11 +86,11 @@ God_group = {
 		color = { 10 10 10 }
 
 		male_names = {
-			Baldr Bragi Dellingr Forseti Freyr Yngvi Ing Heimdallr HermÃ³Ã°r HÃ¶Ã°r HÅ“nir LÃ³Ã°urr Loki MÃ¡ni Meili NjÃ¶rÃ°r Odin Ã“Ã°r SaxnÅt Thor TÃ½r Ullr VÃ¡li ViÃ°arr VÃ© Vili
+			Baldr Bragi Dellingr Forseti Freyr Yngvi Ing Heimdallr Hermóğr Höğr H?nir Lóğurr Loki Máni Meili Njörğr Odin Óğr Saxn?t Thor Tır Ullr Váli Viğarr Vé Vili
 		}
 		female_names = {
-			Baduhenna Bil Beyla Eir Ä’ostre Freyja Frigg Fulla Gefjun Gersemi GerÃ°r GnÃ¡ Gullveig Hariasa HlÃ­n Hretha Hnoss Ilmr IÃ°unn Irpa Lofn Nanna Nerthus NjÃ¶run RÃ¡n Rindr 
-			SÃ¡ga Sandraudiga Sif Sigyn Sinthgunt SjÃ¶fn SkaÃ°i Snotra SÃ³l Sunna Syn Tanfana ÃrÃºÃ°r ÃorgerÃ°r HÃ¶lgabrÃºÃ°r VÃ¡r VÃ¶r Zisa
+			Baduhenna Bil Beyla Eir ?ostre Freyja Frigg Fulla Gefjun Gersemi Gerğr Gná Gullveig Hariasa Hlín Hretha Hnoss Ilmr Iğunn Irpa Lofn Nanna Nerthus Njörun Rán Rindr 
+			Sága Sandraudiga Sif Sigyn Sinthgunt Sjöfn Skaği Snotra Sól Sunna Syn Tanfana Şrúğr Şorgerğr Hölgabrúğr Vár Vör Zisa
 		}
 		from_dynasty_prefix = "of "
 

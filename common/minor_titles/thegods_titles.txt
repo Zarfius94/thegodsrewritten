@@ -12,52 +12,21 @@ title_godoflight = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -67,14 +36,17 @@ title_godoflight = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godoflight
-	add_trait = godoflight
-	add_trait = gregarious
+        give_nickname = nick_the_godoflight
+        add_trait = godoflight
+        add_trait = gregarious
 	}
-lose_effect = {
-	remove_trait = godoflight
-	remove_trait = gregarious
-	}}
+    
+    lose_effect = {
+        remove_trait = godoflight
+        remove_trait = gregarious
+	}
+}
+
 title_godofstrategy = {
 	dignity = 1
 	realm_in_name = no
@@ -86,52 +58,21 @@ title_godofstrategy = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -141,15 +82,17 @@ title_godofstrategy = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofstrategy
-	add_trait = godofstrategy
-	add_trait = strong
+        give_nickname = nick_the_godofstrategy
+        add_trait = godofstrategy
+        add_trait = strong
 	}
-lose_effect = {
-	
-	remove_trait = godofstrategy
-	remove_trait = strong
-	}}
+    
+    lose_effect = {
+        remove_trait = godofstrategy
+        remove_trait = strong
+	}
+}
+
 title_godoffortune = {
 	dignity = 1
 	realm_in_name = no
@@ -161,52 +104,21 @@ title_godoffortune = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -216,15 +128,17 @@ title_godoffortune = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godoffortune
-	add_trait = godoffortune
-	add_trait = charitable
+        give_nickname = nick_the_godoffortune
+        add_trait = godoffortune
+        add_trait = charitable
 	}
-lose_effect = {
-	
-	remove_trait = godoffortune
-	remove_trait = charitable
-	}}
+    
+    lose_effect = {
+        remove_trait = godoffortune
+        remove_trait = charitable
+	}
+}
+
 title_godofsecrecy = {
 	dignity = 1
 	realm_in_name = no
@@ -236,52 +150,21 @@ title_godofsecrecy = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -291,15 +174,17 @@ title_godofsecrecy = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofsecrecy
-	add_trait = godofsecrecy
-	add_trait = shy
+        give_nickname = nick_the_godofsecrecy
+        add_trait = godofsecrecy
+        add_trait = shy
 	}
-lose_effect = {
-	
-	remove_trait = godofsecrecy
-	remove_trait = shy
-	}}
+    
+    lose_effect = {
+        remove_trait = godofsecrecy
+        remove_trait = shy
+	}
+}
+
 title_godofknowledge = {
 	dignity = 1
 	realm_in_name = no
@@ -311,52 +196,21 @@ title_godofknowledge = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -366,15 +220,17 @@ title_godofknowledge = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofknowledge
-	add_trait = godofknowledge
-	add_trait = genius
+        give_nickname = nick_the_godofknowledge
+        add_trait = godofknowledge
+        add_trait = genius
 	}
-lose_effect = {
-	
-	remove_trait = godofknowledge
-	remove_trait = genius
-	}}
+
+    lose_effect = {
+        remove_trait = godofknowledge
+        remove_trait = genius
+	}
+}
+
 title_godoffertility = {
 	dignity = 1
 	realm_in_name = no
@@ -386,52 +242,21 @@ title_godoffertility = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -441,15 +266,17 @@ title_godoffertility = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godoffertility
-	add_trait = godoffertility
-	add_trait = fair
+        give_nickname = nick_the_godoffertility
+        add_trait = godoffertility
+        add_trait = fair
 	}
-lose_effect = {
-	
-	remove_trait = godoffertility
-	remove_trait = fair
-	}}
+    
+    lose_effect = {
+        remove_trait = godoffertility
+        remove_trait = fair
+	}
+}
+
 title_godoftheseas = {
 	dignity = 1
 	realm_in_name = no
@@ -461,52 +288,21 @@ title_godoftheseas = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -516,15 +312,16 @@ title_godoftheseas = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godoftheseas
-	add_trait = godoftheseas
-	add_trait = strong
+        give_nickname = nick_the_godoftheseas
+        add_trait = godoftheseas
+        add_trait = strong
 	}
-lose_effect = {
-	
-	remove_trait = godoftheseas
-	remove_trait = strong
-	}}
+    lose_effect = {
+        remove_trait = godoftheseas
+        remove_trait = strong
+	}
+}
+
 title_godoffestivals = {
 	dignity = 1
 	realm_in_name = no
@@ -536,52 +333,21 @@ title_godoffestivals = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -591,15 +357,17 @@ title_godoffestivals = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godoffestivals
-	add_trait = godoffestivals
-	add_trait = gregarious
+        give_nickname = nick_the_godoffestivals
+        add_trait = godoffestivals
+        add_trait = gregarious
 	}
-lose_effect = {
-	
-	remove_trait = godoffestivals
-	remove_trait = gregarious
-	}}
+    
+    lose_effect = {
+        remove_trait = godoffestivals
+        remove_trait = gregarious
+	}
+}
+
 ########################################################
 # GOOD GODDESS TITLES
 #########################################################
@@ -614,52 +382,21 @@ title_goddessofthesun = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -669,15 +406,16 @@ title_goddessofthesun = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofthesun
-	add_trait = goddessofthesun
-	add_trait = gregarious
+        give_nickname = nick_the_goddessofthesun
+        add_trait = goddessofthesun
+        add_trait = gregarious
 	}
-lose_effect = {
-	
-	remove_trait = goddessofthesun
-	remove_trait = gregarious
-	}}
+    lose_effect = {	
+        remove_trait = goddessofthesun
+        remove_trait = gregarious
+	}
+}
+
 title_goddessofprotection = {
 	dignity = 1
 	realm_in_name = no
@@ -689,52 +427,21 @@ title_goddessofprotection = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -744,15 +451,17 @@ title_goddessofprotection = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofprotection
-	add_trait = goddessofprotection
-	add_trait = strong
+        give_nickname = nick_the_goddessofprotection
+        add_trait = goddessofprotection
+        add_trait = strong
 	}
-lose_effect = {
-	
-	remove_trait = goddessofprotection
-	remove_trait = strong
-	}}
+    
+    lose_effect = {
+        remove_trait = goddessofprotection
+        remove_trait = strong
+	}
+}
+
 title_goddessofharvest = {
 	dignity = 1
 	realm_in_name = no
@@ -764,52 +473,21 @@ title_goddessofharvest = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -819,13 +497,14 @@ title_goddessofharvest = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofharvest
-	add_trait = goddessofharvest
+        give_nickname = nick_the_goddessofharvest
+        add_trait = goddessofharvest
 	}
-lose_effect = {
-	
-	remove_trait = goddessofharvest
-	}}
+    
+    lose_effect = {
+        remove_trait = goddessofharvest
+	}
+}
 title_goddessofsilence = {
 	dignity = 1
 	realm_in_name = no
@@ -837,52 +516,21 @@ title_goddessofsilence = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -892,15 +540,16 @@ title_goddessofsilence = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofsilence
-	add_trait = goddessofsilence
-	add_trait = shy
+        give_nickname = nick_the_goddessofsilence
+        add_trait = goddessofsilence
+        add_trait = shy
 	}
-lose_effect = {
-	
-	remove_trait = goddessofsilence
-	remove_trait = shy
-	}}
+    
+    lose_effect = {
+        remove_trait = goddessofsilence
+        remove_trait = shy
+	}
+}
 title_goddessofwisdom = {
 	dignity = 1
 	realm_in_name = no
@@ -912,52 +561,21 @@ title_goddessofwisdom = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -967,15 +585,16 @@ title_goddessofwisdom = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofwisdom
-	add_trait = goddessofwisdom
-	add_trait = genius
+        give_nickname = nick_the_goddessofwisdom
+        add_trait = goddessofwisdom
+        add_trait = genius
 	}
-lose_effect = {
-	
-	remove_trait = goddessofwisdom
-	remove_trait = genius
-	}}
+    lose_effect = {
+        remove_trait = goddessofwisdom
+        remove_trait = genius
+	}
+}
+
 title_goddessoflove = {
 	dignity = 1
 	realm_in_name = no
@@ -987,52 +606,21 @@ title_goddessoflove = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1042,17 +630,19 @@ title_goddessoflove = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessoflove
-	add_trait = goddessoflove
-	add_trait = fair
-	add_trait = kind
+        give_nickname = nick_the_goddessoflove
+        add_trait = goddessoflove
+        add_trait = fair
+        add_trait = kind
 	}
-lose_effect = {
-	
-	remove_trait = goddessoflove
-	remove_trait = fair
-	remove_trait = kind
-	}}
+    
+    lose_effect = {	
+        remove_trait = goddessoflove
+        remove_trait = fair
+        remove_trait = kind
+	}
+}
+
 title_goddessofrain = {
 	dignity = 1
 	realm_in_name = no
@@ -1064,68 +654,39 @@ title_goddessofrain = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
-			OR = {
-				tier = king
-				tier = emperor
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
+        OR = {
+            tier = king
+            tier = emperor
+        }
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofrain
-	add_trait = goddessofrain
-	add_trait = fair
+        give_nickname = nick_the_goddessofrain
+        add_trait = goddessofrain
+        add_trait = fair
 	}
-lose_effect = {
-	
-	remove_trait = goddessofrain
-	remove_trait = fair
-	}}
+    
+    lose_effect = {
+        remove_trait = goddessofrain
+        remove_trait = fair
+	}
+}
+
 title_goddessofwine = {
 	dignity = 1
 	realm_in_name = no
@@ -1137,52 +698,21 @@ title_goddessofwine = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = God
-				trait = Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = god
+            trait = goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1192,17 +722,19 @@ title_goddessofwine = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofwine
-	add_trait = goddessofwine
-	add_trait = drunkard
+        give_nickname = nick_the_goddessofwine
+        add_trait = goddessofwine
+        add_trait = drunkard
 	}
-lose_effect = {
-	
-	remove_trait = goddessofwine
-	remove_trait = drunkard
-	}}
+    
+    lose_effect = {
+        remove_trait = goddessofwine
+        remove_trait = drunkard
+	}
+}
+
 ########################################################
-# GOOD GOD TITLES
+# EVIL GOD TITLES
 #########################################################
 title_godofdarkness = {
 	dignity = 1
@@ -1215,52 +747,21 @@ title_godofdarkness = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1270,15 +771,16 @@ title_godofdarkness = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofdarkness
-	add_trait = godofdarkness
-	add_trait = gregarious
+        give_nickname = nick_the_godofdarkness
+        add_trait = godofdarkness
+        add_trait = gregarious
 	}
-lose_effect = {
-	
-	remove_trait = godofdarkness
-	remove_trait = gregarious
-	}}
+    lose_effect = {
+        remove_trait = godofdarkness
+        remove_trait = gregarious
+	}
+}
+
 title_godofwar = {
 	dignity = 1
 	realm_in_name = no
@@ -1290,52 +792,21 @@ title_godofwar = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1345,15 +816,16 @@ title_godofwar = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofwar
-	add_trait = godofwar
-	add_trait = strong
+        give_nickname = nick_the_godofwar
+        add_trait = godofwar
+        add_trait = strong
 	}
-lose_effect = {
-	
-	remove_trait = godofwar
-	remove_trait = strong
-	}}
+    lose_effect = {
+        remove_trait = godofwar
+        remove_trait = strong
+	}
+}
+
 title_godofgreed = {
 	dignity = 1
 	realm_in_name = no
@@ -1365,52 +837,21 @@ title_godofgreed = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1420,15 +861,16 @@ title_godofgreed = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofgreed
-	add_trait = godofgreed
-	add_trait = greedy
+        give_nickname = nick_the_godofgreed
+        add_trait = godofgreed
+        add_trait = greedy
 	}
-lose_effect = {
-	
-	remove_trait = godofgreed
-	remove_trait = greedy
-	}}
+    lose_effect = {
+        remove_trait = godofgreed
+        remove_trait = greedy
+	}
+}
+
 title_godofthedead = {
 	dignity = 1
 	realm_in_name = no
@@ -1440,52 +882,21 @@ title_godofthedead = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1495,13 +906,14 @@ title_godofthedead = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofthedead
-	add_trait = godofthedead
+        give_nickname = nick_the_godofthedead
+        add_trait = godofthedead
 	}
-lose_effect = {
-	
-	remove_trait = godofthedead
-	}}
+    lose_effect = {	
+        remove_trait = godofthedead
+	}
+}
+
 title_godofdarkknowledge = {
 	dignity = 1
 	realm_in_name = no
@@ -1513,52 +925,21 @@ title_godofdarkknowledge = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1568,15 +949,17 @@ title_godofdarkknowledge = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofdarkknowledge
-	add_trait = godofdarkknowledge
-	add_trait = genius
+        give_nickname = nick_the_godofdarkknowledge
+        add_trait = godofdarkknowledge
+        add_trait = genius
 	}
-	lose_effect = {
-	
-	remove_trait = godofdarkknowledge
-	remove_trait = genius
-	}}
+    
+    lose_effect = {
+        remove_trait = godofdarkknowledge
+        remove_trait = genius
+	}
+}
+
 title_godofadultery = {
 	dignity = 1
 	realm_in_name = no
@@ -1588,52 +971,21 @@ title_godofadultery = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1643,15 +995,17 @@ title_godofadultery = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofadultery
-	add_trait = godofadultery
-	add_trait = fair
+        give_nickname = nick_the_godofadultery
+        add_trait = godofadultery
+        add_trait = fair
 	}
-lose_effect = {
-	
-	remove_trait = godofadultery
-	remove_trait = fair
-	}}
+    
+    lose_effect = {
+        remove_trait = godofadultery
+        remove_trait = fair
+	}
+}
+
 title_godofearthquakes = {
 	dignity = 1
 	realm_in_name = no
@@ -1663,52 +1017,21 @@ title_godofearthquakes = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1718,13 +1041,15 @@ title_godofearthquakes = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofearthquakes
-	add_trait = godofearthquakes
+        give_nickname = nick_the_godofearthquakes
+        add_trait = godofearthquakes
 	}
-lose_effect = {
-	
-	remove_trait = godofearthquakes
-	}}
+    
+    lose_effect = {
+        remove_trait = godofearthquakes
+	}
+}
+
 title_godofchaos = {
 	dignity = 1
 	realm_in_name = no
@@ -1736,52 +1061,21 @@ title_godofchaos = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1791,16 +1085,18 @@ title_godofchaos = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_godofchaos
-	add_trait = godofchaos
-	add_trait = possessed
-	
-		}
-lose_effect = {
-	
-	remove_trait = possessed
-	remove_trait = godofchaos
-	}}
+        give_nickname = nick_the_godofchaos
+        add_trait = godofchaos
+        add_trait = possessed
+
+	}
+    
+    lose_effect = {
+        remove_trait = possessed
+        remove_trait = godofchaos
+	}
+}
+
 ########################################################
 # EVIL GODDESS TITLES
 #########################################################
@@ -1815,52 +1111,21 @@ title_goddessofthemoon = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1870,15 +1135,17 @@ title_goddessofthemoon = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofthemoon
-	add_trait = goddessofthemoon
-	add_trait = gregarious
-		}
-lose_effect = {
-	
-	remove_trait = goddessofthemoon
-	remove_trait = gregarious
-	}}
+        give_nickname = nick_the_goddessofthemoon
+        add_trait = goddessofthemoon
+        add_trait = gregarious
+    }
+    
+    lose_effect = {
+        remove_trait = goddessofthemoon
+        remove_trait = gregarious
+	}
+}
+
 title_goddessofdestruction = {
 	dignity = 1
 	realm_in_name = no
@@ -1890,52 +1157,21 @@ title_goddessofdestruction = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -1946,17 +1182,19 @@ title_goddessofdestruction = {
 	
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofdestruction
-	add_trait = goddessofdestruction
-	add_trait = cruel
-	add_trait = strong
-			}
-lose_effect = {
-	remove_trait = goddessofdestruction
-	remove_trait = cruel
-	remove_trait = strong
+        give_nickname = nick_the_goddessofdestruction
+        add_trait = goddessofdestruction
+        add_trait = cruel
+        add_trait = strong
+	}
+    
+    lose_effect = {
+        remove_trait = goddessofdestruction
+        remove_trait = cruel
+        remove_trait = strong
 	}
 }
+
 title_goddessofdecadence = {
 	dignity = 1
 	realm_in_name = no
@@ -1968,52 +1206,21 @@ title_goddessofdecadence = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2023,15 +1230,17 @@ title_goddessofdecadence = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofdecadence
-	add_trait = goddessofdecadence
-	add_trait = greedy
-		}
-lose_effect = {
-	
-	remove_trait = goddessofdecadence
-	remove_trait = greedy
-	}}
+        give_nickname = nick_the_goddessofdecadence
+        add_trait = goddessofdecadence
+        add_trait = greedy
+    }
+    
+    lose_effect = {
+        remove_trait = goddessofdecadence
+        remove_trait = greedy
+	}
+}
+
 title_goddessofmurder = {
 	dignity = 1
 	realm_in_name = no
@@ -2043,52 +1252,21 @@ title_goddessofmurder = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2098,15 +1276,17 @@ title_goddessofmurder = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofmurder
-	add_trait = goddessofmurder
-	add_trait = cruel
-		}
-lose_effect = {
-	
-	remove_trait = goddessofmurder
-	remove_trait = cruel
-	}}
+        give_nickname = nick_the_goddessofmurder
+        add_trait = goddessofmurder
+        add_trait = cruel
+    }
+    
+    lose_effect = {
+        remove_trait = goddessofmurder
+        remove_trait = cruel
+	}
+}
+
 title_goddessofmanipulation = {
 	dignity = 1
 	realm_in_name = no
@@ -2118,52 +1298,21 @@ title_goddessofmanipulation = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2173,15 +1322,17 @@ title_goddessofmanipulation = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofmanipulation
-	add_trait = goddessofmanipulation
-	add_trait = genius
-		}
-lose_effect = {
-	
-	remove_trait = goddessofmanipulation
-	remove_trait = genius
-	}}
+        give_nickname = nick_the_goddessofmanipulation
+        add_trait = goddessofmanipulation
+        add_trait = genius
+    }
+    
+    lose_effect = {
+        remove_trait = goddessofmanipulation
+        remove_trait = genius
+	}
+}
+
 title_goddessoflust = {
 	dignity = 1
 	realm_in_name = no
@@ -2193,52 +1344,21 @@ title_goddessoflust = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2248,17 +1368,19 @@ title_goddessoflust = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessoflust
-	add_trait = goddessoflust
-	add_trait = lustful
-	add_trait = fair
-		}
-lose_effect = {
-	
-	remove_trait = goddessoflust
-	remove_trait = lustful
-	remove_trait = fair
-	}}
+        give_nickname = nick_the_goddessoflust
+        add_trait = goddessoflust
+        add_trait = lustful
+        add_trait = fair
+    }
+    
+    lose_effect = {
+        remove_trait = goddessoflust
+        remove_trait = lustful
+        remove_trait = fair
+	}
+}
+
 title_goddessoffire = {
 	dignity = 1
 	realm_in_name = no
@@ -2270,52 +1392,21 @@ title_goddessoffire = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2325,13 +1416,15 @@ title_goddessoffire = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessoffire
-	add_trait = goddessoffire
-		}
-lose_effect = {
-	
-	remove_trait = goddessoffire
-	}}
+        give_nickname = nick_the_goddessoffire
+        add_trait = goddessoffire
+    }
+    
+    lose_effect = {
+        remove_trait = goddessoffire
+	}
+}
+
 title_goddessofhunting = {
 	dignity = 1
 	realm_in_name = no
@@ -2343,52 +1436,21 @@ title_goddessofhunting = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 		}
 	}
 	
 	allowed_to_grant = {
-			OR = {
-				trait = Fallen_God
-				trait = Fallen_Goddess
-			}
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        OR = {
+            trait = fallen_god
+            trait = fallen_goddess
+        }
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2398,15 +1460,20 @@ title_goddessofhunting = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_goddessofhunting
-	add_trait = goddessofhunting
-	add_trait = hunter
-		}
-lose_effect = {
-	
-	remove_trait = goddessofhunting
-	remove_trait = hunter
-	}}
+        give_nickname = nick_the_goddessofhunting
+        add_trait = goddessofhunting
+        add_trait = hunter
+    }
+    
+    lose_effect = {	
+        remove_trait = goddessofhunting
+        remove_trait = hunter
+	}
+}
+
+########################################################
+# GOD KING/QUEEN
+#########################################################
 title_godking = {
 	dignity = 1
 	realm_in_name = no
@@ -2419,40 +1486,9 @@ title_godking = {
 	allowed_to_hold = {
 		is_adult = yes
 		is_married = yes
-		trait = God
+		trait = god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 			trait = kingofthegods
 			trait = queenofthegods
 			trait = evilking
@@ -2461,13 +1497,13 @@ title_godking = {
 	}
 	
 	allowed_to_grant = {
-			is_married = yes
-			trait = Goddess
-			trait = queenofthegods
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        is_married = yes
+        trait = goddess
+        trait = queenofthegods
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2477,13 +1513,15 @@ title_godking = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_kingofthegods
-	add_trait = kingofthegods
-		}
-lose_effect = {
-	
-	remove_trait = kingofthegods
-	}}
+        give_nickname = nick_the_kingofthegods
+        add_trait = kingofthegods
+    }
+    
+    lose_effect = {
+        remove_trait = kingofthegods
+	}
+}
+
 title_godqueen = {
 	dignity = 1
 	realm_in_name = no
@@ -2496,40 +1534,9 @@ title_godqueen = {
 	allowed_to_hold = {
 		is_adult = yes
 		is_married = yes
-		trait = Goddess
+		trait = goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 			trait = kingofthegods
 			trait = queenofthegods
 			trait = evilking
@@ -2538,13 +1545,13 @@ title_godqueen = {
 	}
 	
 	allowed_to_grant = {
-			is_married = yes
-			trait = God
-			trait = kingofthegods
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        is_married = yes
+        trait = god
+        trait = kingofthegods
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2554,13 +1561,15 @@ title_godqueen = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_queenofthegods
-	add_trait = queenofthegods
-		}
-lose_effect = {
-	
-	remove_trait = queenofthegods
-	}}
+        give_nickname = nick_the_queenofthegods
+        add_trait = queenofthegods
+    }
+    
+    lose_effect = {
+        remove_trait = queenofthegods
+	}
+}
+
 title_evilgodking = {
 	dignity = 1
 	realm_in_name = no
@@ -2573,40 +1582,9 @@ title_evilgodking = {
 	allowed_to_hold = {
 		is_adult = yes
 		is_married = yes
-		trait = Fallen_God
+		trait = fallen_god
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 			trait = kingofthegods
 			trait = queenofthegods
 			trait = evilking
@@ -2615,13 +1593,13 @@ title_evilgodking = {
 	}
 	
 	allowed_to_grant = {
-			is_married = yes
-			trait = Fallen_Goddess
-			trait = evilking
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        is_married = yes
+        trait = fallen_goddess
+        trait = evilking
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2631,13 +1609,15 @@ title_evilgodking = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_evilking
-	add_trait = evilking
-		}
-lose_effect = {
-	
-	remove_trait = evilking
-	}}
+        give_nickname = nick_the_evilking
+        add_trait = evilking
+    }
+    
+    lose_effect = {
+        remove_trait = evilking
+	}
+}
+
 title_evilgodqueen = {
 	dignity = 1
 	realm_in_name = no
@@ -2650,40 +1630,9 @@ title_evilgodqueen = {
 	allowed_to_hold = {
 		is_adult = yes
 		is_married = yes
-		trait = Fallen_Goddess
+		trait = fallen_goddess
 		NOT = {
-			trait = godoflight
-			trait = godofstrategy
-			trait = godoffortune
-			trait = godofsecrecy
-			trait = godofknowledge
-			trait = godoffertility
-			trait = godoftheseas
-			trait = godoffestivals
-			trait = godofdarkness
-			trait = godofwar
-			trait = godofgreed
-			trait = godofthedead
-			trait = godofdarkknowledge
-			trait = godofadultery
-			trait = godofearthquakes
-			trait = godofchaos
-			trait = goddessofthesun
-			trait = goddessofprotection
-			trait = goddessofharvest
-			trait = goddessofsilence
-			trait = goddessofwisdom
-			trait = goddessoflove
-			trait = goddessofrain
-			trait = goddessofwine
-			trait = goddessofthemoon
-			trait = goddessofdestruction
-			trait = goddessofdecadence
-			trait = goddessofmurder
-			trait = goddessofmanipulation
-			trait = goddessoflust
-			trait = goddessoffire
-			trait = goddessofhunting
+			has_minor_god_title = yes
 			trait = kingofthegods
 			trait = queenofthegods
 			trait = evilking
@@ -2692,13 +1641,13 @@ title_evilgodqueen = {
 	}
 	
 	allowed_to_grant = {
-			is_married = yes
-			trait = Fallen_God
-			trait = evilking
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+        is_married = yes
+        trait = fallen_god
+        trait = evilking
+        OR = {
+            is_feudal = yes
+            is_tribal = yes
+        }
 		primary_title = {
 			OR = {
 				tier = king
@@ -2708,10 +1657,11 @@ title_evilgodqueen = {
 	}
 	
 	gain_effect = {
-	give_nickname = nick_the_evilqueen
-	add_trait = evilqueen
-		}
-lose_effect = {
-	
-	remove_trait = evilqueen
-	}}
+        give_nickname = nick_the_evilqueen
+        add_trait = evilqueen
+    }
+    
+    lose_effect = {	
+        remove_trait = evilqueen
+	}
+}
