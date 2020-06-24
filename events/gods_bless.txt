@@ -458,7 +458,7 @@ character_event = {
     }
     #Ring of Trickery
     option = {
-        name = EVTOPIgodsbless.100
+        name = EVTOPTIgodsbless.100
         event_target:gods_artifact_target = {
             add_artifact = divine_trick
             new_artifact = {

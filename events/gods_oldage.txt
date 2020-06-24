@@ -33,7 +33,7 @@ character_event = {
 	}
 
 	option = {
-		name =EVTOPTAthegodsage.1
+		name =EVTOPTAgodsage.1
 		death = {
 			death_reason = death_natural
 		}
