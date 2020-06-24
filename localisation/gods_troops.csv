@@ -1,30 +1,31 @@
-angels;Angels;;;;;;,,,,
-angels_desc;Divine Warriors;;;;;;,,,,
-angels_modifier;Divine Warriors;;;;;;,,,,
-angels_offensive;Angels Offensive;;;;;;,,,,
-angels_defensive;Angels Defensive;;;;;;,,,,
-angels_morale;Angels Morale;;;;;;,,,,
-youkai;Youkai;;;;;;,,,,
-youkai_desc;Youkai;;;;;;,,,,
-youkai_modifier;Youkai;;;;;;,,,,
-youkai_offensive;Youkai Offensive;;;;;;,,,,
-youkai_defensive;Youkai Defensive;;;;;;,,,,
-youkai_morale;Youkai Morale;;;;;;,,,,
-dark_angels;Dark Angels;;;;;;,,,,
-dark_angels_desc;Divine Warriors;;;;;;,,,,
-dark_angels_modifier;Divine Warriors;;;;;;,,,,
-dark_angels_offensive;Dark Angels Offensive;;;;;;,,,,
-dark_angels_defensive;Dark Angels Defensive;;;;;;,,,,
-dark_angels_morale;Dark Angels Morale;;;;;;,,,,
-jotnar;Jutnar;;;;;;,
-jotnar_desc;Norse Giants;;;;;;,
-jotnar_modifier;Norse Giants;;;;;;,
-jotnar_offensive;Jutnar Offensive;;;;;;,
-jotnar_defensive;Jutnar Defensive;;;;;;,
-jotnar_morale;Jutnar Morale;;;;;;,
-titans;Titans;;;;;;,
-titans_desc;Olympic Titans;;;;;;,
-titans_modifier;Olympic Titans;;;;;;,
-titans_offensive;Titan Offensive;;;;;;,
-titans_defensive;Titan Defensive;;;;;;,
-titans_morale;Titan Morale;;;;;;,
+#CODE;ENGLISH;FRENCH;GERMAN;SPANISH;;;;;;;;;x
+angels;Angels;;;;;;;;;x
+angels_desc;Divine Warriors;;;;;;;;;x
+angels_modifier;Divine Warriors;;;;;;;;;x
+angels_offensive;Angels Offensive;;;;;;;;;x
+angels_defensive;Angels Defensive;;;;;;;;;x
+angels_MORALE;Angels Morale;;;;;;;;;x
+youkai;Youkai;;;;;;;;;x
+youkai_desc;Youkai;;;;;;;;;x
+youkai_modifier;Youkai;;;;;;;;;x
+youkai_offensive;Youkai Offensive;;;;;;;;;x
+youkai_defensive;Youkai Defensive;;;;;;;;;x
+youkai_MORALE;Youkai Morale;;;;;;;;;x
+dark_angels;Dark Angels;;;;;;;;;x
+dark_angels_desc;Divine Warriors;;;;;;;;;x
+dark_angels_modifier;Divine Warriors;;;;;;;;;x
+dark_angels_offensive;Dark Angels Offensive;;;;;;;;;x
+dark_angels_defensive;Dark Angels Defensive;;;;;;;;;x
+dark_angels_MORALE;Dark Angels Morale;;;;;;;;;x
+jotnar;Jutnar;;;;;;;;;x
+jotnar_desc;Norse Giants;;;;;;;;;x
+jotnar_modifier;Norse Giants;;;;;;;;;x
+jotnar_offensive;Jutnar Offensive;;;;;;;;;x
+jotnar_defensive;Jutnar Defensive;;;;;;;;;x
+jotnar_MORALE;Jutnar Morale;;;;;;;;;x
+titans;Titans;;;;;;;;;x
+titans_desc;Olympic Titans;;;;;;;;;x
+titans_modifier;Olympic Titans;;;;;;;;;x
+titans_offensive;Titan Offensive;;;;;;;;;x
+titans_defensive;Titan Defensive;;;;;;;;;x
+titans_MORALE;Titan Morale;;;;;;;;;x

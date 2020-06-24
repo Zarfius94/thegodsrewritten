@@ -1,3 +1,4 @@
+#CODE;ENGLISH;FRENCH;GERMAN;SPANISH;;;,,,,
 PIETY_GOD;Light;;;;;;,,,,
 god_text;The Light;;;;;;,,,,
 the_light;Good;;;;;;,,,,
@@ -12,8 +13,8 @@ STAT_PIETY_PIETY_GOD;Light;;;;;;,,,,
 STAT_PIETY_PIETY_EVILGOD;Darkness;;;;;;,,,,
 STAT_PIETY_DESC_PIETY_GOD;Concentrated Light;;;;;;,,,,
 STAT_PIETY_DESC_PIETY_EVILGOD;Pure Darkness;;;;;;,,,,
-STAT_PIETY_MENU_PIETY_GOD;Divine Power;;;;;;;;;;;;;x
-STAT_PIETY_MENU_PIETY_EVILGOD;Divine Power;;;;;;;;;;;;;x,
+STAT_PIETY_MENU_PIETY_GOD;Divine Power;;;;;;;;;;;;;
+STAT_PIETY_MENU_PIETY_EVILGOD;Divine Power;;;;;;;;;;;;;
 MONTHLY_PIETY_PIETY_GOD;Test;;;;;;,,,,
 MONTHLY_PIETY_PIETY_EVILGOD;Test;;;;;;,,,,
 god_government;God Government;;;;;;,,,,
