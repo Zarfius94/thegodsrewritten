@@ -14,6 +14,7 @@ castle = {
 			FROM = {
 				culture = High_God
 			}
+			adult_deity = yes
 		}
 		gold_cost = 1000
 		build_time = 100
@@ -28,6 +29,7 @@ castle = {
 			FROM = {
 				culture = High_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_High_God_1
 		gold_cost = 2000
@@ -45,6 +47,7 @@ castle = {
 			FROM = {
 				culture = High_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_High_God_2
 		gold_cost = 4000
@@ -62,6 +65,7 @@ castle = {
 			FROM = {
 				culture = High_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_High_God_3
 		gold_cost = 8000
@@ -79,6 +83,7 @@ castle = {
 			FROM = {
 				culture = Eastern_God
 			}
+			adult_deity = yes
 		}
 		gold_cost = 1000
 		build_time = 100
@@ -93,6 +98,7 @@ castle = {
 			FROM = {
 				culture = Eastern_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Eastern_God_1
 		gold_cost = 2000
@@ -110,6 +116,7 @@ castle = {
 			FROM = {
 				culture = Eastern_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Eastern_God_2
 		gold_cost = 4000
@@ -127,6 +134,7 @@ castle = {
 			FROM = {
 				culture = Eastern_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Eastern_God_3
 		gold_cost = 8000
@@ -144,6 +152,7 @@ castle = {
 			FROM = {
 				culture = Fallen_God
 			}
+			adult_deity = yes
 		}
 		gold_cost = 1000
 		build_time = 100
@@ -159,6 +168,7 @@ castle = {
 			FROM = {
 				culture = Fallen_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Evil_God_1
 		gold_cost = 2000
@@ -176,6 +186,7 @@ castle = {
 			FROM = {
 				culture = Fallen_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Evil_God_2
 		gold_cost = 4000
@@ -193,6 +204,7 @@ castle = {
 			FROM = {
 				culture = Fallen_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Evil_God_3
 		gold_cost = 8000
@@ -210,6 +222,7 @@ castle = {
 			FROM = {
 				culture = Norse_God
 			}
+			adult_deity = yes
 		}
 		gold_cost = 1000
 		build_time = 100
@@ -225,6 +238,7 @@ castle = {
 			FROM = {
 				culture = Norse_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Norse_God_1
 		gold_cost = 2000
@@ -242,6 +256,7 @@ castle = {
 			FROM = {
 				culture = Norse_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Norse_God_2
 		gold_cost = 4000
@@ -259,6 +274,7 @@ castle = {
 			FROM = {
 				culture = Norse_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Norse_God_3
 		gold_cost = 8000
@@ -276,6 +292,7 @@ castle = {
 			FROM = {
 				culture = Olympic_God
 			}
+			adult_deity = yes
 		}
 		gold_cost = 1000
 		build_time = 100
@@ -291,6 +308,7 @@ castle = {
 			FROM = {
 				culture = Olympic_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Olympic_God_1
 		gold_cost = 2000
@@ -308,6 +326,7 @@ castle = {
 			FROM = {
 				culture = Olympic_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Olympic_God_2
 		gold_cost = 4000
@@ -325,6 +344,7 @@ castle = {
 			FROM = {
 				culture = Olympic_God
 			}
+			adult_deity = yes
 		}
 		upgrades_from = ca_culture_Olympic_God_3
 		gold_cost = 8000

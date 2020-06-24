@@ -200,6 +200,7 @@ character_event = {
 			add_trait = kind
 			remove_trait = cruel
 			remove_trait = deceitful
+			set_character_flag = becomegodstep1
 		}
 	}
 }
@@ -224,16 +225,11 @@ character_event = {
             trait = strong
         }
 		trait = hasmagicseer
+		has_character_flag = becomegodstep1
         OR = {
-            AND = {
-                trait = kind
-                trait = studentlight
-            }
-            AND = {
-                trait = cruel
-                trait = studentdark
-            }
-        }
+			trait = studentlight
+			trait = studentdark
+		}
 	}
     
 	mean_time_to_happen = {
@@ -244,7 +240,9 @@ character_event = {
 		name = EVTOPTAgodsbec.5
 		random = { 
 			chance = 60 
-			add_trait = strong 
+			add_trait = strong
+			clr_character_flag = becomegodstep1
+			set_character_flag = becomegodstep2
 		}
 	}
 }
@@ -270,8 +268,7 @@ character_event = {
         }
 		trait = hasmagicseer
 		trait = studentlight
-		trait = kind
-		trait = strong
+		has_character_flag = becomegodstep2
 	}
     
 	mean_time_to_happen = {
@@ -284,6 +281,7 @@ character_event = {
 			chance = 50 
 			add_trait = internallight
 			remove_trait = studentlight
+			clr_character_flag = becomegodstep2
         }
 	}
 }
@@ -306,10 +304,7 @@ character_event = {
             trait = internaldarkness
             trait = deniedseer  
         }
-		trait = hasmagicseer
 		trait = internallight
-		trait = kind
-		trait = strong
 	}
 
 	mean_time_to_happen = {
@@ -366,6 +361,7 @@ character_event = {
 			chance = 70 
 			remove_trait = kind
 			add_trait = cruel
+			set_character_flag = becomegodstep1
 		}
 	}
 }
@@ -391,8 +387,7 @@ character_event = {
         }
 		trait = hasmagicseer
 		trait = studentdark
-		trait = cruel
-		trait = strong
+		has_character_flag = becomegodstep2
 	}
     
 	mean_time_to_happen = {
@@ -405,6 +400,7 @@ character_event = {
 			chance = 50 
 			add_trait = internaldarkness
 			remove_trait = studentdark
+			clr_character_flag = becomegodstep2
         }
 	}
 }
@@ -429,8 +425,6 @@ character_event = {
         }
 		trait = hasmagicseer
 		trait = internaldarkness
-		trait = cruel
-		trait = strong
 	}
 
 	mean_time_to_happen = {

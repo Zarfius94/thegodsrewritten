@@ -854,4 +854,69 @@ targetted_decisions = {
 			factor = 0
 		}
 	}
+
+	demotion = {
+		filter = home_court
+
+		from_potential = {
+			adult_deity = yes
+			ai = no	
+		}
+
+		potential = {
+			OR = {
+				adult_deity = yes
+				trait = demi_god
+				trait = demi_goddess
+			}
+			prisoner = yes
+		}
+
+		allow = {
+			OR = {
+				has_game_rule = {
+					name = powers
+					value = free
+				}
+				from = {
+					piety = 250
+				}
+			}
+		}
+
+		effect = {
+			from = { 
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            name = powers
+                            value = normal
+                        }
+                    }
+                    from = {
+                        piety = -250
+                    }
+				}
+			}
+
+			hidden_tooltip = {
+				remove_trait = god
+				remove_trait = goddess
+				remove_trait = fallen_god
+				remove_trait = fallen_goddess
+				remove_trait = demi_god
+				remove_trait = demi_goddess
+			}
+		}
+
+		revoke_allowes = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		ai_target_filter = court
+	}
 }

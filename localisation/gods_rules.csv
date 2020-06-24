@@ -32,3 +32,8 @@ RULE_TRAITCAP_ONLYGODS;Remove For Gods;;;;;;
 RULE_TRAITCAP_ONLYGODS_DESC;Removes the personality trait cap for gods. Non gods still have random events fire for possessing 5 or more.;;;;;;
 RULE_TRAITCAP_ALL;Remove For All;;;;;;
 RULE_TRAITCAP_ALL_DESC;Removes the personality trait cap for everyone.;;;;;;
+RULE_OLDAGE;§GGODS§!: Immortality;;;;;;
+RULE_OLDAGE_OFF;Default;;;;;;
+RULE_OLDAGE_OFF_DESC;Gods are immortal, and can only die by battle, assassination, or event.;;;;;;
+RULE_OLDAGE_ON;Off;;;;;;
+RULE_OLDAGE_ON_DESC;Gods die from old age just as mortals do.;;;;;;
