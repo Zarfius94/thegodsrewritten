@@ -1,0 +1,481 @@
+###########################################
+#                                         #
+# Gods Mod (Blessings/Curses Events)      #
+#                                         #
+# ID godsbless.1- godsbless.999           #
+#                                         #
+###########################################
+
+namespace = godsbless
+
+#Bless a character
+character_event = {
+    id = godsbless.1
+    desc = EVTDESCgodsbless.1
+    picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+    
+    is_triggered_only = yes
+    
+    #strong
+    option = {
+        name = EVTOPTAgodsbless.1
+        trigger = {
+            from = {
+                NOT = {
+                    trait = strong
+                }
+            }
+        }
+        from = {
+            add_trait = strong
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #smart
+    option = {
+        name = EVTOPTBgodsbless.1
+        trigger = {
+            from = {
+                NOR = {
+                    trait = quick
+                    trait = genius
+                }
+            }
+        }
+        from = {
+            add_trait = quick
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #attractive
+    option = {
+        name = EVTOPTCgodsbless.1
+        trigger = {
+            from = {
+                NOT = {
+                    trait = fair
+                }
+            }
+        }
+        from = {
+            add_trait = fair
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #long live
+    option = {
+        name = EVTOPTDgodsbless.1
+        trigger = {
+            from = {
+                NOT = {
+                    has_character_flag = lifebless
+                }
+            }
+        }
+        from = {
+            health = 15
+            set_character_flag = lifebless
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #immortal
+    option = {
+        name = EVTOPTEgodsbless.1
+        trigger = {
+            from = {
+                trait = strong
+                OR = {
+                    trait = quick
+                    trait = genius
+                }
+                trait = fair
+                has_character_flag = lifebless
+            }
+        }
+        from = {
+            add_trait = immortal
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #demigod
+    option = {
+        name = EVTOPTEgodsbless.1
+        trigger = {
+            from = {
+                trait = strong
+                OR = {
+                    trait = quick
+                    trait = genius
+                    }
+                trait = fair
+                has_character_flag = lifebless
+            }
+        }
+        from = {
+            if = {
+                limit = {
+                    is_female = yes
+                }
+                add_trait = young_demi_goddess
+            }
+            else = {
+                add_trait = young_demi_god
+            }
+            hidden_tooltip = {
+                remove_trait = god_blood
+            }
+        }
+        if = {
+            limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+            piety = -250
+        }
+    }
+    
+    #never mind
+    option = {
+		name = EVTOPTGgodsbless.1
+	}
+}
+
+#Curse a character
+character_event = {
+    id = godsbless.2
+    desc = EVTDESCgodsbless.2
+    picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+    
+	is_triggered_only = yes
+    
+    #weak
+    option = {
+		name = EVTOPTAgodsbless.2
+		trigger = {
+			from = {
+                NOT = {
+                    trait = weak
+                }
+            }
+		}
+		from = {
+            add_trait = weak
+        }
+		if = {
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			piety = -250
+		}
+	}
+    
+    #slow
+	option = {
+		name = EVTOPTBgodsbless.2
+		trigger = {
+			from = {
+                NOR = {
+                    trait = slow
+                    trait = imbecile
+                }
+            }
+		}
+		from = {
+            add_trait = slow
+        }
+		if = {
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			piety = -250
+		}
+	}
+    
+    #ugly
+	option = {
+		name = EVTOPTCgodsbless.2
+		trigger = {
+			from = {
+                NOT = {
+                    trait = ugly
+                }
+            }
+		}
+		from = {
+            add_trait = ugly
+        }
+		if = {
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			piety = -250	
+		}
+	}
+    
+    #balls
+	option = {
+		name = EVTOPTDgodsbless.2
+		trigger = {
+			from = {
+                NOT = {
+                    trait = eunuch
+                }
+                is_female = no
+            }
+		}
+		from = {
+            add_trait = eunuch
+        }
+		if = {
+			limit = {
+                has_game_rule = {
+                    name = powers
+                    value = normal
+                }
+            }
+			piety = -250	
+		}
+	}
+}
+
+#divine visitation
+character_event = {
+	id = godsbless.3
+	desc = EVTDESCgodsbless.3
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+    
+	is_triggered_only = yes
+   
+	option = {
+		name = EVTOPTAgodsbless.3
+		trigger = {
+			religion = the_light
+		}
+		FROM = {
+			religion = the_light
+			add_trait = zealous
+			add_trait = studentlight
+		}
+	}
+	option = {
+		name = EVTOPTBgodsbless.3
+		trigger = {
+			religion = the_darkness
+		}
+		FROM = {
+			religion = the_darkness
+			add_trait = zealous
+			add_trait = studentdark
+		}
+	}
+}
+
+#Artifact creation
+character_event = {
+    id = godsbless.100
+    desc = EVTDESCgodsbless.100
+    picture = GFX_evt_god_01
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    trigger = {
+    }
+
+    #Radiant Sword
+    option = {
+        name = EVTOPTAgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_sword
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Radiant Sword"
+            }
+        }
+    }
+    #World-Hewing Axe
+    option = {
+        name = EVTOPTBgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_axe
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s World-Hewing Axe"
+            }
+        }
+    }
+    #Flying Hammer
+    option = {
+        name = EVTOPTCgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_hammer
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Flying Hammer"
+            }
+        }
+    }
+    option = {
+        name = EVTOPTDgodsbless.100
+        character_event = {
+            id = godsbless.101
+        }
+    }
+}
+
+character_event = {
+    id = godsbless.101
+    desc = EVTDESCgodsbless.100
+    picture = GFX_evt_god_01
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    trigger = {
+    }
+
+    #Spear of Destiny
+    option = {
+        name = EVTOPTEgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_spear
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Spear of Destiny"
+            }
+        }
+    }
+    #Divine Aegis
+    option = {
+        name = EVTOPTFgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_shield
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Divine Aegis"
+            }
+        }
+    }
+    #Symbol
+    option = {
+        name = EVTOPTGgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_symbol
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "Symbol of [gods_artifact_target.GetFirstName]"
+            }
+        }
+    }
+    option = {
+        name = EVTOPTDgodsbless.100
+        character_event = {
+            id = godsbless.102
+        }
+    }
+}
+
+character_event = {
+    id = godsbless.102
+    desc = EVTDESCgodsbless.100
+    picture = GFX_evt_god_01
+    border = GFX_event_normal_frame_economy
+
+    is_triggered_only = yes
+
+    trigger = {
+    }
+
+    #Horn of Plenty
+    option = {
+        name = EVTOPTHgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_horn
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Horn of Plenty"
+            }
+        }
+    }
+    #Ring of Trickery
+    option = {
+        name = EVTOPTIgodsbless.100
+        event_target:gods_artifact_target = {
+            add_artifact = divine_trick
+            new_artifact = {
+                set_original_owner = event_target:gods_artifact_gifter
+                set_name = "[gods_artifact_target.GetFirstName]'s Ring of Trickery"
+            }
+        }
+    }
+    #Back to start
+    option = {
+        name = EVTOPTJgodsbless.100
+        character_event = {
+            id = godsbless.100
+        }
+    }
+    #Never mind
+    option = {
+        name = EVTOPTKgodsbless.100
+    }
+}

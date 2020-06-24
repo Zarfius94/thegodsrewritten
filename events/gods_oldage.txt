@@ -1,0 +1,41 @@
+###########################################
+#                                         #
+# Gods Mod (God age events)               #
+#                                         #
+# ID godsage.1- godsage.999               #
+#                                         #
+###########################################
+
+namespace = godsage
+
+character_event = {
+	id = godsage.1
+	desc = EVTDESCgodsage.1
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	min_age = 60
+	ai = yes
+	
+	trigger = {
+		OR = {
+			adult_deity = yes
+			angel_beeing = yes
+			mythic_beeing = yes
+		}
+		has_game_rule = {
+			name = oldage
+			value = on
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name =EVTOPTAgodsage.1
+		death = {
+			death_reason = death_natural
+		}
+	}
+}

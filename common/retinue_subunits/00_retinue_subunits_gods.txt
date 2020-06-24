@@ -20,6 +20,10 @@ RETTYPE_ANGELSA =
 			culture = Fallen_God
 		}
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_ANGELSB = 
 {
@@ -33,6 +37,10 @@ RETTYPE_ANGELSB =
 			culture = High_God
 			culture = Fallen_God
 		}
+	}
+
+	modifier = {
+		
 	}
 }
 RETTYPE_ANGELSC = 
@@ -48,6 +56,10 @@ RETTYPE_ANGELSC =
 			culture = Fallen_God
 		}
 	}
+
+	modifier = {
+		
+	}
 }
 
 RETTYPE_YOUKAIA = 
@@ -60,6 +72,10 @@ RETTYPE_YOUKAIA =
 	potential = {
 		culture = Eastern_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_YOUKAIB = 
 {
@@ -71,6 +87,10 @@ RETTYPE_YOUKAIB =
 	potential = {
 		culture = Eastern_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_YOUKAIC = 
 {
@@ -81,6 +101,10 @@ RETTYPE_YOUKAIC =
 	
 	potential = {
 		culture = Eastern_God
+	}
+
+	modifier = {
+		
 	}
 }
 #RETTYPE_DARKANGELSA = 
@@ -126,6 +150,10 @@ RETTYPE_JOTNARA =
 	potential = {
 		culture = Norse_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_JOTNARB = 
 {
@@ -136,6 +164,10 @@ RETTYPE_JOTNARB =
 	
 	potential = {
 		culture = Norse_God
+	}
+
+	modifier = {
+		
 	}
 }
 RETTYPE_JOTNARC = 
@@ -148,6 +180,10 @@ RETTYPE_JOTNARC =
 	potential = {
 		culture = Norse_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_JOTNARD = 
 {
@@ -158,6 +194,10 @@ RETTYPE_JOTNARD =
 	
 	potential = {
 		culture = Norse_God
+	}
+
+	modifier = {
+		
 	}
 }
 RETTYPE_TITANA = 
@@ -170,6 +210,10 @@ RETTYPE_TITANA =
 	potential = {
 		culture = Olympic_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_TITANB = 
 {
@@ -180,6 +224,10 @@ RETTYPE_TITANB =
 	
 	potential = {
 		culture = Olympic_God
+	}
+
+	modifier = {
+		
 	}
 }
 RETTYPE_TITANC = 
@@ -192,6 +240,10 @@ RETTYPE_TITANC =
 	potential = {
 		culture = Olympic_God
 	}
+
+	modifier = {
+		
+	}
 }
 RETTYPE_TITAND = 
 {
@@ -202,5 +254,9 @@ RETTYPE_TITAND =
 	
 	potential = {
 		culture = Olympic_God
+	}
+
+	modifier = {
+		
 	}
 }

@@ -63,6 +63,21 @@ powers = {
 	}
 }
 
+oldage = {
+	name ="RULE_OLDAGE"
+	group = "RULE_GROUP_GODS"
+	option = {
+		name = off
+		text = "RULE_OLDAGE_OFF"
+		desc = "RULE_OLDAGE_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OLDAGE_ON"
+		desc = "RULE_OLDAGE_ON_DESC"
+	}
+}
+
 traitcap = {
     name = "RULE_TRAITCAP"
     group = "RULE_GROUP_GODS"

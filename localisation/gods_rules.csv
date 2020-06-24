@@ -1,15 +1,16 @@
+#CODE;ENGLISH;FRENCH;GERMAN;SPANISH;;;,,,,
 RULE_GROUP_GODS;The Gods Mod;;;;;;
-RULE_AUTOGOD;§GGODS§!: God Party Mode;;;;;;
+RULE_AUTOGOD;ï¿½GGODSï¿½!: God Party Mode;;;;;;
 RULE_AUTOGOD_OFF;Default;;;;;;
 RULE_AUTOGOD_OFF_DESC;Only the player becomes a god.;;;;;;
 RULE_AUTOGOD_ON;God Party!;;;;;;
 RULE_AUTOGOD_ON_DESC;All adult AI independent rulers at peace are elevated to godhood (and sometimes Fallen Gods if the War is on).;;;;;;
-RULE_REGOD;§GGODS§!: Repeat God Ascension Chain;;;;;;
+RULE_REGOD;ï¿½GGODSï¿½!: Repeat God Ascension Chain;;;;;;
 RULE_REGOD_ON;Default;;;;;;
 RULE_REGOD_ON_DESC;All non-god player characters receive the event chain to become a god.;;;;;;
 RULE_REGOD_OFF;Off;;;;;;
 RULE_REGOD_OFF_DESC;Only the first non-god player character receives the event chain to become a god.;;;;;;
-RULE_POWERS;§GGODS§!: God Powers Cost;;;;;;
+RULE_POWERS;ï¿½GGODSï¿½!: God Powers Cost;;;;;;
 RULE_POWERS_NORMAL;Default;;;;;;
 RULE_POWERS_NORMAL_DESC;God powers cost the normal amount of piety.;;;;;;
 RULE_POWERS_FREE;Omnipotent;;;;;;
@@ -20,8 +21,8 @@ RULE_WAR_OFF;No War;;;;;;,,,,,
 RULE_WAR_NOPE_DESC;Gods live among mortals, worshipping as they do.  This setting turns off auto-conversion events.;;;;;;
 RULE_WAR_JUSTGOOD;Only Good;;;;;;,,,,,
 RULE_WAR_JUSTGOOD_DESC;Only Good gods exist.  This setting turns off auto-conversion to Evil religion and Evil God.;;;;;;,,,,,
-RULE_WARTOGGLE;§GGODS§!: War of the Gods;;;;;;,,,,,
-RULE_TRAITCAP;§GGODS§!: Personality trait cap;;;;;;
+RULE_WARTOGGLE;ï¿½GGODSï¿½!: War of the Gods;;;;;;,,,,,
+RULE_TRAITCAP;ï¿½GGODSï¿½!: Personality trait cap;;;;;;
 RULE_TRAITCAP_NORMAL;Normal;;;;;;
 RULE_TRAITCAP_NORMAL_DESC;Random events to remove personality traits will fire for characters possessing 6 or more.;;;;;;
 RULE_TRAITCAP_DOUBLE;Double Cap (All);;;;;;
@@ -32,3 +33,8 @@ RULE_TRAITCAP_ONLYGODS;Remove For Gods;;;;;;
 RULE_TRAITCAP_ONLYGODS_DESC;Removes the personality trait cap for gods. Non gods still have random events fire for possessing 5 or more.;;;;;;
 RULE_TRAITCAP_ALL;Remove For All;;;;;;
 RULE_TRAITCAP_ALL_DESC;Removes the personality trait cap for everyone.;;;;;;
+RULE_OLDAGE;ï¿½GGODSï¿½!: Immortality;;;;;;
+RULE_OLDAGE_OFF;Default;;;;;;
+RULE_OLDAGE_OFF_DESC;Gods are immortal, and can only die by battle, assassination, or event.;;;;;;
+RULE_OLDAGE_ON;Off;;;;;;
+RULE_OLDAGE_ON_DESC;Gods die from old age just as mortals do.;;;;;;

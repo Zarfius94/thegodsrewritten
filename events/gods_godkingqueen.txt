@@ -1,0 +1,65 @@
+###########################################
+#                                         #
+# Gods Mod (Gods king/queen events)       #
+#                                         #
+# ID godskq.1- godskq.999                 #
+#                                         #
+###########################################
+
+namespace = godskq
+
+character_event = {
+	id = godskq.1
+	desc = EVTDESCgodskq.1
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgodskq.1
+		add_trait = kingofthegods
+		give_nickname = nick_the_kingofthegods
+	}
+}
+
+character_event = {
+	id = godskq.2
+	desc = EVTDESCgodskq.2
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgodskq.2
+		add_trait = queenofthegods
+		give_nickname = nick_the_queenofthegods
+	}
+}
+
+character_event = {
+	id = godskq.3
+	desc = EVTDESCgodskq.3
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgodskq.1
+		add_trait = evilking
+		give_nickname = nick_the_evilking
+	}
+}
+
+character_event = {
+	id = godskq.4
+	desc = EVTDESCgodskq.4
+	picture = GFX_evt_god_01
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgodskq.2
+		add_trait = evilqueen
+		give_nickname = nick_the_evilqueen
+	}
+}

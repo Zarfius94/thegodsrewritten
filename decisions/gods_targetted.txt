@@ -1,0 +1,922 @@
+# Targetted decisions are possible vs _all_ other characters and shown are in the Diplomacy View, not the Intrigue View. The taker is in the FROM scope.
+#
+# filter = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] (self MUST be set for decisions targetting only the taker, the other filter types can be set to lessen CPU load)
+# #ai_target_filter  = [self/court/home_court/vassals/sub_realm/realm/dynasty/all] (which characters for which the AI evaluates the decision.)
+#	court: all characters in the AI's host court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	home_court: all characters in the AI's home court, including prisoners, and characters currently away (wards, prisoners, etc)
+#	vassals: direct vassal rulers of the AI's employer
+#	sub_realm: all characters below the AI's employer
+#	realm: all characters in the same top realm as the AI
+#	dynasty: all members of the same dynasty (including the dead!)
+#	all: all living characters (Avoid if possible. VERY CPU-HEAVY!)
+#	
+
+targetted_decisions = {
+    divine_conception = {
+        from_potential = {
+            OR = {
+                trait = god
+                trait = fallen_god
+            }
+            ai = no
+        }
+        potential = {
+            NOR = {
+                trait = goddess
+                trait = fallen_goddess
+                trait = young_goddess
+                trait = young_fallen_goddess
+            }
+            is_female = yes
+            age = 16
+        }
+        allow = {
+            OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 100
+                }
+			}
+            is_pregnant = no
+        }
+        
+        effect = {
+			ROOT = {
+                impregnate_cuckoo = FROM
+            }
+            if = {
+				limit = {
+                    has_game_rule = {
+                        name = powers
+                        value = normal
+                    }
+                }
+				FROM = {
+                    piety = -100
+                }
+            }	
+        }
+
+		ai_will_do = {
+			factor = 0
+		}
+        
+        ai_target_filter = court
+    }
+    
+    divine_seduction = {
+		filter = all
+        ai_target_filter = court
+        
+		from_potential = {
+			religion_group = god_group
+			OR = {
+				trait = goddess
+				trait = fallen_goddess
+				}
+			ai = no
+			is_pregnant = no
+		}
+        
+		potential = {
+			NOR = {
+                trait = god
+                trait = fallen_god
+                trait = young_god
+                trait = young_fallen_god
+            }
+			is_female = no
+			age = 16
+		}
+        
+		allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 25
+                }
+			}
+		}
+        
+		effect = {
+            FROM = {
+                impregnate = ROOT
+            }
+            if = {
+                limit = { 
+                    has_game_rule = {
+                        name = powers
+                        value = normal
+                    }
+                }
+                from = {
+                    piety = -25
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    god_duel = {
+        ai_target_filter = rivals
+        
+        from_potential = {
+            is_adult = yes
+            prisoner = no
+            has_regent = no
+            has_dlc = "Way of Life"
+            OR = {
+                adult_deity = yes
+                trait = demi_god
+                trait = demi_goddess
+            }
+        }
+        
+        potential = {
+            is_adult = yes
+            prisoner = no
+            OR = {
+                adult_deity = yes
+                trait = demi_god
+                trait = demi_goddess
+            }
+            NOT = {
+                character = FROM
+            }
+			NOT = {
+                trait = incapable
+            }
+        }
+        
+        allow = {
+        }
+        
+        effect = {
+            hidden_tooltip = {
+                character_event = {
+                    id = WoL.11000
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_character_modifier = declined_prestige_duel_timer
+			}
+			modifier = {
+				factor = 0.01
+			}
+		}
+    }
+    
+    god_king = {
+		is_high_prio = yes
+		filter = self
+        ai_target_filter = self
+		
+		potential = {
+			is_adult = yes
+			is_ruler = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { 
+				trait = kingofthegods
+				trait = queenofthegods
+				trait = evilking
+				trait = evilqueen
+			}
+			prisoner = no
+			trait = god
+			has_regent = no
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = {
+                    id = godskq.1
+                }
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    god_queen = {
+		is_high_prio = yes
+		filter = self
+        ai_target_filter = self
+		
+		potential = {
+			is_adult = yes
+			is_ruler = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { 
+				trait = kingofthegods
+				trait = queenofthegods
+				trait = evilking
+				trait = evilqueen
+			}
+			prisoner = no
+			trait = goddess
+			has_regent = no
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = {
+                    id = godskq.2
+                }
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	evilgod_king = {
+		is_high_prio = yes
+		filter = self
+        ai_target_filter = self
+		
+		potential = {
+			is_adult = yes
+			is_ruler = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { 
+				trait = kingofthegods
+				trait = queenofthegods
+				trait = evilking
+				trait = evilqueen
+			}
+			prisoner = no
+			trait = fallen_god
+			has_regent = no
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = {
+                    id = godskq.3
+                }
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+	evilgod_queen = {
+		is_high_prio = yes
+		filter = self
+        ai_target_filter = self
+		
+		potential = {
+			is_adult = yes
+			is_ruler = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+			NOT = { 
+				trait = kingofthegods
+				trait = queenofthegods
+				trait = evilking
+				trait = evilqueen
+			}
+			prisoner = no
+			trait = fallen_goddess
+			has_regent = no
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = {
+                    id = godskq.4
+                }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    smite = {
+        ai_target_filter = court
+        filter = all
+        
+        from_potential = {
+            ai = no
+            adult_deity = yes
+        }
+        
+        potential = {
+            NOT = {
+                character = FROM
+            }
+            NOT = {
+                adult_deity = yes
+            }
+        }
+        
+        allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 250
+                }
+			}
+		}
+        
+        effect = {
+            ROOT = {
+                death = {
+                    death_reason = smite_death
+                    killer = FROM
+                }
+            }
+            if = {
+                limit = {
+                    has_game_rule = {
+                        name = powers
+                        value = normal
+                    }
+                }
+                from = {
+                    piety = -250
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    divine_healing = {
+		filter = all_including_me
+        ai_target_filter = court
+		
+		from_potential = {
+			adult_deity = yes
+			ai = no
+		}
+		potential = {
+			OR = {
+				is_ill = yes
+				trait = wounded
+				trait = maimed
+				trait = infirm
+				trait = incapable
+				trait = clubfooted
+				trait = harelip
+				trait = hunchback
+				trait = inbred
+				trait = eunuch
+				trait = blinded
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+				trait = lovers_pox
+				has_character_modifier = bedridden_illness
+			}
+		}
+        
+		allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 250
+                }
+			}
+		}
+        
+		effect = {
+			hidden_tooltip = {
+                ROOT = {
+                    cure_illness = yes
+                    remove_trait = wounded
+                    remove_trait = maimed
+                    remove_trait = infirm
+                    remove_trait = incapable
+                    remove_trait = clubfooted
+                    remove_trait = harelip
+                    remove_trait = hunchback
+                    remove_trait = inbred
+                    remove_trait = eunuch
+                    remove_trait = blinded
+                    remove_trait = one_eyed
+                    remove_trait = one_handed
+                    remove_trait = one_legged
+                    remove_trait = disfigured
+                    remove_trait = mangled
+                    remove_trait = severely_injured
+                    remove_trait = lovers_pox
+                    remove_character_modifier = bedridden_illness
+                }
+			}
+			if = {
+				limit = {
+                    has_game_rule = {
+                        name = powers
+                        value = normal
+                    }
+                }
+				from = {
+                    piety = -250
+                }
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    bless = {
+        filter = all
+        ai_target_filter = court
+        
+        from_potential = {
+            adult_deity = yes
+            ai = no
+        }
+        
+        potential = {
+            NOT = {
+                character = FROM
+            }
+            NOR = {
+                good_deity = yes
+                fallen_deity = yes
+                demi_deity = yes
+                angel_beeing = yes
+                trait = immortal
+            }
+        }
+        
+        allow = {
+            OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 250
+                }
+			}
+        }
+        
+        effect = {
+            from = {
+                character_event = {
+                    id = godsbless.1
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    curse = {
+        filter = all
+        ai_target_filter = court
+		
+		from_potential = {
+			adult_deity = yes
+			ai = no
+		}
+		potential = {
+			NOT = {
+                character = FROM
+            }
+			NOR = {
+                good_deity = yes
+                fallen_deity = yes
+                demi_deity = yes
+                angel_beeing = yes
+            }
+			NAND = {
+				trait = ugly
+				trait = slow
+				trait = weak
+				is_female = yes
+			}
+			NAND = {
+				trait = ugly
+				trait = slow
+				trait = weak
+				trait = eunuch
+			}
+		}
+        
+		allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 250
+                }
+			}
+		}
+        
+		effect = {
+            from = {
+                character_event = {
+                    id = godsbless.2
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    apotheosis = {
+		filter = all
+        ai_target_filter = court
+		
+		from_potential = {
+			adult_deity = yes
+			ai = no
+		}
+		potential = {
+			OR = {
+                trait = demi_god
+                trait = demi_goddess
+            }
+		}
+		allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 5000
+                }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+                    has_game_rule = {
+                        name = powers
+                        value = normal
+                    }
+                }
+				from = {
+                    piety = -5000
+                }
+			}
+			hidden_tooltip = {
+				remove_trait = demi_god
+				remove_trait = demi_goddess
+			}
+			if = {
+				limit = {
+					from = {
+                        OR = {
+                            trait = god
+                            trait = goddess
+                        }
+                    }
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = goddess
+				} else = {
+					add_trait = god
+				}
+			}
+			if = {
+				limit = {
+					from = {
+                        OR = {
+                            trait = fallen_god
+                            trait = fallen_goddess
+                        }
+                    }
+				}
+				if = {
+					limit = {
+						is_female = yes
+					}
+					add_trait = fallen_goddess
+				} else = {
+					add_trait = fallen_god
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    visitation = {
+		filter = all
+        ai_target_filter = court
+		
+		from_potential = {
+			adult_deity = yes
+			ai = no
+			OR = {
+				religion = the_light
+				religion = the_darkness
+			}
+		}
+		potential = {
+			NOT = {
+                character = FROM
+            }
+			NOR = {
+                good_deity = yes
+                fallen_deity = yes
+                demi_deity = yes
+                angel_beeing = yes
+                trait = immortal
+                religion = the_light
+				religion = the_darkness
+            }
+			age = 16	
+		}
+		allow = {
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 500
+                }
+			}
+		}
+		effect = {
+            FROM = { 
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            name = powers
+                            value = normal
+                        }
+                    }
+                    from = {
+                        piety = -500
+                    }
+                }
+                character_event = {
+                    id = godsbless.3
+                }
+            }
+        }
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    player_gift_angel = {
+		filter = all
+		ai_target_filter = self
+
+		from_potential = {
+			ai = no
+			NOT = {
+                has_character_flag = buying_troops
+            }
+			adult_deity = yes
+			OR = {
+				religion = the_light
+				religion = the_darkness
+			}
+			OR = {
+				culture = High_God
+				culture = Fallen_God
+			}
+		}
+		potential = {
+			NOT = {
+                character = FROM
+            }
+			OR = {
+				religion = the_light
+				religion = the_darkness
+			}
+		}
+		allow = {
+			ROOT = {
+                war = yes
+            }
+			OR = {
+				has_game_rule = {
+                    name = powers
+                    value = free
+                }
+				from = {
+                    piety = 100
+                }
+			}
+			OR = {
+				AND = {
+					ROOT = {
+                        religion = the_light
+                    }
+					FROM = {
+                        religion = the_light
+                    }
+				}
+				AND = {
+					ROOT = {
+                        religion = the_darkness
+                    }
+					FROM = {
+                        religion = the_darkness
+                    }
+				}
+			}
+		}
+		effect = {
+			save_event_target_as = sin_troop_target
+			FROM = {
+				#save_event_target_as = sin_troop_gifter
+				set_character_flag = buying_troops
+				set_character_flag = troops1
+				character_event = {
+                    id = godsgift.1
+                }
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	divine_relic = {
+		filter = all_including_me
+
+		from_potential = {
+			ai = no
+			adult_deity = yes
+		}
+
+		potential = {
+			OR = {
+				good_deity = yes
+				fallen_deity = yes
+				demi_deity = yes
+			}	
+		}
+
+		allow = {
+			OR = {			
+				has_game_rule = {
+					name = powers
+					value = free
+				}
+				from = {
+					piety = 500
+				}
+			}
+		}
+
+		effect = {
+			save_event_target_as = gods_artifact_target
+			from = {
+				save_event_target_as = gods_artifact_gifter
+				character_event = {
+					id = godsbless.100
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	demotion = {
+		filter = home_court
+
+		from_potential = {
+			adult_deity = yes
+			ai = no	
+		}
+
+		potential = {
+			OR = {
+				adult_deity = yes
+				trait = demi_god
+				trait = demi_goddess
+			}
+			prisoner = yes
+		}
+
+		allow = {
+			OR = {
+				has_game_rule = {
+					name = powers
+					value = free
+				}
+				from = {
+					piety = 250
+				}
+			}
+		}
+
+		effect = {
+			from = { 
+                if = {
+                    limit = {
+                        has_game_rule = {
+                            name = powers
+                            value = normal
+                        }
+                    }
+                    from = {
+                        piety = -250
+                    }
+				}
+			}
+
+			hidden_tooltip = {
+				remove_trait = god
+				remove_trait = goddess
+				remove_trait = fallen_god
+				remove_trait = fallen_goddess
+				remove_trait = demi_god
+				remove_trait = demi_goddess
+			}
+		}
+
+		revoke_allowes = {
+			always = no
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		ai_target_filter = court
+	}
+}

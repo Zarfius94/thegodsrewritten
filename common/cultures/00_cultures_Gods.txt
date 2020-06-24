@@ -40,6 +40,7 @@ God_group = {
 		pat_grm_name_chance = 50
 		mat_grm_name_chance = 50
 		mother_name_chance = 0
+		used_for_random = no
 	}
 	
 	Fallen_God = {
@@ -78,6 +79,7 @@ God_group = {
 		pat_grm_name_chance = 50
 		mat_grm_name_chance = 50
 		mother_name_chance = 0
+		used_for_random = no
 	}
 	
 	Norse_God = {
@@ -103,6 +105,7 @@ God_group = {
 		pat_grm_name_chance = 15
 		mat_grm_name_chance = 15
 		mother_name_chance = 0
+		used_for_random = no
 	}
 	Olympic_God = {
 		graphical_cultures = { byzantinegfx }
@@ -115,7 +118,7 @@ God_group = {
 			Plutus Pollux Pontus Poseidon Priapus Pricus Proteus Tartarus Thanatos Triton Typhon Uranus Zelus Zephyrus Zeus
 		}
 		female_names = {
-			Achelois Alcyone Alectrona Amphitrite Antheia Aphaea Aphrodite Artemis Astraea AtÃ© Athena Atropos Bia Brizo Calliope Calypso Celaeno Ceto Circe Clio
+			Achelois Alcyone Alectrona Amphitrite Antheia Aphaea Aphrodite Artemis Astraea Até Athena Atropos Bia Brizo Calliope Calypso Celaeno Ceto Circe Clio
 			Clotho Cybele Demeter Doris Eileithyia Electra Elpis Enyo Eos Erato Eris Euterpe Gaia Harmonia Hebe Hecate Hemera Hera Hestia Hygea Iris Kotys Lacheses 
 			Maia Mania Melpomene Merope Metis Nemesis Nike Nyx Peitha Persephone Pheme Polyhymnia Rhea Selene Sterope Styx Taygete Terpsichore Thalia Themis Thetis Tyche Urania
 		}
@@ -130,6 +133,7 @@ God_group = {
 		pat_grm_name_chance = 0
 		mat_grm_name_chance = 0
 		mother_name_chance = 0
+		used_for_random = no
 	}
 	Eastern_God = {
 		graphical_cultures = { mongolgfx }
@@ -142,7 +146,7 @@ God_group = {
 		}
 		female_names = {
 			Yui Rio Yuna Hina Koharu Hinata Mei Mio Saki Miyu Kokona Haruka Rin Akari Kairi Honoka Momoka Aoi Ichika Sakura Himari Yume Airi Sara Nanami Ayaka 
-			Yuka Riko Noa Mao Yua Ayane Hiyori Misaki Yuzuki Rina Sana RÃ­a Ruka Kanon Kaho Hana Karin Risa Shiori Fuka Rino Anna Natsuki Nana Reina
+			Yuka Riko Noa Mao Yua Ayane Hiyori Misaki Yuzuki Rina Sana Ría Ruka Kanon Kaho Hana Karin Risa Shiori Fuka Rino Anna Natsuki Nana Reina
 		}
 		from_dynasty_prefix = "no "
 
@@ -155,6 +159,7 @@ God_group = {
 		pat_grm_name_chance = 0
 		mat_grm_name_chance = 0
 		mother_name_chance = 0
+		used_for_random = no
 	}
 }
 
