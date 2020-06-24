@@ -337,7 +337,7 @@ character_event = {
                         OR = {
                                 trait = goddess
                                 trait = fallen_goddess
-                            }
+                        }
                     }
                 }
                 add_trait = young_demi_baby
